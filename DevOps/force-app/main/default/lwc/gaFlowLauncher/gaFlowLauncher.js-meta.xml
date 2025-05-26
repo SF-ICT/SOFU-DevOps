@@ -7,9 +7,10 @@
     <target>lightning__RecordPage</target>
     <target>lightning__HomePage</target>
     <target>lightningCommunity__Page</target>
+    <target>lightningCommunity__Default</target>
   </targets>
   <targetConfigs>
-    <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage,lightningCommunity__Page">
+    <targetConfig targets="lightning__AppPage,lightning__RecordPage,lightning__HomePage,lightningCommunity__Default">
       <property name="flowName" type="String" label="Flow API Name" description="The API name of the Flow to run." />
     </targetConfig>
   </targetConfigs>
