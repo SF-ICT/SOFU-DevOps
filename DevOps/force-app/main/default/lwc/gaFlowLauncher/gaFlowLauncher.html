@@ -1,0 +1,12 @@
+<template>
+  <template if:true={flowName}>
+    <lightning-flow
+      flow-api-name={flowName}
+      flow-input-variables={inputVariables}
+      onstatuschange={handleStatusChange}>
+    </lightning-flow>
+  </template>
+  <template if:false={flowName}>
+    <p>Please configure a Flow name.</p>
+  </template>
+</template>
