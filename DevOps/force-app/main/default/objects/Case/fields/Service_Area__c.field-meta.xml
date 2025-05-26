@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Area__c</fullName>
+    <description>RCC - Service Area for participant</description>
+    <inlineHelpText>RCC - Service Area for participant</inlineHelpText>
+    <label>Service Area</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Tweed Heads</fullName>
+                <default>false</default>
+                <label>Tweed Heads</label>
+            </value>
+            <value>
+                <fullName>Grafton</fullName>
+                <default>false</default>
+                <label>Grafton</label>
+            </value>
+            <value>
+                <fullName>Lismore</fullName>
+                <default>false</default>
+                <label>Lismore</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

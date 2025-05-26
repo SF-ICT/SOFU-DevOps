@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Workshop_Indie_Project_Cases_Open</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Outlet_Activity__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>Date_Of_Last_Session__c</columns>
+    <columns>Session_Count__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Group_Case</value>
+    </filters>
+    <filters>
+        <field>Program_Name__c</field>
+        <operation>equals</operation>
+        <value>The Indie Project</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>My Workshop Indie Project Cases (Open)</label>
+    <sharedTo>
+        <group>The_Indie_Project</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Psychological_Factors__c</fullName>
+    <description>CC - Psychological Factors of Participant</description>
+    <inlineHelpText>CC - Psychological Factors of Participant</inlineHelpText>
+    <label>Psychological Factors</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Domestic Violence</fullName>
+                <default>false</default>
+                <label>Domestic Violence</label>
+            </value>
+            <value>
+                <fullName>Alcohol or Other Drugs</fullName>
+                <default>false</default>
+                <label>Alcohol or Other Drugs</label>
+            </value>
+            <value>
+                <fullName>Relationship Problems</fullName>
+                <default>false</default>
+                <label>Relationship Problems</label>
+            </value>
+            <value>
+                <fullName>Trauma</fullName>
+                <default>false</default>
+                <label>Trauma</label>
+            </value>
+            <value>
+                <fullName>Housing/Living Conditions</fullName>
+                <default>false</default>
+                <label>Housing/Living Conditions</label>
+            </value>
+            <value>
+                <fullName>Social Issues/Isolation</fullName>
+                <default>false</default>
+                <label>Social Issues/Isolation</label>
+            </value>
+            <value>
+                <fullName>Legal Issues</fullName>
+                <default>false</default>
+                <label>Legal Issues</label>
+            </value>
+            <value>
+                <fullName>Recent Loss</fullName>
+                <default>false</default>
+                <label>Recent Loss</label>
+            </value>
+            <value>
+                <fullName>Financial Stress</fullName>
+                <default>false</default>
+                <label>Financial Stress</label>
+            </value>
+            <value>
+                <fullName>Physical health needs</fullName>
+                <default>false</default>
+                <label>Physical health needs</label>
+            </value>
+            <value>
+                <fullName>Vulnerability</fullName>
+                <default>false</default>
+                <label>Vulnerability</label>
+            </value>
+            <value>
+                <fullName>Other (Specify)</fullName>
+                <default>false</default>
+                <label>Other (Specify)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

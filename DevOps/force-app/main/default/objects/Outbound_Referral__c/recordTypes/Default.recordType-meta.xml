@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default</fullName>
+    <active>true</active>
+    <label>Default</label>
+    <picklistValues>
+        <picklist>BPS_Linkage_Type__c</picklist>
+        <values>
+            <fullName>Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Informal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mainstream</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BPS_Linkage__c</picklist>
+        <values>
+            <fullName>Child protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultural</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early childhood education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educational or work colleagues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extended family</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family members</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Higher education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Justice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local community group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Local community people</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online digital community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreational %28sports%2Finterests%2Fhobbies%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spiritual%2FReligious</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Currently_Engaging_Service__c</picklist>
+        <values>
+            <fullName>Disengaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engaged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Other_Reasons_For_Seeking_Assistance__c</picklist>
+        <values>
+            <fullName>AGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMMUNITY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMPLOYMENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAMILY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOUSING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MATERIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MENTAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONEY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERSONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHYSICAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRAINING</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outbound_Referral__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Reason_For_Seeking_Assistance__c</picklist>
+        <values>
+            <fullName>AGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMMUNITY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMPLOYMENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAMILY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOUSING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MATERIAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MENTAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONEY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PERSONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PHYSICAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRAINING</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Disengaging__c</picklist>
+        <values>
+            <fullName>Able to Access Supports External to the Aged Care System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Difficulty Accessing Service on an Ongoing Basis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dissatisfied with Services Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer Required Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Only Required Short-Term Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Determine Primary Reason</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Status__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waiting</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Type_Referred_To__c</picklist>
+        <values>
+            <fullName>Adventure Therapy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aged Care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Allied Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Builders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centrelink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Child Protection Helpline</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Transport</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disability Counselling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic Violence Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drug and alcohol</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early childhood education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Counselling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food Relief</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gambling counselling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geotechnical Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Kind Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indigenous Counselling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Aid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA - no referral made</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other counselling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent%2Ffamily support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police%2FJustice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Group</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sport and recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supported playgroup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TAFE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Welfare</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

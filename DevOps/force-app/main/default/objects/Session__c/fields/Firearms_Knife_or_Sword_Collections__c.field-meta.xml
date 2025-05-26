@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Firearms_Knife_or_Sword_Collections__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Asked if there are firearms on the property – if yes, home visits are not authorised</description>
+    <inlineHelpText>Asked if there are firearms on the property – if yes, home visits are not authorised</inlineHelpText>
+    <label>Firearms, Knife or Sword Collections</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

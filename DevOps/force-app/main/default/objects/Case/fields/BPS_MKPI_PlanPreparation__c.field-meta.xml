@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_MKPI_PlanPreparation__c</fullName>
+    <formula>OR(AND(BPS_Most_Recent_Planning_Contact_Attempt__c - BPS_Participant__r.BPS_Access_Met__c &lt;=21, NOT(ISBLANK(BPS_Scheduled_Appointment_Date__c))),
+
+AND(BPS_Most_Recent_Planning_Contact_Attempt__c - BPS_Participant__r.BPS_Access_Met__c &lt;=21, OR(ISPICKVAL(BPS_Planning_Contact_Status__c, &quot;UTC Complete in CRM&quot;), ISPICKVAL(BPS_Planning_Contact_Status__c, &quot;UTP Complete in CRM&quot;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MKPI_PlanPreparation</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

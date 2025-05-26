@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_Source__c</fullName>
+    <label>Enquiry Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Another Participant / Client</fullName>
+                <default>false</default>
+                <label>Another Participant / Client</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Family/Friend</fullName>
+                <default>false</default>
+                <label>Family/Friend</label>
+            </value>
+            <value>
+                <fullName>Google Search</fullName>
+                <default>false</default>
+                <label>Google Search</label>
+            </value>
+            <value>
+                <fullName>NDIS</fullName>
+                <default>false</default>
+                <label>NDIS</label>
+            </value>
+            <value>
+                <fullName>Other Agency / Provider</fullName>
+                <default>false</default>
+                <label>Other Agency / Provider</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+                <label>Walk-in</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>1zqjfq&apos;&quot;(){}&lt;x&gt;:/1zqjfq;9</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1zqjfq&apos;&quot;(){}&lt;x&gt;:/1zqjfq;9</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

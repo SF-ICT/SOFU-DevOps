@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_time_did_the_incident_happen_or__c</fullName>
+    <description>What time did the incident happen? or you were made aware of the incident?</description>
+    <inlineHelpText>What time did the incident happen? or you were made aware of the incident?</inlineHelpText>
+    <label>What time did the incident happen? or</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

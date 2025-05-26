@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_you_are_asked_to_leave_do_so__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If you are asked to leave, do so.</description>
+    <inlineHelpText>If you are asked to leave, do so.</inlineHelpText>
+    <label>If you are asked to leave, do so.</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

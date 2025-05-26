@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_why_some_or_all_outbound_referra__c</fullName>
+    <description>Reason why some or all outbound referrals could not be made</description>
+    <inlineHelpText>FCS - Reason why some or all outbound referrals could not be made</inlineHelpText>
+    <label>Reason why outbound referrals failed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A (Referral was made)</fullName>
+                <default>false</default>
+                <label>N/A (Referral was made)</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t meet service criteria</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t meet service criteria</label>
+            </value>
+            <value>
+                <fullName>Families needs were met through the service</fullName>
+                <default>false</default>
+                <label>Families needs were met through the service</label>
+            </value>
+            <value>
+                <fullName>Family can&apos;t be contacted</fullName>
+                <default>false</default>
+                <label>Family can&apos;t be contacted</label>
+            </value>
+            <value>
+                <fullName>Family declined</fullName>
+                <default>false</default>
+                <label>Family declined</label>
+            </value>
+            <value>
+                <fullName>Family referred back to DCJ</fullName>
+                <default>false</default>
+                <label>Family referred back to DCJ</label>
+            </value>
+            <value>
+                <fullName>Family will self-refer</fullName>
+                <default>false</default>
+                <label>Family will self-refer</label>
+            </value>
+            <value>
+                <fullName>Information only given</fullName>
+                <default>false</default>
+                <label>Information only given</label>
+            </value>
+            <value>
+                <fullName>No appropriate service available</fullName>
+                <default>false</default>
+                <label>No appropriate service available</label>
+            </value>
+            <value>
+                <fullName>Referral was not applicable</fullName>
+                <default>false</default>
+                <label>Referral was not applicable</label>
+            </value>
+            <value>
+                <fullName>Service at full capacity</fullName>
+                <default>false</default>
+                <label>Service at full capacity</label>
+            </value>
+            <value>
+                <fullName>Significant assessment conducted on family</fullName>
+                <default>false</default>
+                <label>Significant assessment conducted on family</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

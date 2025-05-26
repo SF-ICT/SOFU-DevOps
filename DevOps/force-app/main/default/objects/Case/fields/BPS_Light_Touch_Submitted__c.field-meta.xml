@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_Light_Touch_Submitted__c</fullName>
+    <formula>AND(ISPICKVAL( BPS_Participant__r.BPS_Current_Plan__r.BPS_Review_Type__c, &quot;Light Touch&quot;), NOT(ISBLANK(BPS_Plan_Submitted_to_NDIA_CP__c)), BPS_Participant__r.BPS_Previous_Plan_Expiry__c - BPS_Plan_Submitted_to_NDIA_CP__c &lt;= 100, OR(BPS_Participant__r.BPS_Previous_Plan_Expiry__c - TODAY() &lt;= 100, TODAY() - BPS_Participant__r.BPS_Previous_Plan_Expiry__c &lt;= 100))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Light Touch Submitted</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

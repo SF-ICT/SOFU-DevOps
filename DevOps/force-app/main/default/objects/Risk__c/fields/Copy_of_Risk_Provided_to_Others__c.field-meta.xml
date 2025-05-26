@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_Risk_Provided_to_Others__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Have other programs within Social Futures been provided with a copy of or access to the identified risk?</description>
+    <inlineHelpText>Have other programs within Social Futures been provided with a copy of or access to the identified risk?</inlineHelpText>
+    <label>Copy of Risk Provided to Others?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

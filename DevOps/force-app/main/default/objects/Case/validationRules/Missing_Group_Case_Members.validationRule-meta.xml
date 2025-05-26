@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Group_Case_Members</fullName>
+    <active>true</active>
+    <description>No case members and Unidentified clients = 0</description>
+    <errorConditionFormula>RecordTypeId = &quot;0124a0000004LBKAA2&quot; &amp;&amp; 
+Case_Member_Count__c = 0 &amp;&amp; 
+Total_Number_of_Unidentified_Clients__c = 0</errorConditionFormula>
+    <errorMessage>Group cases must have case members or Unidentified Participants. Please add Case Members or Unidentified Participants.</errorMessage>
+</ValidationRule>

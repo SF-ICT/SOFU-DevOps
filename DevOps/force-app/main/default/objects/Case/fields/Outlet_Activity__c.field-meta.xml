@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outlet_Activity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Field that defines which of the TEI Program Activity type is reported to DEX. Only for Getting it Together and Youth Connections Clubhouse</description>
+    <inlineHelpText>Elements, FCS, GIT, MJKIM, Pathfinders, Reconnect, Clubhouse, Care Connect - Hunter Manning, Resilient Kids</inlineHelpText>
+    <label>Outlet Activity</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <filterItems>
+            <field>Outlet_Activity__c.Program__r.Program_Type__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Program_Type2__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Outlet_Activity__c.Program__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Program__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Outlet_Activity__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Outlet_Activity__c</referenceTo>
+    <relationshipLabel>Cases</relationshipLabel>
+    <relationshipName>Cases</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

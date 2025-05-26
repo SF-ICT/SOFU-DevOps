@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_4__c</fullName>
+    <description>Checks if LOC is Level 4</description>
+    <formula>/* Level 4 Check */
+				IF(
+				AND(
+					OR(
+						TEXT(iar_dst_domain_1__c) &gt;= &quot;2&quot;,
+						TEXT(iar_dst_domain_2__c) &gt;= &quot;2&quot;,
+						TEXT(iar_dst_domain_3__c) &gt;= &quot;2&quot;,
+						TEXT(iar_dst_domain_4__c) &gt;= &quot;2&quot;
+					),
+					TEXT(iar_dst_domain_1__c) = &quot;3&quot;,
+					OR(
+						TEXT(iar_dst_domain_2__c) &gt;= &quot;2&quot;,
+						TEXT(iar_dst_domain_3__c) &gt;= &quot;2&quot;,
+						TEXT(iar_dst_domain_4__c) &gt;= &quot;2&quot;
+					)
+				),
+				True,
+False
+)</formula>
+    <inlineHelpText>Checks if LOC is Level 4</inlineHelpText>
+    <label>Level 4</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

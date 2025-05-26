@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_Referral</fullName>
+    <fields>CaseNumber</fields>
+    <fields>Date_of_Enquiry_or_Referral__c</fields>
+    <fields>Provided_First_Name__c</fields>
+    <fields>Provided_Last_Name__c</fields>
+    <fields>OwnerId</fields>
+    <fields>CreatedById</fields>
+    <label>Enquiry/Referral</label>
+</CompactLayout>

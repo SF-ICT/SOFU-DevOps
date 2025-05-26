@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_committed_to_just_them_family__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Obtained commitment from client that only client and their immediate family member(s) and/or identified support person will be in the home when you visit.</description>
+    <inlineHelpText>Obtained commitment from client that only client and their immediate family member(s) and/or identified support person will be in the home when you visit.</inlineHelpText>
+    <label>Client committed to just them/family</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

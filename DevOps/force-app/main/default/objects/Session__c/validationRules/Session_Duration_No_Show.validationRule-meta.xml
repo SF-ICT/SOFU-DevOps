@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Session_Duration_No_Show</fullName>
+    <active>true</active>
+    <description>If the Session Duration is 0 then No Show must be set to Yes.</description>
+    <errorConditionFormula>Duration__c == &quot;No contact took place&quot; &amp;&amp;   ISPICKVAL(No_Show__c, &quot;No&quot;)</errorConditionFormula>
+    <errorDisplayField>No_Show__c</errorDisplayField>
+    <errorMessage>If the Session Duration is 0 then No Show must be set to Yes.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indigenous_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Contact.Indigenous_Status__c), &quot;NO&quot;, &quot;Neither Aboriginal nor Torres Strait Islander&quot;, &quot;ABORIGINAL&quot;, &quot;Aboriginal&quot;, &quot;TSI&quot;, &quot;Torres Strait Islander&quot;, &quot;BOTH&quot;,&quot;Both Aboriginal &amp; Torres Strait Islander&quot;,&quot;Not stated/Inadequately described&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Indigenous Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

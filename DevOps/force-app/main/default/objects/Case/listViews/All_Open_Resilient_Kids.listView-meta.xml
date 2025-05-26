@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Resilient_Kids</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Case_Owner_Full_Name__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>equals</operation>
+        <value>Resilient Kids</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>All Open Resilient Kids</label>
+    <sharedTo>
+        <group>Resilient_Kids</group>
+    </sharedTo>
+</ListView>

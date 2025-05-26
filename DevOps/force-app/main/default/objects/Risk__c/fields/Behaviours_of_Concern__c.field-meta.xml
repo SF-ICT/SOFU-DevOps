@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Behaviours_of_Concern__c</fullName>
+    <description>Behaviours of Concern</description>
+    <inlineHelpText>Behaviours of Concern</inlineHelpText>
+    <label>Behaviours of Concern</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Self-harm / Self Injury</fullName>
+                <default>false</default>
+                <label>Self-harm / Self Injury</label>
+            </value>
+            <value>
+                <fullName>Family / Domestic Violence history</fullName>
+                <default>false</default>
+                <label>Family / Domestic Violence history</label>
+            </value>
+            <value>
+                <fullName>Family / Domestic Violence current</fullName>
+                <default>false</default>
+                <label>Family / Domestic Violence current</label>
+            </value>
+            <value>
+                <fullName>Assault –physical</fullName>
+                <default>false</default>
+                <label>Assault –physical</label>
+            </value>
+            <value>
+                <fullName>Assault –verbal</fullName>
+                <default>false</default>
+                <label>Assault –verbal</label>
+            </value>
+            <value>
+                <fullName>Psychological/emotionalabuse</fullName>
+                <default>false</default>
+                <label>Psychological/emotionalabuse</label>
+            </value>
+            <value>
+                <fullName>Intimidation –physical</fullName>
+                <default>false</default>
+                <label>Intimidation –physical</label>
+            </value>
+            <value>
+                <fullName>Intimidation–verbal(threats)</fullName>
+                <default>false</default>
+                <label>Intimidation–verbal(threats)</label>
+            </value>
+            <value>
+                <fullName>Access to weapons and skills/knowledge to injure others</fullName>
+                <default>false</default>
+                <label>Access to weapons and skills/knowledge to injure others</label>
+            </value>
+            <value>
+                <fullName>Destructiveness</fullName>
+                <default>false</default>
+                <label>Destructiveness</label>
+            </value>
+            <value>
+                <fullName>Use of projectiles(throwing) or weapons</fullName>
+                <default>false</default>
+                <label>Use of projectiles(throwing) or weapons</label>
+            </value>
+            <value>
+                <fullName>Appears or behaves in an agitated manner</fullName>
+                <default>false</default>
+                <label>Appears or behaves in an agitated manner</label>
+            </value>
+            <value>
+                <fullName>Persistent low mood</fullName>
+                <default>false</default>
+                <label>Persistent low mood</label>
+            </value>
+            <value>
+                <fullName>Suicideideation/attempts</fullName>
+                <default>false</default>
+                <label>Suicideideation/attempts</label>
+            </value>
+            <value>
+                <fullName>Isolated</fullName>
+                <default>false</default>
+                <label>Isolated</label>
+            </value>
+            <value>
+                <fullName>Feelings of loss of control</fullName>
+                <default>false</default>
+                <label>Feelings of loss of control</label>
+            </value>
+            <value>
+                <fullName>Recent behaviour/lifestyle changes</fullName>
+                <default>false</default>
+                <label>Recent behaviour/lifestyle changes</label>
+            </value>
+            <value>
+                <fullName>Property damage</fullName>
+                <default>false</default>
+                <label>Property damage</label>
+            </value>
+            <value>
+                <fullName>Harassment/stalking</fullName>
+                <default>false</default>
+                <label>Harassment/stalking</label>
+            </value>
+            <value>
+                <fullName>Harm to animals</fullName>
+                <default>false</default>
+                <label>Harm to animals</label>
+            </value>
+            <value>
+                <fullName>Exploiting others</fullName>
+                <default>false</default>
+                <label>Exploiting others</label>
+            </value>
+            <value>
+                <fullName>Hitting or slamming objects</fullName>
+                <default>false</default>
+                <label>Hitting or slamming objects</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Not applicable</fullName>
+                <default>false</default>
+                <label>Not applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

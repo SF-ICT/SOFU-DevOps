@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Factors_identified_in_Review_Note__c</fullName>
+    <description>Risk Factors identified in Review Process</description>
+    <inlineHelpText>Risk Factors identified in Review Process</inlineHelpText>
+    <label>Risk Factors identified in Review Note</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

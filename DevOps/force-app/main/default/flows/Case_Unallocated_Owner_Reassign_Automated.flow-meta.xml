@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_for_Prior_Owner</name>
+        <label>Check for Prior Owner</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Change_Owner_to_Previous</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Prior Owner</defaultConnectorLabel>
+        <rules>
+            <name>No_Prior_Owner</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Case_Owner_Id__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Case_Owner_Id__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <label>No Prior Owner</label>
+        </rules>
+    </decisions>
+    <description>Reassigns a Case if it is changed to Case Owner Unallocated back to the previous owner.</description>
+    <environments>Default</environments>
+    <interviewLabel>Case: Unallocated Owner Reassign (Automated) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case: Unallocated Owner Reassign (Automated)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Change_Owner_to_Previous</name>
+        <label>Change Owner to Previous</label>
+        <locationX>264</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record__Prior.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_for_Prior_Owner</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Case_Owner_Id__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Case_Owner_Id__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>00G2x000000ECeo</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

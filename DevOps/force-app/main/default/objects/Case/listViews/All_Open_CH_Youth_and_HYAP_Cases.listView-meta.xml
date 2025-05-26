@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_CH_Youth_and_HYAP_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Case_Owner_Full_Name__c</columns>
+    <columns>Case_ID_18__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>contains</operation>
+        <value>HYAP,Home - Youth,Northern Youth</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>Relationship_to_Parent_Case__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Case_Owner_Type__c</field>
+        <operation>equals</operation>
+        <value>User</value>
+    </filters>
+    <label>All Open CH Youth &amp; HYAP Cases</label>
+    <sharedTo>
+        <group>Connecting_Home_HYAP</group>
+        <group>Connecting_Home_Northern_Youth</group>
+        <group>Connecting_Home_Youth</group>
+    </sharedTo>
+</ListView>

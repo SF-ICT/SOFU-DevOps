@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEX_Prevent_Program_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>$Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp;
+ISCHANGED(Program__c) &amp;&amp;
+Program__r.DEX_Reporter__c &amp;&amp;
+OR(
+    NOT(ISBLANK(Dex_Last_Sync__c)),
+    NOT(ISNULL(Dex_Last_Sync__c))
+)</errorConditionFormula>
+    <errorDisplayField>Program__c</errorDisplayField>
+    <errorMessage>The Program  cannot be changed once the case has been synced to DEX.</errorMessage>
+</ValidationRule>

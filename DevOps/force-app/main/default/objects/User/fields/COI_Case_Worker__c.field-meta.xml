@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>COI_Case_Worker__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If the user is involved with a case that has been flagged as a COI populate this checkbox. (e.g., the assigned case worker to a COI case)</description>
+    <label>COI Case Worker</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Add_Next_Workday_To_Dates</name>
+        <label>Add Next Workday To Dates</label>
+        <locationX>528</locationX>
+        <locationY>566</locationY>
+        <assignmentItems>
+            <assignToReference>AllDates</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>StoreLastSetDateplusWorkday</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>AllDatesText</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>StoreLastSetDateplusWorkdayText</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>StoreLastSetDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>StoreLastSetDateplusWorkday</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_User_Tasks_On_Date</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Add_SLA_Start_Date_to_Dates</name>
+        <label>Add SLA Start Date to Dates</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignmentItems>
+            <assignToReference>AllDates</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SLA_Start_Date</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_All_Dates_Within_SLA</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Subject_To_AllDatesText</name>
+        <label>Assign Subject To AllDatesText</label>
+        <locationX>616</locationX>
+        <locationY>890</locationY>
+        <assignmentItems>
+            <assignToReference>AllDatesText</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SubjectTextWithBreak</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Tasks</targetReference>
+        </connector>
+    </assignments>
+    <choices>
+        <name>Access_Appointment</name>
+        <choiceText>Access Appointment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Access Appointment</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>CCP_Appointment</name>
+        <choiceText>CCP Appointment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>CCP Appointment</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Discretionary_Check_In_Appointment</name>
+        <choiceText>Discretionary Check-In Appointment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Discretionary Check-In Appointment</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Implementation_Appointment</name>
+        <choiceText>Implementation Appointment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Implementation Appointment</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Pre_Reassessment_Check_In_Appointment</name>
+        <choiceText>Pre-Reassessment Check-In Appointment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Pre-Reassessment Check-In Appointment</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Scheduled_Check_In_Appointment</name>
+        <choiceText>Scheduled Check-In Appointment</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Scheduled Check-In Appointment</stringValue>
+        </value>
+    </choices>
+    <customProperties>
+        <name>ScreenProgressIndicator</name>
+        <value>
+            <stringValue>{&quot;location&quot;:&quot;top&quot;,&quot;type&quot;:&quot;simple&quot;}</stringValue>
+        </value>
+    </customProperties>
+    <decisions>
+        <name>All_Dates_Contains_Last_Date</name>
+        <label>All Dates Contains Last Date?</label>
+        <locationX>396</locationX>
+        <locationY>458</locationY>
+        <defaultConnector>
+            <targetReference>Add_Next_Workday_To_Dates</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Contains_Last_Date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>AllDates</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <elementReference>LastApptDueDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_All_Dates_Within_SLA</targetReference>
+            </connector>
+            <label>Contains Last Date</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>AllDatesTextFormatted</name>
+        <dataType>String</dataType>
+        <expression>SUBSTITUTE(SUBSTITUTE(SUBSTITUTE({!AllDatesText}, &quot;,&quot;, &quot;&quot;),  &quot;[&quot;, &quot;&quot;), &quot;]&quot;, &quot;&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>LastApptDate</name>
+        <dataType>Date</dataType>
+        <expression>IF({!Activity_Type}=&quot;Access Appointment&quot;, {!SLA_Start_Date} + 25,
+IF({!Activity_Type}=&quot;CCP Appointment&quot;, {!SLA_Start_Date} + 57,
+IF({!Activity_Type}=&quot;Discretionary Check-In Appointment&quot;, {!SLA_Start_Date} + 4,
+IF({!Activity_Type}=&quot;Implementation Appointment&quot;, {!SLA_Start_Date} + 25,
+IF({!Activity_Type}=&quot;Pre-Reassessment Appointment&quot;, {!SLA_Start_Date} + 47,
+IF({!Activity_Type}=&quot;Scheduled Check-In Appointment&quot;, {!SLA_Start_Date} + 57, {!SLA_Start_Date}))))))</expression>
+    </formulas>
+    <formulas>
+        <name>LastApptDueDate</name>
+        <dataType>Date</dataType>
+        <expression>{!SLAEndDate} - 
+CASE(WEEKDAY({!SLAEndDate}),
+1,5, 
+2,5, 
+3,5, 
+4,5, 
+5,3,
+6,3, 
+7,4, 
+0)</expression>
+    </formulas>
+    <formulas>
+        <name>SLAEndDate</name>
+        <dataType>Date</dataType>
+        <expression>IF({!Activity_Type}=&quot;Access Appointment&quot;, {!SLA_Start_Date} + 28,
+IF({!Activity_Type}=&quot;CCP Appointment&quot;, {!SLA_Start_Date} + 60,
+IF({!Activity_Type}=&quot;Discretionary Check-In Appointment&quot;, {!SLA_Start_Date} + 7,
+IF({!Activity_Type}=&quot;Implementation Appointment&quot;, {!SLA_Start_Date} + 28,
+IF({!Activity_Type}=&quot;Pre-Reassessment Check-In Appointment&quot;, {!SLA_Start_Date} + 50,
+IF({!Activity_Type}=&quot;Scheduled Check-In Appointment&quot;, {!SLA_Start_Date} + 60, {!SLA_Start_Date}))))))</expression>
+    </formulas>
+    <formulas>
+        <name>SLATotalDays</name>
+        <dataType>Number</dataType>
+        <expression>IF({!Activity_Type}=&quot;Access Appointment&quot;, 28,
+IF({!Activity_Type}=&quot;CCP Appointment&quot;, 60,
+IF({!Activity_Type}=&quot;Discretionary Check-In Appointment&quot;, 7,
+IF({!Activity_Type}=&quot;Implementation Appointment&quot;, 28,
+IF({!Activity_Type}=&quot;Pre-Reassessment Check-In Appointment&quot;, 50,
+IF({!Activity_Type}=&quot;Scheduled Check-In Appointment&quot;, 60, NULL))))))</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>StoreLastSetDateplusWorkday</name>
+        <dataType>Date</dataType>
+        <expression>{!StoreLastSetDate} +
+CASE( WEEKDAY({!StoreLastSetDate} ),
+1,1, 
+2,1, 
+3,1, 
+4,1, 
+5,1,
+6,3, 
+7,2, 
+0)</expression>
+    </formulas>
+    <formulas>
+        <name>StoreLastSetDateplusWorkdayDay</name>
+        <dataType>String</dataType>
+        <expression>CASE(WEEKDAY({!StoreLastSetDateplusWorkday}), 1, &quot;Sunday&quot;, 2, &quot;Monday&quot;, 3, &quot;Tuesday&quot;, 4, &quot;Wednesday&quot;, 5, &quot;Thursday&quot;, 6, &quot;Friday&quot;, 7, &quot;Saturday&quot;, NULL)</expression>
+    </formulas>
+    <formulas>
+        <name>StoreLastSetDateplusWorkdayText</name>
+        <dataType>String</dataType>
+        <expression>BR() &amp; &quot;• &quot;&amp; {!StoreLastSetDateplusWorkdayDay} &amp; &quot; - &quot; &amp;TEXT(DAY({!StoreLastSetDateplusWorkday})) &amp; &quot;/&quot; &amp; TEXT(MONTH({!StoreLastSetDateplusWorkday})) &amp; &quot;/&quot; &amp; TEXT(YEAR({!StoreLastSetDateplusWorkday})) &amp;  BR()</expression>
+    </formulas>
+    <formulas>
+        <name>SubjectTextWithBreak</name>
+        <dataType>String</dataType>
+        <expression>&quot;‎ ‎‎ ‎‎ ‎‣ ‎&quot;&amp;{!Loop_Through_Tasks.Subject} &amp; &quot; - &quot; &amp; TEXT({!Loop_Through_Tasks.Time_to_Complete__c}) &amp; &quot; hrs&quot; &amp; BR()</expression>
+    </formulas>
+    <interviewLabel>LAC Appointment Scheduling Assistant {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LAC Appointment Scheduling Assistant</label>
+    <loops>
+        <name>Get_All_Dates_Within_SLA</name>
+        <label>Get All Dates Within SLA</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <collectionReference>AllDates</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>All_Dates_Contains_Last_Date</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Display_All_Dates_and_Open_Tasks</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>Loop_Through_Tasks</name>
+        <label>Loop Through Tasks</label>
+        <locationX>528</locationX>
+        <locationY>782</locationY>
+        <collectionReference>Get_User_Tasks_On_Date</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Subject_To_AllDatesText</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Get_All_Dates_Within_SLA</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_User_Tasks_On_Date</name>
+        <label>Get User Tasks On Date</label>
+        <locationX>528</locationX>
+        <locationY>674</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_Through_Tasks</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND (3 OR 4) AND 5</filterLogic>
+        <filters>
+            <field>OwnerId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>UserName.recordId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Subject</field>
+            <operator>EndsWith</operator>
+            <value>
+                <stringValue>Appointment</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Subject</field>
+            <operator>Contains</operator>
+            <value>
+                <stringValue>Submission</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ActivityDate</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>StoreLastSetDateplusWorkday</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Task</object>
+        <sortField>ActivityDate</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <name>Details_Screen</name>
+        <label>Details Screen</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Add_SLA_Start_Date_to_Dates</targetReference>
+        </connector>
+        <fields>
+            <name>UserName</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>LAC_Contact__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Name</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>BPS_Activity_Log__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>maxValues</name>
+                <value>
+                    <numberValue>1.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>recordId</name>
+                <value>
+                    <elementReference>$User.Id</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Activity_Type</name>
+            <choiceReferences>Access_Appointment</choiceReferences>
+            <choiceReferences>CCP_Appointment</choiceReferences>
+            <choiceReferences>Discretionary_Check_In_Appointment</choiceReferences>
+            <choiceReferences>Implementation_Appointment</choiceReferences>
+            <choiceReferences>Pre_Reassessment_Check_In_Appointment</choiceReferences>
+            <choiceReferences>Scheduled_Check_In_Appointment</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Activity Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>SLA_Start_Date</name>
+            <dataType>Date</dataType>
+            <fieldText>SLA Start Date</fieldText>
+            <fieldType>InputField</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Display_All_Dates_and_Open_Tasks</name>
+        <label>Display All Dates and Open Tasks</label>
+        <locationX>176</locationX>
+        <locationY>1250</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SLAInfoText</name>
+            <fieldText>&lt;p&gt;&lt;strong&gt;Appointment Type: &lt;/strong&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;{!Activity_Type}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;SLA Total Days:&lt;/strong&gt; {!SLATotalDays}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;SLA Start Date: &lt;/strong&gt;{!SLA_Start_Date}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;SLA End Date:&lt;/strong&gt; {!SLAEndDate}&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Last Appointment Date (3 working days before SLA End Date): &lt;/strong&gt;{!LastApptDueDate}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>AllDatesTextBox</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;{!AllDatesTextFormatted}&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Details_Screen</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>AllDates</name>
+        <dataType>Date</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>AllDatesText</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>StoreLastSetDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>SLA_Start_Date</elementReference>
+        </value>
+    </variables>
+</Flow>

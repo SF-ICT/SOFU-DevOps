@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conflict_of_Interest__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Use this to mark if the contact record has a conflict of interest with a staff member</description>
+    <label>Conflict of Interest</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

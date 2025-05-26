@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_MKPI_SubmittedBeforeExpiry__c</fullName>
+    <formula>OR(BPS_Participant__r.BPS_Previous_Plan_Expiry__c &gt;= BPS_Plan_Submitted_to_NDIA_CP__c, BPS_Participant__r.BPS_Current_Plan__r.BPS_Assigned_to_SF_at_Implementation__c = TRUE, BPS_Participant__r.BPS_Current_Plan__r.BPS_Assigned_to_SF_Post_Implementation__c = TRUE, AND(NOT(ISBLANK(BPS_Plan_Submitted_to_NDIA_CP__c)), NOT(ISBLANK(BPS_Participant__r.BPS_Current_Plan__r.BPS_Plan_End_Date__c)), ISPICKVAL(BPS_Participant__r.BPS_Current_Plan__r.BPS_Review_Type__c, &quot;Unscheduled&quot;)), AND(NOT(ISBLANK(BPS_Plan_Submitted_to_NDIA_CP__c)), NOT(ISBLANK(BPS_Participant__r.BPS_Current_Plan__r.BPS_Plan_End_Date__c)), ISPICKVAL(BPS_Participant__r.BPS_Current_Plan__r.BPS_Review_Type__c, &quot;Auto Extension - NDIA 2021&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MKPI_SubmittedBeforeExpiry</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

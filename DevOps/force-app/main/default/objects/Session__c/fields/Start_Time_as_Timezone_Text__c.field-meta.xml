@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Time_as_Timezone_Text__c</fullName>
+    <description>Session Start Time in correct Timezone as text</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(Start_Time_as_Timezone__c),&apos;&apos;,
+IF(HOUR(Start_Time_as_Timezone__c) + 10 &lt;= 12, LPAD(TEXT(HOUR(Start_Time_as_Timezone__c)), 2, &apos;0&apos;),
+LPAD(TEXT(HOUR(Start_Time_as_Timezone__c) - 12), 2, &apos;0&apos;)
+)
++ &apos;:&apos; + LPAD(TEXT(MINUTE(Start_Time_as_Timezone__c)), 2, &apos;0&apos;) +
+IF
+(HOUR(Start_Time_as_Timezone__c) &lt; 12, &apos; am&apos;, &apos; pm&apos;)
+)</formula>
+    <inlineHelpText>Session Start Time in correct Timezone as text</inlineHelpText>
+    <label>Start Time as Timezone Text</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

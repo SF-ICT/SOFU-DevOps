@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Displaced_from_Community__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>RCC - Displaced from Community</description>
+    <inlineHelpText>RCC - Displaced from Community</inlineHelpText>
+    <label>Displaced from Community</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

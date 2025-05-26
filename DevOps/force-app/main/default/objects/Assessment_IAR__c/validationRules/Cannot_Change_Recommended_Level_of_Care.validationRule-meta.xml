@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Change_Recommended_Level_of_Care</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(PRIORVALUE(Level_Of_Care__c))) &amp;&amp;  PRIORVALUE(Level_Of_Care__c) !=  Level_Of_Care__c</errorConditionFormula>
+    <errorDisplayField>Level_Of_Care__c</errorDisplayField>
+    <errorMessage>You cannot change the Recommended Level of Care once it is set.</errorMessage>
+</ValidationRule>

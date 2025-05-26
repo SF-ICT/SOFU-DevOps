@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FCS_Response_1__c</fullName>
+    <inlineHelpText>FCS - Response 1</inlineHelpText>
+    <label>FCS Response 1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A - family declined to engage</fullName>
+                <default>false</default>
+                <label>N/A - family declined to engage</label>
+            </value>
+            <value>
+                <fullName>Active holding</fullName>
+                <default>false</default>
+                <label>Active holding</label>
+            </value>
+            <value>
+                <fullName>Information/advice provided to family member(s)</fullName>
+                <default>false</default>
+                <label>Information/advice provided to family member(s)</label>
+            </value>
+            <value>
+                <fullName>Referral made</fullName>
+                <default>false</default>
+                <label>Referral made</label>
+            </value>
+            <value>
+                <fullName>Family Group Conferencing</fullName>
+                <default>false</default>
+                <label>Family Group Conferencing</label>
+            </value>
+            <value>
+                <fullName>Brokerage</fullName>
+                <default>false</default>
+                <label>Brokerage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

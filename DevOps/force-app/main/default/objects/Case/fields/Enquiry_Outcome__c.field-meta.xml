@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_Outcome__c</fullName>
+    <label>Enquiry Outcome</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Action</fullName>
+                <default>true</default>
+                <label>No Action</label>
+            </value>
+            <value>
+                <fullName>Information Provided - Verbal</fullName>
+                <default>false</default>
+                <label>Information Provided - Verbal</label>
+            </value>
+            <value>
+                <fullName>Information provided - Email</fullName>
+                <default>false</default>
+                <label>Information provided - Email</label>
+            </value>
+            <value>
+                <fullName>Information Provided - Posted</fullName>
+                <default>false</default>
+                <label>Information Provided - Posted</label>
+            </value>
+            <value>
+                <fullName>Unable to provide services requested</fullName>
+                <default>false</default>
+                <label>Unable to provide services requested</label>
+            </value>
+            <value>
+                <fullName>Converted to Participant</fullName>
+                <default>false</default>
+                <label>Converted to Participant</label>
+            </value>
+            <value>
+                <fullName>Follow up task</fullName>
+                <default>false</default>
+                <label>Follow up task</label>
+            </value>
+            <value>
+                <fullName>Converted to Intake</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Converted to Intake</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

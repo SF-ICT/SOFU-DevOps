@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Safety_Plan_Knowledge_and_or_in_place__c</fullName>
+    <description>Used in the Intake process for Care Connect Hunter Manning and Hunter Central Coast</description>
+    <inlineHelpText>Have you heard of a safety plan, and do you already have one in place?</inlineHelpText>
+    <label>Safety Plan Knowledge and/or in place</label>
+    <length>5000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

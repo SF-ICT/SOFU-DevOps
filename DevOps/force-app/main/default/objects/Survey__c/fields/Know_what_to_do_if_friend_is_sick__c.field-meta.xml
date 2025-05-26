@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Know_what_to_do_if_friend_is_sick__c</fullName>
+    <description>Field used for The Bridge | Pre/Post Participant Survey</description>
+    <inlineHelpText>How confident are you in knowing what to do when your friend gets sick from drugs or passes out?</inlineHelpText>
+    <label>Know what to do if friend is sick</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>X1to5</valueSetName>
+    </valueSet>
+</CustomField>

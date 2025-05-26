@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LAC_Access_Met</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( TEXT(BPS_Access_Decision__c) = &apos;Access Met&apos;, ISBLANK(BPS_Access_Met_Decision_Date__c ))</errorConditionFormula>
+    <errorDisplayField>BPS_Access_Met_Decision_Date__c</errorDisplayField>
+    <errorMessage>Please enter a date for Access Met Decision Date</errorMessage>
+</ValidationRule>

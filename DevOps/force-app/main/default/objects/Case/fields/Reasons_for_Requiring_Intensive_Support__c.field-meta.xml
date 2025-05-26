@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reasons_for_Requiring_Intensive_Support__c</fullName>
+    <description>CF - Reasons for requiring intensive support</description>
+    <inlineHelpText>CF - Reasons for requiring intensive support</inlineHelpText>
+    <label>Reasons for Requiring Intensive Support</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Isolation or no support person (e.g. carer, family or representative) who they are comfortable to act on their behalf and/or who is willing and able to support them to access aged care services via My Aged Care.</fullName>
+                <default>false</default>
+                <label>Isolation or no support person (e.g. carer, family or representative) who they are comfortable to act on their behalf and/or who is willing and able to support them to access aged care services via My Aged Care.</label>
+            </value>
+            <value>
+                <fullName>Communication barriers, including limited literacy skills.</fullName>
+                <default>false</default>
+                <label>Communication barriers, including limited literacy skills.</label>
+            </value>
+            <value>
+                <fullName>Difficulty processing information to make decisions.</fullName>
+                <default>false</default>
+                <label>Difficulty processing information to make decisions.</label>
+            </value>
+            <value>
+                <fullName>Resistance to engage with aged care for any reason and their safety is at immediate risk or they may end up in a crisis situation within (approximately) the next year.</fullName>
+                <default>false</default>
+                <label>Resistance to engage with aged care for any reason and their safety is at immediate risk or they may end up in a crisis situation within (approximately) the next year.</label>
+            </value>
+            <value>
+                <fullName>Past experiences that mean they are hesitant to engage with aged care, institutions or government.</fullName>
+                <default>false</default>
+                <label>Past experiences that mean they are hesitant to engage with aged care, institutions or government.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

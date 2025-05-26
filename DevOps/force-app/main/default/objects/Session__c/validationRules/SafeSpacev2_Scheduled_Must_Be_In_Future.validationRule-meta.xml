@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SafeSpacev2_Scheduled_Must_Be_In_Future</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND
+(
+  NOT(ISBLANK(Safe_Space_Assessment__c)),
+  TEXT(Status__c) = &apos;Scheduled&apos;,
+  TEXT(PRIORVALUE(Status__c)) = &apos;Planning&apos;,
+  Start_Date_Time__c &lt; NOW()
+)</errorConditionFormula>
+    <errorDisplayField>Start_Date_Time__c</errorDisplayField>
+    <errorMessage>You cannot &quot;Schedule&quot; a Session related to a Safe Space Assessment when its Start Date/Time is in the past, as this would cause all the Safe Space SMS messages to fire at once. Please adjust the Start Date / Time to be in the future.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Principal_Diagnosis__c</fullName>
+    <label>Principal Diagnosis</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>107</fullName>
+                <default>false</default>
+                <label>Acute stress disorder</label>
+            </value>
+            <value>
+                <fullName>601</fullName>
+                <default>false</default>
+                <label>Adjustment disorder</label>
+            </value>
+            <value>
+                <fullName>200</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Affective (Mood) disorders (ATAPS)</label>
+            </value>
+            <value>
+                <fullName>102</fullName>
+                <default>false</default>
+                <label>Agoraphobia</label>
+            </value>
+            <value>
+                <fullName>302</fullName>
+                <default>false</default>
+                <label>Alcohol dependence</label>
+            </value>
+            <value>
+                <fullName>301</fullName>
+                <default>false</default>
+                <label>Alcohol harmful use</label>
+            </value>
+            <value>
+                <fullName>100</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anxiety disorders (ATAPS)</label>
+            </value>
+            <value>
+                <fullName>901</fullName>
+                <default>false</default>
+                <label>Anxiety symptoms</label>
+            </value>
+            <value>
+                <fullName>502</fullName>
+                <default>false</default>
+                <label>Attention deficit hyperactivity disorder (ADHD)</label>
+            </value>
+            <value>
+                <fullName>204</fullName>
+                <default>false</default>
+                <label>Bipolar disorder</label>
+            </value>
+            <value>
+                <fullName>403</fullName>
+                <default>false</default>
+                <label>Brief psychotic disorder</label>
+            </value>
+            <value>
+                <fullName>503</fullName>
+                <default>false</default>
+                <label>Conduct disorder</label>
+            </value>
+            <value>
+                <fullName>205</fullName>
+                <default>false</default>
+                <label>Cyclothymic disorder</label>
+            </value>
+            <value>
+                <fullName>203</fullName>
+                <default>false</default>
+                <label>Depressive disorder NOS</label>
+            </value>
+            <value>
+                <fullName>902</fullName>
+                <default>false</default>
+                <label>Depressive symptoms</label>
+            </value>
+            <value>
+                <fullName>202</fullName>
+                <default>false</default>
+                <label>Dysthymia</label>
+            </value>
+            <value>
+                <fullName>602</fullName>
+                <default>false</default>
+                <label>Eating disorder</label>
+            </value>
+            <value>
+                <fullName>104</fullName>
+                <default>false</default>
+                <label>Generalised anxiety disorder</label>
+            </value>
+            <value>
+                <fullName>201</fullName>
+                <default>false</default>
+                <label>Major depressive disorder</label>
+            </value>
+            <value>
+                <fullName>999</fullName>
+                <default>false</default>
+                <label>Missing</label>
+            </value>
+            <value>
+                <fullName>903</fullName>
+                <default>false</default>
+                <label>Mixed anxiety and depressive symptoms</label>
+            </value>
+            <value>
+                <fullName>105</fullName>
+                <default>false</default>
+                <label>Obsessive-compulsive disorder</label>
+            </value>
+            <value>
+                <fullName>504</fullName>
+                <default>false</default>
+                <label>Oppositional defiant disorder</label>
+            </value>
+            <value>
+                <fullName>905</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>206</fullName>
+                <default>false</default>
+                <label>Other affective disorder</label>
+            </value>
+            <value>
+                <fullName>108</fullName>
+                <default>false</default>
+                <label>Other anxiety disorder</label>
+            </value>
+            <value>
+                <fullName>506</fullName>
+                <default>false</default>
+                <label>Other disorder of childhood and adolescence</label>
+            </value>
+            <value>
+                <fullName>304</fullName>
+                <default>false</default>
+                <label>Other drug dependence</label>
+            </value>
+            <value>
+                <fullName>303</fullName>
+                <default>false</default>
+                <label>Other drug harmful use</label>
+            </value>
+            <value>
+                <fullName>605</fullName>
+                <default>false</default>
+                <label>Other mental disorder</label>
+            </value>
+            <value>
+                <fullName>404</fullName>
+                <default>false</default>
+                <label>Other psychotic disorder</label>
+            </value>
+            <value>
+                <fullName>305</fullName>
+                <default>false</default>
+                <label>Other substance use disorder</label>
+            </value>
+            <value>
+                <fullName>101</fullName>
+                <default>false</default>
+                <label>Panic disorder</label>
+            </value>
+            <value>
+                <fullName>604</fullName>
+                <default>false</default>
+                <label>Personality disorder</label>
+            </value>
+            <value>
+                <fullName>505</fullName>
+                <default>false</default>
+                <label>Pervasive developmental disorder</label>
+            </value>
+            <value>
+                <fullName>106</fullName>
+                <default>false</default>
+                <label>Post-traumatic stress disorder</label>
+            </value>
+            <value>
+                <fullName>400</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Psychotic disorders (ATAPS)</label>
+            </value>
+            <value>
+                <fullName>402</fullName>
+                <default>false</default>
+                <label>Schizoaffective disorder</label>
+            </value>
+            <value>
+                <fullName>401</fullName>
+                <default>false</default>
+                <label>Schizophrenia</label>
+            </value>
+            <value>
+                <fullName>501</fullName>
+                <default>false</default>
+                <label>Separation anxiety disorder</label>
+            </value>
+            <value>
+                <fullName>103</fullName>
+                <default>false</default>
+                <label>Social phobia</label>
+            </value>
+            <value>
+                <fullName>603</fullName>
+                <default>false</default>
+                <label>Somatoform disorder</label>
+            </value>
+            <value>
+                <fullName>904</fullName>
+                <default>false</default>
+                <label>Stress related</label>
+            </value>
+            <value>
+                <fullName>300</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Substance use disorders (ATAPS)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Closure_Reason_Other</fullName>
+    <active>true</active>
+    <description>If Other is selected as the Case Closure Reason, users must record notes in the Case Closure Notes</description>
+    <errorConditionFormula>TEXT(Case_Close_Reason__c) = &quot;Other (specify in notes)&quot;  &amp;&amp;  ISBLANK( Case_Closure_Notes__c)</errorConditionFormula>
+    <errorMessage>When you select Other as the reason for closing a case, you must record a note to explain why you have closed the case</errorMessage>
+</ValidationRule>

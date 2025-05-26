@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Case</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Cases with Outbound Referrals</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>Outbound_Referrals__r</relationship>
+    </join>
+    <label>Cases with Outbound Referrals</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case ID</displayNameOverride>
+            <field>Id</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Case Number</displayNameOverride>
+            <field>CaseNumber</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Participant Name</displayNameOverride>
+            <field>Contact</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Name</displayNameOverride>
+            <field>Account</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Navigator_Trial__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Asset</displayNameOverride>
+            <field>Asset</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Business Hours</displayNameOverride>
+            <field>BusinessHours</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Parent Case</displayNameOverride>
+            <field>Parent</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Web Name</displayNameOverride>
+            <field>SuppliedName</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Web Email</displayNameOverride>
+            <field>SuppliedEmail</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Web Phone</displayNameOverride>
+            <field>SuppliedPhone</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Web Company</displayNameOverride>
+            <field>SuppliedCompany</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>Type</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>Status</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Reason</displayNameOverride>
+            <field>Reason</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Origin</displayNameOverride>
+            <field>Origin</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Language</displayNameOverride>
+            <field>Language</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subject</displayNameOverride>
+            <field>Subject</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Priority</displayNameOverride>
+            <field>Priority</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Details</displayNameOverride>
+            <field>Description</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Closed</displayNameOverride>
+            <field>IsClosed</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date/Time Closed</displayNameOverride>
+            <field>ClosedDate</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Escalated</displayNameOverride>
+            <field>IsEscalated</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Closed When Created</displayNameOverride>
+            <field>IsClosedOnCreate</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date/Time Opened</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case ID 18</displayNameOverride>
+            <field>Case_ID_18__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Owner Full Name</displayNameOverride>
+            <field>Case_Owner_Full_Name__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Thread ID</displayNameOverride>
+            <field>Thread_ID__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referred from Social Futures Program</displayNameOverride>
+            <field>Referred_from_Social_Futures_Program__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquirer&apos;s First Name</displayNameOverride>
+            <field>Provided_First_Name__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquirer&apos;s Last Name</displayNameOverride>
+            <field>Provided_Last_Name__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referred by Social Futures Staff Member</displayNameOverride>
+            <field>Referred_by_Social_Futures_Staff_Member__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Consent to make request for service?</displayNameOverride>
+            <field>Consent_to_make_request_for_service__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Acceptance</displayNameOverride>
+            <field>Referral_Acceptance__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Source</displayNameOverride>
+            <field>Referral_Source__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Secondary Reason For Seeking Assistance</displayNameOverride>
+            <field>Other_Reasons_For_Seeking_Assistance__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Eligibility Status</displayNameOverride>
+            <field>Eligibility_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Community Engagement</displayNameOverride>
+            <field>Community_Engagement__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referring Organisation</displayNameOverride>
+            <field>Referral_Organisation__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of Parenting Agreement</displayNameOverride>
+            <field>Date_of_Parenting_Agreement__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>zz Deprecated Referral Purpose</displayNameOverride>
+            <field>Referral_Purpose__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>z Deprec Consent to gather information?</displayNameOverride>
+            <field>Consent_to_gather_information__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dex Data Completeness</displayNameOverride>
+            <field>Dex_Data_Completeness__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Program</displayNameOverride>
+            <field>Program__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Name</displayNameOverride>
+            <field>Case_Name__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Provided Middle Name</displayNameOverride>
+            <field>Provided_Middle_Name__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquirer&apos;s Email</displayNameOverride>
+            <field>Provided_Email__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquirer&apos;s Mobile</displayNameOverride>
+            <field>Provided_Mobile__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquirer&apos;s Landline</displayNameOverride>
+            <field>Provided_Landline__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact Phone.</displayNameOverride>
+            <field>Contact_Phone__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact Hyperlink</displayNameOverride>
+            <field>Contact_Hyperlink__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Program Name</displayNameOverride>
+            <field>Program_Name__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sharing Criteria</displayNameOverride>
+            <field>Sharing_Criteria__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referring Organisation Contact</displayNameOverride>
+            <field>Referring_Organisation_Contact__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Team Leader</displayNameOverride>
+            <field>Team_Leader__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquiry Outcome</displayNameOverride>
+            <field>Enquiry_Outcome__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dex Id Override</displayNameOverride>
+            <field>Dex_Id_Override__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Participant Email</displayNameOverride>
+            <field>Participant_Email__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Participant Landline</displayNameOverride>
+            <field>Participant_Landline__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Participant Mobile</displayNameOverride>
+            <field>Participant_Mobile__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Profile</displayNameOverride>
+            <field>Referral_Profile__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dex Id</displayNameOverride>
+            <field>Dex_Id__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquiry Source</displayNameOverride>
+            <field>Enquiry_Source__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dex Last Sync</displayNameOverride>
+            <field>Dex_Last_Sync__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Team</displayNameOverride>
+            <field>Case_Team__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DEX Referral Source</displayNameOverride>
+            <field>DEX_Referral_Source__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Dex Sync Message</displayNameOverride>
+            <field>Dex_Sync_Message__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Program Type</displayNameOverride>
+            <field>Program_Type__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Reason For Seeking Assistance</displayNameOverride>
+            <field>Primary_Reason_For_Seeking_Assistance__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Program Manager</displayNameOverride>
+            <field>Program_Manager__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Dex Sync Status</displayNameOverride>
+            <field>Dex_Sync_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Did Legal Assist With Agreement?</displayNameOverride>
+            <field>Did_Legal_Assist_With_Agreement__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Exit Reason</displayNameOverride>
+            <field>Exit_Reason__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Parenting Agreement Outcome</displayNameOverride>
+            <field>Parenting_Agreement_Outcome__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outlet Activity</displayNameOverride>
+            <field>Outlet_Activity__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Section60I Certificate Type</displayNameOverride>
+            <field>Section60I_Certificate_Type__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Section60I Date Issued</displayNameOverride>
+            <field>Section60I_Date_Issued__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Number of Unidentified Clients</displayNameOverride>
+            <field>Total_Number_of_Unidentified_Clients__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Close Reason</displayNameOverride>
+            <field>Case_Close_Reason__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquiry/Referral Date</displayNameOverride>
+            <field>Date_of_Enquiry_or_Referral__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Legacy Family Id</displayNameOverride>
+            <field>Legacy_Family_Id__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Closure Notes</displayNameOverride>
+            <field>Case_Closure_Notes__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Reason unable to provide service</displayNameOverride>
+            <field>Reason_unable_to_provide_service__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Needs Outcome</displayNameOverride>
+            <field>Needs_Outcome__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>First Nations Status</displayNameOverride>
+            <field>First_Nations_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Owner Type</displayNameOverride>
+            <field>Case_Owner_Type__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Indirect Hours Total</displayNameOverride>
+            <field>Indirect_Hours_Total__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Direct Hours Total</displayNameOverride>
+            <field>Direct_Hours_Total__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Z Deprecated Outbound Confirmation</displayNameOverride>
+            <field>Outbound_Confirmation__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Weighted Referral</displayNameOverride>
+            <field>Weighted__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Zz Date Case Closed</displayNameOverride>
+            <field>Date_Case_Closed__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Employment Support Type</displayNameOverride>
+            <field>Employment_Support_Type__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OldId</displayNameOverride>
+            <field>OldId__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Household Composition</displayNameOverride>
+            <field>Household_Composition__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Family Referred to DCJ</displayNameOverride>
+            <field>Family_Referred_to_DCJ__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Method of Contact 1</displayNameOverride>
+            <field>Method_of_Contact_1__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Method of Contact 2</displayNameOverride>
+            <field>Method_of_Contact_2__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Method of Contact 3</displayNameOverride>
+            <field>Method_of_Contact_3__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of Method of Contact 1</displayNameOverride>
+            <field>Date_of_Method_of_Contact_1__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of Method of Contact 2</displayNameOverride>
+            <field>Date_of_Method_of_Contact_2__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of Method of Contact 3</displayNameOverride>
+            <field>Date_of_Method_of_Contact_3__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Attempts at Contact</displayNameOverride>
+            <field>Total_Attempts_at_Contact__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Priority Group 1</displayNameOverride>
+            <field>Priority_Group_1__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Priority Group 2</displayNameOverride>
+            <field>Priority_Group_2__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Priority Group 3</displayNameOverride>
+            <field>Priority_Group_3__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Supported to Access NDIS</displayNameOverride>
+            <field>Supported_to_Access_NDIS__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time spent in Active Holding</displayNameOverride>
+            <field>Time_spent_in_Active_Holding__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cloned From</displayNameOverride>
+            <field>Cloned_From__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Member Count</displayNameOverride>
+            <field>Case_Member_Count__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Case Note</displayNameOverride>
+            <field>Last_Case_Note__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Program Activity</displayNameOverride>
+            <field>Program_Activity__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CORIS Id</displayNameOverride>
+            <field>CORIS_Id__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Program is AIHW Reporter</displayNameOverride>
+            <field>Program_is_AIHW_Reporter__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Did the FCS complete a case plan?</displayNameOverride>
+            <field>Did_the_FCS_complete_a_case_plan__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Setting</displayNameOverride>
+            <field>Outreach_Setting__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FCS Response 1</displayNameOverride>
+            <field>FCS_Response_1__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FCS Response 2</displayNameOverride>
+            <field>FCS_Response_2__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FCS Response 3</displayNameOverride>
+            <field>FCS_Response_3__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FCS Response 5</displayNameOverride>
+            <field>FCS_Response_5__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FCS Response 4</displayNameOverride>
+            <field>FCS_Response_4__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service location postcode 1</displayNameOverride>
+            <field>Service_location_postcode_1__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service location postcode 2</displayNameOverride>
+            <field>Service_location_postcode_2__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service location postcode 3</displayNameOverride>
+            <field>Service_location_postcode_3__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service location postcode 4</displayNameOverride>
+            <field>Service_location_postcode_4__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service location postcode 5</displayNameOverride>
+            <field>Service_location_postcode_5__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Brokerage</displayNameOverride>
+            <field>Total_Brokerage__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Reason why outbound referrals failed</displayNameOverride>
+            <field>Reason_why_some_or_all_outbound_referra__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Provider</displayNameOverride>
+            <field>Service_Provider__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Wage Subsidy Available?</displayNameOverride>
+            <field>Wage_Subsidy_Available__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Wage Subsidy Details</displayNameOverride>
+            <field>Wage_Subsidy_Details__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Feedback provided to Inbound Referrer</displayNameOverride>
+            <field>Feedback_provided_to_Inbound_Referrer__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of Intake</displayNameOverride>
+            <field>Date_of_Intake__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Consider online sessions?</displayNameOverride>
+            <field>Consider_online_sessions__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is technology an issue (online)?</displayNameOverride>
+            <field>Is_technology_an_issue_online__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Family impacted by a natural disaster?</displayNameOverride>
+            <field>Family_impacted_by_a_natural_disaster__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>If yes, what type of emergency?</displayNameOverride>
+            <field>If_yes_what_type_of_emergency__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>If yes, how did FCS respond?</displayNameOverride>
+            <field>If_yes_how_did_FCS_respond__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Response Tier</displayNameOverride>
+            <field>Response_Tier__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Of Last Session</displayNameOverride>
+            <field>Date_Of_Last_Session__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Response Tier (without 4)</displayNameOverride>
+            <field>Response_Tier_without_4__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Referrer Informed of Case Closure</displayNameOverride>
+            <field>Date_Referrer_Informed_of_Case_Closure__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Attempted Contact Notes</displayNameOverride>
+            <field>Attempted_Contact_Notes__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CIMS Support Period Id</displayNameOverride>
+            <field>CIMS_Support_Period_Id__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Time Hours</displayNameOverride>
+            <field>Total_Time_Hours__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Presenting Challenges</displayNameOverride>
+            <field>Presenting_Challenges__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Program Commenced Date</displayNameOverride>
+            <field>Program_Commenced_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>If pre-employed, increased by 14 hours?</displayNameOverride>
+            <field>If_pre_employed_increased_by_14_hours__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>School</displayNameOverride>
+            <field>School__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Report Viewer is Owner</displayNameOverride>
+            <field>Report_Viewer_is_Owner__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Summary of presenting issues/self-harm</displayNameOverride>
+            <field>Summary_of_presenting_issues_self_harm__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Other Psychological Factor Details</displayNameOverride>
+            <field>Other_Psychological_Factor_Details__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referrer Notified of Participation</displayNameOverride>
+            <field>Referrer_Notified_of_Participation__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Second Contact Date</displayNameOverride>
+            <field>Second_Contact_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case Owner Id</displayNameOverride>
+            <field>Case_Owner_Id__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>YOT Number</displayNameOverride>
+            <field>YOT_Number__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CNI Number</displayNameOverride>
+            <field>CNI_Number__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Full Name</displayNameOverride>
+            <field>Full_Name__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of Consent</displayNameOverride>
+            <field>Date_of_Consent__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Collection Periods Completion</displayNameOverride>
+            <field>Collection_Periods_Completion__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rough Sleeping?</displayNameOverride>
+            <field>Rough_Sleeping__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Tasks Created</displayNameOverride>
+            <field>Tasks_Created__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date of Last CP</displayNameOverride>
+            <field>Date_of_Last_CP__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Location</displayNameOverride>
+            <field>Location__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Principle Focus of Treatment Plan</displayNameOverride>
+            <field>Principle_Focus_of_Treatment_Plan__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>GP Mental Health Treatment Plan Flag</displayNameOverride>
+            <field>GP_Mental_Health_Treatment_Plan_Flag__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Health Care Card</displayNameOverride>
+            <field>Health_Care_Card__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Suicide Referral Flag</displayNameOverride>
+            <field>Suicide_Referral_Flag__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Principal Diagnosis</displayNameOverride>
+            <field>Principal_Diagnosis__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Additional Diagnosis</displayNameOverride>
+            <field>Additional_Diagnosis__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medication - Antipsychotics</displayNameOverride>
+            <field>Medication_Antipsychotics__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medication - Anxiolytics</displayNameOverride>
+            <field>Medication_Anxiolytics__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medication - Hypnotics and sedatives</displayNameOverride>
+            <field>Medication_Hypnotics_and_sedatives__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medication - Antidepressants</displayNameOverride>
+            <field>Medication_Antidepressants__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medication - Psychostimulants/nootropics</displayNameOverride>
+            <field>Medication_Psychostimulants_and_nootro__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referrer Profession</displayNameOverride>
+            <field>Referrer_Profession__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referrer Organisation Type</displayNameOverride>
+            <field>Referrer_Organisation_Type__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Continuity of Support</displayNameOverride>
+            <field>Continuity_of_Support__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Latest Collection Period</displayNameOverride>
+            <field>Latest_Collection_Period__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Completion Status</displayNameOverride>
+            <field>Completion_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Flood Assistance</displayNameOverride>
+            <field>Flood_Assistance__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Flood Assistance Services</displayNameOverride>
+            <field>Flood_Assistance_Services__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Flood Assistance Comments</displayNameOverride>
+            <field>Flood_Assistance_Comments__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Flood Assistance Services.</displayNameOverride>
+            <field>Flood_Assistance_Services_Formula__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Flood Assistance - Accommodation</displayNameOverride>
+            <field>Flood_Assistance_Accommodation__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Flood Assistance - Counselling</displayNameOverride>
+            <field>Flood_Assistance_Counselling__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Weighted Referral Pre-DEX</displayNameOverride>
+            <field>Weighted_Referral_Pre_DEX__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Client Consent to Anonymised Data</displayNameOverride>
+            <field>Client_Consent_to_Anonymised_Data__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Marital Status</displayNameOverride>
+            <field>Marital_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Family Connect - Schools Survey Consent</displayNameOverride>
+            <field>Family_Connect_in_Schools_Survey_Consent__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Homelessness Flag</displayNameOverride>
+            <field>Homelessness_Flag__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Labour Force Status</displayNameOverride>
+            <field>Labour_Force_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Employment Participation</displayNameOverride>
+            <field>Employment_Participation__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Source of Cash Income</displayNameOverride>
+            <field>Source_of_Cash_Income__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>NDIS Participant</displayNameOverride>
+            <field>NDIS_Participant__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Current Accommodation Status</displayNameOverride>
+            <field>Current_Accommodation_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Children in Accommodation</displayNameOverride>
+            <field>Children_in_Accommodation__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Perpetrator of Violence in Accommodation</displayNameOverride>
+            <field>Perpetrator_of_Violence_in_Accommodation__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Veteran/Family</displayNameOverride>
+            <field>Veteran_Family__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service/PMKeyS Number</displayNameOverride>
+            <field>Service_PMKeyS_Number__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Branch</displayNameOverride>
+            <field>Service_Branch__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enlistment Date</displayNameOverride>
+            <field>Enlistment_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Discharge Date</displayNameOverride>
+            <field>Discharge_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Relationship to Veteran</displayNameOverride>
+            <field>Relationship_to_Veteran__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Case Started High Level Check In</displayNameOverride>
+            <field>High_Level_Check_In_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PHN Program Type</displayNameOverride>
+            <field>PHN_Program_Type__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PHN Referral Date</displayNameOverride>
+            <field>PHN_Referral_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PHN End Date</displayNameOverride>
+            <field>PHN_End_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PHN Consent</displayNameOverride>
+            <field>PHN_Consent__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FCS &gt; 16 Weeks Timestamp</displayNameOverride>
+            <field>FCS_16_Weeks_Timestamp__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Reasons for Requiring Intensive Support</displayNameOverride>
+            <field>Reasons_for_Requiring_Intensive_Support__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PMHC Changed</displayNameOverride>
+            <field>PMHC_Changed__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FCS &gt; 16 Weeks Alert Trigger</displayNameOverride>
+            <field>FCS_16_Weeks_Alert_Trigger__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PACE Case Created</displayNameOverride>
+            <field>NDIA_Case_Created__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Old BPS ID</displayNameOverride>
+            <field>Old_BPS_ID__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Access Met</displayNameOverride>
+            <field>BPS_Access_Met__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By Office</displayNameOverride>
+            <field>Created_By_Office__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By Current User</displayNameOverride>
+            <field>Created_By_Current_User__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Appointment Held</displayNameOverride>
+            <field>Appointment_Held__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>BPS_preReassessmentCheckinCreated</displayNameOverride>
+            <field>BPS_preReassessmentCheckinCreated__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Time</displayNameOverride>
+            <field>Total_Time__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By Region</displayNameOverride>
+            <field>Created_By_Region__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Plan Preparation Due</displayNameOverride>
+            <field>Plan_Preparation_Due__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Client Survey Offered</displayNameOverride>
+            <field>Client_Survey_Offered__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Enquiry Actioned Within 7 Days</displayNameOverride>
+            <field>Enquiry_Closed_Within_7_Days__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CCP Closed Within 60 Days</displayNameOverride>
+            <field>CCP_Closed_Within_60_Days__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>RecordTypeID18</displayNameOverride>
+            <field>RecordTypeID18__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Access Case Submitted Within 28 Days</displayNameOverride>
+            <field>Access_Case_Submitted_Within_28_Days__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Offer Outcome Date</displayNameOverride>
+            <field>Offer_Outcome_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Implementation Offer Within 7 Days</displayNameOverride>
+            <field>Implementation_Offer_Within_7_Days__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Implementation Held Within 28 Days</displayNameOverride>
+            <field>Implementation_Held_Within_28_Days__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>KPI_EnquiryDueDate</displayNameOverride>
+            <field>KPI_EnquiryDueDate__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>KPI_CCPDueDate</displayNameOverride>
+            <field>KPI_CCPDueDate__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>KPI_AccessDueDate</displayNameOverride>
+            <field>KPI_AccessDueDate__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>KPI_ImplementationOfferDue</displayNameOverride>
+            <field>KPI_ImplementationOfferDue__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>KPI_ImplementationDue</displayNameOverride>
+            <field>KPI_ImplementationDue__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Days Until Due</displayNameOverride>
+            <field>Days_Until_Due__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DEX Cutoff Date</displayNameOverride>
+            <field>DEX_Cutoff_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Level of Care</displayNameOverride>
+            <field>Level_of_Care__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Disengaged from School</displayNameOverride>
+            <field>Disengaged_from_School__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>FCS &gt; 12 Weeks Timestamp</displayNameOverride>
+            <field>FCS_12_Weeks_Timestamp__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Additional Information</displayNameOverride>
+            <field>BPS_Additional_Information__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Created by LAC/First Assigned to SF</displayNameOverride>
+            <field>BPS_Date_Created_by_LAC__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Next Scheduled Check-In</displayNameOverride>
+            <field>Next_Scheduled_Check_In__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Pre-Reassessment Check-In</displayNameOverride>
+            <field>Pre_Reassessment_Check_In__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Intake Contacted</displayNameOverride>
+            <field>Intake_Contacted__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Case Note Creator</displayNameOverride>
+            <field>Last_Case_Note_Creator__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Current Intake Worker</displayNameOverride>
+            <field>Current_Intake_Worker__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Delay ID</displayNameOverride>
+            <field>Delay_ID__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Client Session Assessment Count</displayNameOverride>
+            <field>Client_Session_Assessment_Count__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total PWI&apos;s Completed</displayNameOverride>
+            <field>Total_PWI_s_Completed__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Indirect Hours</displayNameOverride>
+            <field>Total_Indirect_Hours__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medication for these conditions?</displayNameOverride>
+            <field>Medication_for_these_conditions__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Medications, if yes then specify</displayNameOverride>
+            <field>Medications_if_yes_then_specify__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total K10&apos;s Completed</displayNameOverride>
+            <field>Total_K10_s_Completed__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total K5&apos;s Completed</displayNameOverride>
+            <field>Total_K5_s_Completed__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>OrgPath</displayNameOverride>
+            <field>OrgPath__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Missing PHN MDS Data?</displayNameOverride>
+            <field>Missing_PHN_MDS_Data__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Missing Nadabase MDS Data?</displayNameOverride>
+            <field>Missing_Nadabase_MDS_Data__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Priority Eligiblity Request</displayNameOverride>
+            <field>Priority_Eligiblity_Request__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Clinician</displayNameOverride>
+            <field>Clinician__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PHN KPI Suicide Referral Flag Date</displayNameOverride>
+            <field>PHN_KPI_Suicide_Referral_Flag_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PHN K10 KPI Met</displayNameOverride>
+            <field>PHN_K10_KPI_Met__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total ATOP&apos;s Completed</displayNameOverride>
+            <field>Total_ATOP_s_Completed__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Unsuccessful Contact Attempts</displayNameOverride>
+            <field>Unsuccessful_Contact_Attempts__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Attendance Profile</displayNameOverride>
+            <field>Attendance_Profile__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>NADAbase Extracted?</displayNameOverride>
+            <field>NADAbase_Extracted__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Case Entered Service Delivery</displayNameOverride>
+            <field>Date_Case_Entered_Service_Delivery__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Previous Plan ID</displayNameOverride>
+            <field>Previous_Plan_ID__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Collection Periods Completion Total</displayNameOverride>
+            <field>Collection_Periods_Completion_Total__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Package</displayNameOverride>
+            <field>Package__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Uptake Date of MyAged Care Package</displayNameOverride>
+            <field>Uptake_Date_of_MyAged_Care_Package__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Next High Level Check In Date</displayNameOverride>
+            <field>Next_High_Level_Check_In_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>IsPreviousPlan</displayNameOverride>
+            <field>IsPreviousPlan__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>IsCurrentOrPrevious</displayNameOverride>
+            <field>IsCurrentOrPrevious__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PreviousPED&amp;CurrentPED</displayNameOverride>
+            <field>PPED_CPED__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Total_SDQ_s_Completed__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Scheduled_Proposal_Appointment_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>First_Case_Note_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_First_Contact__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_First_Contact_Within_2_Days__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_First_Scheduled_Appointment_Date__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_X1stAppt14DaysOfOffer__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Date_of_Last_Case_Review__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_Navigator_Offer_Status__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact_Case_Type__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Created_By_Profile__c</field>
+            <table>Case</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>First_K10_Completed__c</field>
+            <table>Case</table>
+        </columns>
+        <masterLabel>Cases</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outbound Referral ID</displayNameOverride>
+            <field>Id</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Outbound Referral Ref</displayNameOverride>
+            <field>Name</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referred To Organisation</displayNameOverride>
+            <field>Referred_To_Organisation__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_Linkage__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_Linkage_Name__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Linkage_Number__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_Linkage_Type__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_Participant__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_Participant_LGA__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_Participant_Region__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Key Contact At Referred To Organisation</displayNameOverride>
+            <field>Key_Contact_At_Referred_To_Organisation__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact Id</displayNameOverride>
+            <field>Contact_Id__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact Name</displayNameOverride>
+            <field>Contact_Name__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Participant</displayNameOverride>
+            <field>Contact__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Program Name</displayNameOverride>
+            <field>Program_Name__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sharing Criteria</displayNameOverride>
+            <field>Sharing_Criteria__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Date</displayNameOverride>
+            <field>Referral_Date__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Reason For Seeking Assistance</displayNameOverride>
+            <field>Primary_Reason_For_Seeking_Assistance__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Status</displayNameOverride>
+            <field>Referral_Status__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Purpose</displayNameOverride>
+            <field>Referral_Purpose__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Other Reasons For Seeking Assistance</displayNameOverride>
+            <field>Other_Reasons_For_Seeking_Assistance__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>General Comments</displayNameOverride>
+            <field>General_Comments__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referring Worker</displayNameOverride>
+            <field>Referring_Worker__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Presenting Issues</displayNameOverride>
+            <field>Presenting_Issues__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Legacy Refferal Id</displayNameOverride>
+            <field>Legacy_Refferal_Id__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Acceptance Date</displayNameOverride>
+            <field>Referral_Acceptance_Date__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Cloned From</displayNameOverride>
+            <field>Cloned_From__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Service Type Referred To</displayNameOverride>
+            <field>Service_Type_Referred_To__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date outbound service provider accessed</displayNameOverride>
+            <field>Date_outbound_service_provider_accessed__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date first follow up completed</displayNameOverride>
+            <field>Date_first_follow_up_completed__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date second follow up completed</displayNameOverride>
+            <field>Date_second_follow_up_completed__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referral Profile</displayNameOverride>
+            <field>Outbound_Referral__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Referred Organisation Type</displayNameOverride>
+            <field>Referred_Organisation_Type__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Currently Engaging Service</displayNameOverride>
+            <field>Currently_Engaging_Service__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Reason for Disengaging</displayNameOverride>
+            <field>Reason_for_Disengaging__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Case_Member__c</field>
+            <table>Case.Outbound_Referrals__r</table>
+        </columns>
+        <masterLabel>Outbound Referrals</masterLabel>
+    </sections>
+</ReportType>

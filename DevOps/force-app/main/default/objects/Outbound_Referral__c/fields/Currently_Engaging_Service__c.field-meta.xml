@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Currently_Engaging_Service__c</fullName>
+    <description>CF - Whether a participant is currently engaging the service</description>
+    <inlineHelpText>CF - Whether a participant is currently engaging the service</inlineHelpText>
+    <label>Currently Engaging Service</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Engaged</fullName>
+                <default>false</default>
+                <label>Engaged</label>
+            </value>
+            <value>
+                <fullName>Disengaged</fullName>
+                <default>false</default>
+                <label>Disengaged</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

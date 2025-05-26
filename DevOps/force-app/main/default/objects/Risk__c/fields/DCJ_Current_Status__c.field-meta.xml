@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DCJ_Current_Status__c</fullName>
+    <label>DCJ Current Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Case Allocated</fullName>
+                <default>false</default>
+                <label>Case Allocated</label>
+            </value>
+            <value>
+                <fullName>Case Closed</fullName>
+                <default>false</default>
+                <label>Case Closed</label>
+            </value>
+            <value>
+                <fullName>Case Not Allocated</fullName>
+                <default>false</default>
+                <label>Case Not Allocated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

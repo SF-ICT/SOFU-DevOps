@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Ballina Clubhouse</fullName>
+        <default>false</default>
+        <label>Ballina Clubhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Bathurst Clubhouse</fullName>
+        <default>false</default>
+        <label>Bathurst Clubhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Broken Hill Clubhouse</fullName>
+        <default>false</default>
+        <label>Broken Hill Clubhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Care Connect</fullName>
+        <default>false</default>
+        <label>Care Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Care Connect - Hunter Manning</fullName>
+        <default>false</default>
+        <label>Care Connect - Hunter Manning</label>
+    </customValue>
+    <customValue>
+        <fullName>Care Finder</fullName>
+        <default>false</default>
+        <label>Care Finder</label>
+    </customValue>
+    <customValue>
+        <fullName>Clubhouse</fullName>
+        <default>false</default>
+        <label>Clubhouse</label>
+    </customValue>
+    <customValue>
+        <fullName>CETS</fullName>
+        <default>false</default>
+        <label>Connecting Employment Transport Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecting Home</fullName>
+        <default>false</default>
+        <label>Connecting Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Elements</fullName>
+        <default>false</default>
+        <label>Elements</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Connect &amp; Support</fullName>
+        <default>false</default>
+        <label>Family Connect &amp; Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Connect - Schools</fullName>
+        <default>false</default>
+        <label>Family Connect - Schools</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Referral Service (FRS)</fullName>
+        <default>false</default>
+        <label>Family Referral Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Getting it Together</fullName>
+        <default>false</default>
+        <label>Getting it Together</label>
+    </customValue>
+    <customValue>
+        <fullName>Headspace</fullName>
+        <default>false</default>
+        <label>Headspace</label>
+    </customValue>
+    <customValue>
+        <fullName>Mijung Jarjums Kids in Mind</fullName>
+        <default>false</default>
+        <label>Mijung Jarjums Kids in Mind</label>
+    </customValue>
+    <customValue>
+        <fullName>NDIA Local Area Coordination</fullName>
+        <default>false</default>
+        <label>NDIA Local Area Coordination</label>
+    </customValue>
+    <customValue>
+        <fullName>NDIS</fullName>
+        <default>false</default>
+        <label>NDIS</label>
+    </customValue>
+    <customValue>
+        <fullName>Old Byron Hospital</fullName>
+        <default>false</default>
+        <label>Old Byron Hospital</label>
+    </customValue>
+    <customValue>
+        <fullName>Opportunity Pathways</fullName>
+        <default>false</default>
+        <label>Opportunity Pathways</label>
+    </customValue>
+    <customValue>
+        <fullName>Pathfinders FCS</fullName>
+        <default>false</default>
+        <label>Pathfinders FCS</label>
+    </customValue>
+    <customValue>
+        <fullName>Phillip Street Transition</fullName>
+        <default>false</default>
+        <label>Phillip Street Transition</label>
+    </customValue>
+    <customValue>
+        <fullName>Reconnect</fullName>
+        <default>false</default>
+        <label>Reconnect</label>
+    </customValue>
+    <customValue>
+        <fullName>Recovery Connect</fullName>
+        <default>false</default>
+        <label>Recovery Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Resilient Kids</fullName>
+        <default>false</default>
+        <label>Resilient Kids</label>
+    </customValue>
+    <customValue>
+        <fullName>Standby Response Service</fullName>
+        <default>false</default>
+        <label>Standby Response Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Standing Strong</fullName>
+        <default>false</default>
+        <label>Standing Strong</label>
+    </customValue>
+    <customValue>
+        <fullName>Strong Minds in the Early Years</fullName>
+        <default>false</default>
+        <label>Strong Minds in the Early Years</label>
+    </customValue>
+    <customValue>
+        <fullName>Veterans Connect</fullName>
+        <default>false</default>
+        <label>Veterans Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>AOD Hub</fullName>
+        <default>false</default>
+        <label>The Bridge</label>
+    </customValue>
+    <customValue>
+        <fullName>Medicare Mental Health Centre</fullName>
+        <default>false</default>
+        <label>Medicare Mental Health Centre</label>
+    </customValue>
+    <customValue>
+        <fullName>The Indie Project</fullName>
+        <default>false</default>
+        <label>The Indie Project</label>
+    </customValue>
+    <customValue>
+        <fullName>Supported TA</fullName>
+        <default>false</default>
+        <label>Supported TA</label>
+    </customValue>
+    <customValue>
+        <fullName>Care Connect - Hunter Central Coast</fullName>
+        <default>false</default>
+        <label>Care Connect - Hunter Central Coast</label>
+    </customValue>
+    <customValue>
+        <fullName>headspace - Tweed Heads</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>headspace - Tweed Heads</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecting Home - Adult</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Connecting Home - Adult</label>
+    </customValue>
+    <customValue>
+        <fullName>headspace - Lismore</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>headspace - Lismore</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecting Home - Youth</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Connecting Home - Youth</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecting Home - Northern Youth</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Connecting Home - Northern Youth</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecting Home - HYAP</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Connecting Home - HYAP</label>
+    </customValue>
+    <customValue>
+        <fullName>Connecting Home - Adult Complex</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Connecting Home - Adult Complex</label>
+    </customValue>
+    <description>This is the &quot;type&quot; of program, not the program itself - so when there are multiple contracts delivering the same services under different &quot;programs&quot;, this is how we group them all together</description>
+    <masterLabel>Program Types</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

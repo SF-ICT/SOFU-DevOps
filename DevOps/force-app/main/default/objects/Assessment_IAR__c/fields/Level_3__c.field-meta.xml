@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_3__c</fullName>
+    <description>Checks if LOC is Level 3</description>
+    <formula>/* Level 3 Check */
+			IF(
+				OR(
+				AND(
+					OR(
+					TEXT(iar_dst_domain_1__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_2__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_3__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_4__c) &gt;= &quot;2&quot;
+					),
+					OR(
+					TEXT(iar_dst_domain_1__c) = &quot;0&quot;,
+					TEXT(iar_dst_domain_1__c) = &quot;1&quot;
+					),
+					OR(
+					TEXT(iar_dst_domain_2__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_3__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_4__c) &gt;= &quot;3&quot;
+					)
+				),
+				AND(
+					OR(
+					TEXT(iar_dst_domain_1__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_2__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_3__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_4__c) &gt;= &quot;2&quot;
+					),
+					TEXT(iar_dst_domain_1__c) = &quot;2&quot;,
+					OR(
+					TEXT(iar_dst_domain_2__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_3__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_4__c) &gt;= &quot;2&quot;
+					)
+				),
+				AND(
+					OR(
+					TEXT(iar_dst_domain_1__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_2__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_3__c) &gt;= &quot;2&quot;,
+					TEXT(iar_dst_domain_4__c) &gt;= &quot;2&quot;
+					),
+					TEXT(iar_dst_domain_1__c) = &quot;3&quot;,
+					TEXT(iar_dst_domain_2__c) &lt;= &quot;1&quot;,
+					TEXT(iar_dst_domain_3__c) &lt;= &quot;1&quot;,
+					TEXT(iar_dst_domain_4__c) &lt;= &quot;1&quot;
+				)
+			),
+			True,
+False
+)</formula>
+    <inlineHelpText>Checks if LOC is Level 3</inlineHelpText>
+    <label>Level 3</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

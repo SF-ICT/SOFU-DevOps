@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Enquiries_Veterans_Connect</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Case_ID_18__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program_Type2__c</field>
+        <operation>equals</operation>
+        <value>Veterans Connect</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Enquiry</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Open,Enquiry_New,Enquiry - In Progress</value>
+    </filters>
+    <label>All Open Enquiries - Veterans Connect</label>
+    <sharedTo>
+        <group>Executives</group>
+        <group>Managers</group>
+        <group>SystemAdmins</group>
+        <group>Team_Leaders</group>
+        <group>Veterans_Connect</group>
+    </sharedTo>
+</ListView>

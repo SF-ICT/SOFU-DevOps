@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Session_Owner_Active__c</fullName>
+    <description>This field is used in reports to filter out sessions where the employee no longer works at Social Futures</description>
+    <formula>Owner:User.IsActive</formula>
+    <inlineHelpText>This field is used in reports to filter out sessions where the employee no longer works at Social Futures</inlineHelpText>
+    <label>Is Session Owner Active?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

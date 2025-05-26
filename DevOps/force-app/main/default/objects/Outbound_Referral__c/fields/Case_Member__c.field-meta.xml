@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Member__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Participant the Outbound Referral is referring to.</description>
+    <inlineHelpText>Participant the Outbound Referral is referring to.</inlineHelpText>
+    <label>Case Member</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Outbound Referrals (Case Member)</relationshipLabel>
+    <relationshipName>Outbound_Referrals_Participant</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

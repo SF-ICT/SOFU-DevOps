@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hide_from_List_Views__c</fullName>
+    <formula>IF
+(
+  AND
+  (
+    NOT(ISBLANK(ParentId)),
+    OwnerId =  Parent.OwnerId 
+  ),
+  true, /*Hide from list views*/
+  false
+)</formula>
+    <label>Hide from List Views</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

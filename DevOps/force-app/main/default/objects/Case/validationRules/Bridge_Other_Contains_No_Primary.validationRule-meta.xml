@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Other_Contains_No_Primary</fullName>
+    <active>false</active>
+    <description>Ensures Other Services Provided does not contain the value in Primary Services Provided</description>
+    <errorConditionFormula>CONTAINS(Program__r.Name, &quot;The Bridge&quot;) &amp;&amp;
+CONTAINS(Other_Services_Text__c, TEXT(AOD_MainService__c))</errorConditionFormula>
+    <errorDisplayField>AOD_OtherService__c</errorDisplayField>
+    <errorMessage>Other Services Provided cannot contain the value in Primary Services Provided</errorMessage>
+</ValidationRule>

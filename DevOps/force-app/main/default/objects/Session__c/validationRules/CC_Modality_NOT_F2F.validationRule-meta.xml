@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CC_Modality_NOT_F2F</fullName>
+    <active>true</active>
+    <description>If Modality is not ‘1: Face to Face’, Postcode must be 9999.</description>
+    <errorConditionFormula>OR(CONTAINS(Program_Name__c, &quot;Care Connect&quot;), CONTAINS(Program_Name__c, &quot;Veterans Connect&quot;)) &amp;&amp;
+ISPICKVAL(Status__c, &quot;Scheduled&quot;) &amp;&amp;
+NOT(ISPICKVAL(PRIORVALUE(Status__c), &quot;Planning&quot;)) &amp;&amp;
+Start_Date_Time__c &lt;  NOW() &amp;&amp;
+NOT(ISPICKVAL(Modality__c, &quot;1&quot;)) &amp;&amp;
+NOT(Postcode__c == &quot;9999&quot;)</errorConditionFormula>
+    <errorDisplayField>Postcode__c</errorDisplayField>
+    <errorMessage>If Modality is not ‘Face to Face’, Postcode must be 9999.</errorMessage>
+</ValidationRule>

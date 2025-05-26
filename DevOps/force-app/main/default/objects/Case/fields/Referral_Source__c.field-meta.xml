@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Source__c</fullName>
+    <label>Referral Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Origin</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ACHP</fullName>
+                <default>false</default>
+                <label>ACHP</label>
+            </value>
+            <value>
+                <fullName>Allied Health</fullName>
+                <default>false</default>
+                <label>Allied Health</label>
+            </value>
+            <value>
+                <fullName>CHP</fullName>
+                <default>false</default>
+                <label>CHP</label>
+            </value>
+            <value>
+                <fullName>Community Support Provider</fullName>
+                <default>false</default>
+                <label>Community Support Provider</label>
+            </value>
+            <value>
+                <fullName>Concerned Relative</fullName>
+                <default>false</default>
+                <label>Concerned Relative</label>
+            </value>
+            <value>
+                <fullName>CWU DCJ</fullName>
+                <default>false</default>
+                <label>CWU DCJ</label>
+            </value>
+            <value>
+                <fullName>CWU Education</fullName>
+                <default>false</default>
+                <label>CWU Education</label>
+            </value>
+            <value>
+                <fullName>CWU Health</fullName>
+                <default>false</default>
+                <label>CWU Health</label>
+            </value>
+            <value>
+                <fullName>CWU Police</fullName>
+                <default>false</default>
+                <label>CWU Police</label>
+            </value>
+            <value>
+                <fullName>DCJ (FACS)</fullName>
+                <default>false</default>
+                <label>DCJ (FACS)</label>
+            </value>
+            <value>
+                <fullName>DCJ (Youth Justice)</fullName>
+                <default>false</default>
+                <label>DCJ (Youth Justice)</label>
+            </value>
+            <value>
+                <fullName>Employment Agency</fullName>
+                <default>false</default>
+                <label>Employment Agency</label>
+            </value>
+            <value>
+                <fullName>General public/community member</fullName>
+                <default>false</default>
+                <label>General public/community member</label>
+            </value>
+            <value>
+                <fullName>Government - Education</fullName>
+                <default>false</default>
+                <label>Government - Education</label>
+            </value>
+            <value>
+                <fullName>Government - Health</fullName>
+                <default>false</default>
+                <label>Government - Health</label>
+            </value>
+            <value>
+                <fullName>Government - Housing</fullName>
+                <default>false</default>
+                <label>Government - Housing</label>
+            </value>
+            <value>
+                <fullName>Govt/MR DCJ</fullName>
+                <default>false</default>
+                <label>Govt/MR DCJ</label>
+            </value>
+            <value>
+                <fullName>Govt/MR Education</fullName>
+                <default>false</default>
+                <label>Govt/MR Education</label>
+            </value>
+            <value>
+                <fullName>Govt/MR Health</fullName>
+                <default>false</default>
+                <label>Govt/MR Health</label>
+            </value>
+            <value>
+                <fullName>Govt/MR JIRT</fullName>
+                <default>false</default>
+                <label>Govt/MR JIRT</label>
+            </value>
+            <value>
+                <fullName>Govt/MR Juvenile Justice</fullName>
+                <default>false</default>
+                <label>Govt/MR Juvenile Justice</label>
+            </value>
+            <value>
+                <fullName>Govt/MR Other</fullName>
+                <default>false</default>
+                <label>Govt/MR Other</label>
+            </value>
+            <value>
+                <fullName>Govt/MR Police</fullName>
+                <default>false</default>
+                <label>Govt/MR Police</label>
+            </value>
+            <value>
+                <fullName>Homes NSW</fullName>
+                <default>false</default>
+                <label>Homes NSW</label>
+            </value>
+            <value>
+                <fullName>Internal Referral</fullName>
+                <default>false</default>
+                <label>Internal Referral</label>
+            </value>
+            <value>
+                <fullName>Medical Practitioner</fullName>
+                <default>false</default>
+                <label>Medical Practitioner</label>
+            </value>
+            <value>
+                <fullName>NDIS</fullName>
+                <default>false</default>
+                <label>NDIS</label>
+            </value>
+            <value>
+                <fullName>NGO</fullName>
+                <default>false</default>
+                <label>NGO</label>
+            </value>
+            <value>
+                <fullName>Non-Government or Other</fullName>
+                <default>false</default>
+                <label>Non-Government or Other</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Police</fullName>
+                <default>false</default>
+                <label>Police</label>
+            </value>
+            <value>
+                <fullName>Promotional Activity held by Social Futures</fullName>
+                <default>false</default>
+                <label>Promotional Activity held by Social Futures</label>
+            </value>
+            <value>
+                <fullName>Self</fullName>
+                <default>false</default>
+                <label>Self</label>
+            </value>
+            <value>
+                <fullName>Self-Referred</fullName>
+                <default>false</default>
+                <label>Self-Referred</label>
+            </value>
+            <value>
+                <fullName>Womens DV Court Advocacy Services</fullName>
+                <default>false</default>
+                <label>Womens DV Court Advocacy Services</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>ACHP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Allied Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>CHP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Community Support Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>DCJ (FACS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>DCJ (Youth Justice)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Employment Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Government - Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Government - Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Referral From Internal Source</controllingFieldValue>
+            <valueName>Government - Housing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Homes NSW</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>NDIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Non-Government or Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Police</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Promotional Activity held by Social Futures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Self-Referred</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From Internal Source</controllingFieldValue>
+            <valueName>Internal Referral</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Nadabase_MDS_Data__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        ISBLANK(TEXT(Labour_Force_Status__c)),
+        ISBLANK(TEXT(Marital_Status__c)),
+        ISBLANK(TEXT(AOD_ClientType__c)),
+	ISBLANK(TEXT(AOD_ReferralSource__c)),
+        ISBLANK(TEXT(AOD_Accommodation__c)),
+        ISBLANK(TEXT(AOD_PreviousServices__c)),
+        ISBLANK(TEXT(AOD_MainService__c)),
+        ISBLANK(TEXT(AOD_PDoC__c)),
+        ISBLANK(TEXT(AOD_PDoCmethod__c)),
+        ISBLANK(AOD_ODoC__c),
+        ISBLANK(AOD_OtherService__c),
+        ISBLANK(TEXT(AOD_Injecting__c))
+    ),
+    &quot;Yes&quot;,
+    &quot;No&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Missing Nadabase MDS Data?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Attempt_Outcome__c</fullName>
+    <description>The Outcome of an Unsuccessful Contact Attempt</description>
+    <inlineHelpText>The Outcome of an Unsuccessful Contact Attempt</inlineHelpText>
+    <label>Contact Attempt Outcome</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Left voicemail inviting callback</fullName>
+                <default>false</default>
+                <label>Left voicemail inviting callback</label>
+            </value>
+            <value>
+                <fullName>No voicemail option</fullName>
+                <default>false</default>
+                <label>No voicemail option</label>
+            </value>
+            <value>
+                <fullName>Sent text message</fullName>
+                <default>false</default>
+                <label>Sent text message</label>
+            </value>
+            <value>
+                <fullName>Voicemail and text</fullName>
+                <default>false</default>
+                <label>Voicemail and text</label>
+            </value>
+            <value>
+                <fullName>Note left under door</fullName>
+                <default>false</default>
+                <label>Note left under door</label>
+            </value>
+            <value>
+                <fullName>Knocked on door</fullName>
+                <default>false</default>
+                <label>Knocked on door</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

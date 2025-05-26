@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Re_Referral__c</fullName>
+    <description>FRS: Reason for re-referral</description>
+    <inlineHelpText>FRS: Reason for re-referral</inlineHelpText>
+    <label>Reason for Re-Referral</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inadequate Service received from previous Outbound Referral</fullName>
+                <default>false</default>
+                <label>Inadequate Service received from previous Outbound Referral</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>true</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>New presenting Issue/Vulnerability</fullName>
+                <default>false</default>
+                <label>New presenting Issue/Vulnerability</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

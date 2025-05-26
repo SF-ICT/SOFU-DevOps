@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recovery_Connect_Referral_Source__c</fullName>
+    <description>RCC - Recovery Connect Referral Source</description>
+    <inlineHelpText>RCC - Recovery Connect Referral Source</inlineHelpText>
+    <label>Recovery Connect Referral Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Self-Referral</fullName>
+                <default>false</default>
+                <label>Self-Referral</label>
+            </value>
+            <value>
+                <fullName>Council (CRO)</fullName>
+                <default>false</default>
+                <label>Council (CRO)</label>
+            </value>
+            <value>
+                <fullName>Service NSW</fullName>
+                <default>false</default>
+                <label>Service NSW</label>
+            </value>
+            <value>
+                <fullName>Service Australia</fullName>
+                <default>false</default>
+                <label>Service Australia</label>
+            </value>
+            <value>
+                <fullName>Resilience NSW</fullName>
+                <default>false</default>
+                <label>Resilience NSW</label>
+            </value>
+            <value>
+                <fullName>Emergency Accommodation</fullName>
+                <default>false</default>
+                <label>Emergency Accommodation</label>
+            </value>
+            <value>
+                <fullName>DCJ Housing</fullName>
+                <default>false</default>
+                <label>DCJ Housing</label>
+            </value>
+            <value>
+                <fullName>Temporary Pod Villages</fullName>
+                <default>false</default>
+                <label>Temporary Pod Villages</label>
+            </value>
+            <value>
+                <fullName>Health Providers</fullName>
+                <default>false</default>
+                <label>Health Providers</label>
+            </value>
+            <value>
+                <fullName>Other Recovery Support Services</fullName>
+                <default>false</default>
+                <label>Other Recovery Support Services</label>
+            </value>
+            <value>
+                <fullName>Other Service Providers</fullName>
+                <default>false</default>
+                <label>Other Service Providers</label>
+            </value>
+            <value>
+                <fullName>Other Community Groups</fullName>
+                <default>false</default>
+                <label>Other Community Groups</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>NSW RA</fullName>
+                <default>false</default>
+                <label>NSW RA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

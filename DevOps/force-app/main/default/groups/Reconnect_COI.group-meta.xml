@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Group xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use this group for cases that have a conflict of interest. Never include workers have have a COI with a participant in this group.</description>
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <name>Reconnect - COI</name>
+</Group>

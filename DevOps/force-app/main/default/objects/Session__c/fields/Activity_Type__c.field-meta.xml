@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Type__c</fullName>
+    <description>CF - Activity Type</description>
+    <inlineHelpText>CF - Activity Type</inlineHelpText>
+    <label>Activity Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Engagement and Rapport Building</fullName>
+                <default>false</default>
+                <label>Engagement and Rapport Building</label>
+            </value>
+            <value>
+                <fullName>Support Interacting with My Aged Care</fullName>
+                <default>false</default>
+                <label>Support Interacting with My Aged Care</label>
+            </value>
+            <value>
+                <fullName>Support Explaining and Guiding Aged Care Assessment Process</fullName>
+                <default>false</default>
+                <label>Support Explaining and Guiding Aged Care Assessment Process</label>
+            </value>
+            <value>
+                <fullName>Support Finding and Connecting with Aged Care Supports and Services</fullName>
+                <default>false</default>
+                <label>Support Finding and Connecting with Aged Care Supports and Services</label>
+            </value>
+            <value>
+                <fullName>High Level Check In</fullName>
+                <default>false</default>
+                <label>High Level Check In</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

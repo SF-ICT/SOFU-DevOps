@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_aware_of_alarm_strategy__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Ensure point of contact is aware of alarm strategy and will respond appropriately if you call to advise i.e. “I am going to be late for the meeting, can you reschedule that for me?”
+
+Point of contact should not be a staff member who may be with clients or out of the office for either the start or end of visit</description>
+    <inlineHelpText>Ensure point of contact is aware of alarm strategy and will respond appropriately if you call to advise i.e. “I am going to be late for the meeting, can you reschedule that for me?”</inlineHelpText>
+    <label>Contact aware of alarm strategy?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

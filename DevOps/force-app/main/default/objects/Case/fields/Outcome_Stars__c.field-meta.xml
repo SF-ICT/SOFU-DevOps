@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome_Stars__c</fullName>
+    <description>Dependant Picklist to determine what outcome stars are available to each program. Dependant on Program Type. (Not for page layout use)</description>
+    <inlineHelpText>Dependant Picklist to determine what outcome stars are available to each program. Dependant on Program Type. (Not for page layout use)</inlineHelpText>
+    <label>Outcome Stars</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Program_Type2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Empowerment Star</fullName>
+                <default>false</default>
+                <label>Empowerment Star</label>
+            </value>
+            <value>
+                <fullName>Family Star</fullName>
+                <default>false</default>
+                <label>Family Star</label>
+            </value>
+            <value>
+                <fullName>Family Star Plus</fullName>
+                <default>false</default>
+                <label>Family Star Plus</label>
+            </value>
+            <value>
+                <fullName>Home Star</fullName>
+                <default>false</default>
+                <label>Home Star</label>
+            </value>
+            <value>
+                <fullName>Homelessness Star</fullName>
+                <default>false</default>
+                <label>Homelessness Star</label>
+            </value>
+            <value>
+                <fullName>My Star</fullName>
+                <default>false</default>
+                <label>My Star</label>
+            </value>
+            <value>
+                <fullName>Work Star</fullName>
+                <default>false</default>
+                <label>Work Star</label>
+            </value>
+            <value>
+                <fullName>Young Person Star</fullName>
+                <default>false</default>
+                <label>Young Person Star</label>
+            </value>
+            <value>
+                <fullName>Youth Star</fullName>
+                <default>false</default>
+                <label>Youth Star</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <valueName>Youth Star</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Supported TA</controllingFieldValue>
+            <valueName>Homelessness Star</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

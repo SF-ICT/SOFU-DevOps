@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMHC_Modality_F2F</fullName>
+    <active>true</active>
+    <description>If Modality is ‘Face to Face’, Postcode must not be 9999.</description>
+    <errorConditionFormula>AND(
+    SessionPassed__c = true,
+    OR(
+        CONTAINS(Program_Name__c, &quot;Care Connect&quot;),
+        CONTAINS(Program_Name__c, &quot;Veterans Connect&quot;),
+        CONTAINS(Program_Name__c, &quot;Medicare Mental Health Centre&quot;)
+    ),
+    RecordTypeId &lt;&gt; &quot;0129s0000004IoG&quot;,
+    ISPICKVAL(Modality__c, &quot;1&quot;),
+    Postcode__c == &quot;9999&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Postcode__c</errorDisplayField>
+    <errorMessage>If Modality is ‘Face to Face’, Postcode must not be 9999.</errorMessage>
+</ValidationRule>

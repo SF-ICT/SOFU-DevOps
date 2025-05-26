@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Number_of_Unidentified_Clients__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>DEX: this field is used by Programs reporting to the Data Exchange and records the number of Unidentified Clients associated with the Case. For all other programs, leave blank and ignore.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>DEX: this field is used by Programs reporting to the Data Exchange and records the number of Unidentified Clients associated with the Case. For all other programs, leave blank and ignore.</inlineHelpText>
+    <label>Total Number of Unidentified Clients</label>
+    <precision>3</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

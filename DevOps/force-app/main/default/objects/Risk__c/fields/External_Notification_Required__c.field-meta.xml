@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>External_Notification_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Recording whether an external service provider needs to be made aware of the client risks, such as FACS, DSS, Police, DoJ, etc</description>
+    <inlineHelpText>Does any other service provider need to be notified?</inlineHelpText>
+    <label>External Notification Required</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weapon_Collections__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Does the client have gun, knife or sword collections? If Yes - home visits are not authorised</description>
+    <inlineHelpText>Does the client have gun, knife or sword collections? If Yes - home visits are not authorised</inlineHelpText>
+    <label>Weapon Collections</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

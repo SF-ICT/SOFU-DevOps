@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>An_Agency_Representative_is_Attending__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Are you going with a representative from another agency?</description>
+    <inlineHelpText>Are you going with a representative from another agency?</inlineHelpText>
+    <label>An Agency Representative is Attending</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

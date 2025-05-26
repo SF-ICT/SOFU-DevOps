@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_People_at_Home__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Will other people be in the home during the home visit? (only client and their immediate family member(s) and/or identified support person can be in the home when you visit).</description>
+    <label>Other People at Home?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligibility_Status__c</fullName>
+    <description>Records the eligibility status of an Opportunity Pathways Participant at the time of Referral. Field only for Opportunity Pathways Program</description>
+    <inlineHelpText>SS - Select the most appropriate eligibility status for an Opportunity Pathways Participant at the time of Referral</inlineHelpText>
+    <label>Eligibility Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Living in Public Housing</fullName>
+                <default>false</default>
+                <label>Living in Public Housing</label>
+            </value>
+            <value>
+                <fullName>Living in Aboriginal Housing</fullName>
+                <default>false</default>
+                <label>Living in Aboriginal Housing</label>
+            </value>
+            <value>
+                <fullName>On NSW Housing Register</fullName>
+                <default>false</default>
+                <label>On NSW Housing Register</label>
+            </value>
+            <value>
+                <fullName>Rent Choice Recipient</fullName>
+                <default>false</default>
+                <label>Rent Choice Recipient</label>
+            </value>
+            <value>
+                <fullName>Living in Community Housing</fullName>
+                <default>false</default>
+                <label>Living in Community Housing</label>
+            </value>
+            <value>
+                <fullName>Does not meet eligibility</fullName>
+                <default>false</default>
+                <label>Does not meet eligibility</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

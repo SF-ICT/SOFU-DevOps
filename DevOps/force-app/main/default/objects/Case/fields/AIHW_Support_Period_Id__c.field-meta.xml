@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AIHW_Support_Period_Id__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF
+(
+  OR
+  (
+    CIMS_Cluster_Id__c = &apos;HYAP&apos;,
+    ISBLANK(CIMS_Support_Period_Id__c)
+  ),
+  CASESAFEID(Id),
+  CIMS_Support_Period_Id__c
+)</formula>
+    <label>AIHW Support Period Id</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

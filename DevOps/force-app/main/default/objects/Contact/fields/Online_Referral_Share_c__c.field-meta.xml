@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Online_Referral_Share_c__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>A checkbox to allow an online referral to be temporarily shared to a guest user so a referral can be sent as a PDF.</description>
+    <inlineHelpText>A checkbox to allow an online referral to be temporarily shared to a guest user so a referral can be sent as a PDF.</inlineHelpText>
+    <label>Online Referral Share</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

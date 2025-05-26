@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AOD_Accommodation__c</fullName>
+    <inlineHelpText>Usual accommodation. The participant’s usual type of accommodation just prior to the start of engagement with the program</inlineHelpText>
+    <label>Current Accommodation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>01</fullName>
+                <default>false</default>
+                <label>Rented house or flat (public or private)</label>
+            </value>
+            <value>
+                <fullName>02</fullName>
+                <default>false</default>
+                <label>Privately owned house or flat</label>
+            </value>
+            <value>
+                <fullName>03</fullName>
+                <default>false</default>
+                <label>Boarding house</label>
+            </value>
+            <value>
+                <fullName>04</fullName>
+                <default>false</default>
+                <label>Hostel/supported accommodation services</label>
+            </value>
+            <value>
+                <fullName>05</fullName>
+                <default>false</default>
+                <label>Psychiatric hospital</label>
+            </value>
+            <value>
+                <fullName>06</fullName>
+                <default>false</default>
+                <label>Alcohol/other drug treatment residence</label>
+            </value>
+            <value>
+                <fullName>07</fullName>
+                <default>false</default>
+                <label>Shelter/refuge</label>
+            </value>
+            <value>
+                <fullName>08</fullName>
+                <default>false</default>
+                <label>Prison/detention centre</label>
+            </value>
+            <value>
+                <fullName>09</fullName>
+                <default>false</default>
+                <label>Caravan on a serviced site</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>No usual residence/homeless</label>
+            </value>
+            <value>
+                <fullName>98</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>99</fullName>
+                <default>false</default>
+                <label>Not known</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

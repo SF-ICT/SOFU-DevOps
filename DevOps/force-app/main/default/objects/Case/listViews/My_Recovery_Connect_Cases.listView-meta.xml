@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Recovery_Connect_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Current_Accommodation__c</columns>
+    <columns>Displaced_from_Community__c</columns>
+    <columns>Food_Access_Issues__c</columns>
+    <columns>Recovery_Connect_Referral_Source__c</columns>
+    <columns>Service_Area__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>equals</operation>
+        <value>Recovery Connect</value>
+    </filters>
+    <label>My Recovery Connect Cases</label>
+    <sharedTo>
+        <group>All_Hende_Users</group>
+    </sharedTo>
+</ListView>

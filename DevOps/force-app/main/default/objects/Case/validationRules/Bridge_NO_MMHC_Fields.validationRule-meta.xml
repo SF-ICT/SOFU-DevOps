@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_NO_MMHC_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>Program_Name__c = &quot;The Bridge&quot; &amp;&amp;
+OR(NOT(ISPICKVAL(NDIS_Participant__c, &quot;&quot;)), 
+NOT(ISPICKVAL(Principal_Diagnosis__c, &quot;&quot;)), 
+NOT(ISPICKVAL(Suicide_Referral_Flag__c, &quot;&quot;)), 
+NOT(ISPICKVAL(Level_of_Care__c, &quot;&quot;)), 
+NOT(ISPICKVAL(Referrer_Organisation_Type__c, &quot;&quot;)), 
+Medication_for_their_mental_health__c = true)</errorConditionFormula>
+    <errorMessage>Medicare Mental Health Centre fields cannot be filled in on The Bridge cases (including Referral Organisation Type).
+Please remove all values in these fields.</errorMessage>
+</ValidationRule>

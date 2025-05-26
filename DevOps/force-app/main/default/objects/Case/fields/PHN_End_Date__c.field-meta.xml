@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PHN_End_Date__c</fullName>
+    <description>PHN - Converts End date to the format DDMMYYYY for PHN uploads.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(Case_Closed_Date__c),&quot;&quot;,IF(LEN(TEXT(DAY(Case_Closed_Date__c))) &lt; 2,&apos;0&apos; + TEXT(DAY(Case_Closed_Date__c)), TEXT(DAY(Case_Closed_Date__c))) + IF(LEN(TEXT(MONTH(Case_Closed_Date__c))) &lt; 2,&apos;0&apos; + TEXT(MONTH(Case_Closed_Date__c)), TEXT(MONTH(Case_Closed_Date__c))) + TEXT(YEAR(Case_Closed_Date__c)))</formula>
+    <label>PHN End Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

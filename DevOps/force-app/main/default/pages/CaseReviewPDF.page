@@ -1,0 +1,144 @@
+<apex:page standardController="Case" extensions="CaseReviewPDF" applyBodyTag="false" standardStylesheets="false" sidebar="false" showheader="false" renderAs="PDF">
+  <head>
+      <style>
+          #caseNum {
+              font-size: 25px;
+              font-family: Arial Unicode MS;
+          }
+          .element {
+              font-size: 20px;
+             font-family: Serif;
+          }
+          .bold {
+           font-weight: bold;
+          }
+          .col {
+              test-align: left;
+              
+          }
+          Table {
+              font-size: 20px;
+             font-family: Serif;
+          }
+          .center {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 50%;
+          }
+          
+          @page {
+                size: letter;
+                margin: 25mm;
+                @bottom-center {
+                    content: "Page " counter(page) " of " counter(pages);
+                }
+          }
+          .page-break {
+              display:block;
+              page-break-after:always;
+          }
+      </style>
+  </head>
+  <body>
+      <div style="height: 80px;">&nbsp;</div>
+      <img class="center" style="" src="{!urlfor($Resource.SocialFuturesLogoWhiteBackgroundPng)}"/>
+      <div style="height: 20px;">&nbsp;</div>
+      <hr />
+      <div style="height: 40px;">&nbsp;</div>
+      <div id="caseNum" style="text-align: center;"><b>Case Ref: {!c.caseNumber}</b></div>
+      <div style="height: 40px;">&nbsp;</div>
+      <hr />
+      <br />
+      <div style="height: 20px;">&nbsp;</div>
+      <div class="element" style="text-align: center;"><b>Exported: </b> {!exportTime}</div>
+      <div style="height: 40px;">&nbsp;</div>
+      <div style="text-align: center; font-family: Serif; font-size: 20px;"><b>Participant:</b> {!c.Contact.FullName__c}</div>
+      <div style="text-align: center; font-family: Serif; font-size: 20px;"><b>Participant ref: </b>{!c.Contact.Contact_Number__c}</div>
+      <div style="height: 40px;">&nbsp;</div>
+      <div class="element"><b>Case Owner: </b> {!c.Case_Owner_Full_Name__c}</div>
+      <div style="height: 40px;">&nbsp;</div>
+      <div class="element"><b>Program: </b> {!c.Program_Name__c}</div>
+      <div style="height: 40px;">&nbsp;</div>
+      <div class="element"><b>Date of Referral/Enquiry: </b><apex:outputField value=" {!c.Date_of_Enquiry_or_Referral__c}"/></div>
+      <div style="height: 40px;">&nbsp;</div>
+      <!--<div visibility="visible"><b >Date Closed: </b>{!c.ClosedDate }</div>-->
+      <div class="element" Style="{!IF(isNull(c.ClosedDate), "Display: None", "")}"><b >Date Closed: </b><apex:outputField value=" {!c.ClosedDate}"/></div>
+      
+      <div style="height: 250px;">&nbsp;</div>
+      <br />
+      <apex:repeat value="{!caseReviews}" var="cr">
+      <div>
+          <table width="100%" style="border-bottom: 1px solid black;">
+              <tr>
+                  <td width="10%" style="font-size: 20px; font-family: Serif; ">&nbsp;</td>
+                  <td width="40%" height="40px" style="font-size: 20px; font-family: Serif; text-align: center;"><b>Review #</b> {!cr.Name}</td>
+              </tr>
+          </table>
+          <table width="100%">
+              <tr>
+                  <td width="50%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Date of Review: </b>{!cr.Date_Of_Review__c}</td>
+                  
+                  <td width="50%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Initial Outcome Star Completed:</b> {!cr.Initial_Outcome_Star_Completed__c}</td>
+              </tr>
+              <tr>
+                  <td width="50%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Program Worker:</b> {!cr.Program_Worker__r.FullName__c}</td>
+                  
+                  <td width="50%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Number of Outcomes Star Completed:</b> {!cr.Number_of_Outcomes_Star_Completed__c}</td>
+              </tr>
+              <tr>
+                  <td width="50%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Lead Reviewer: </b> {!cr.Reviewer__r.FullName__c}</td>
+                  
+                  <td width="50%" height="50px;" style="font-size: 18px; font-family: Serif;"><b >CSAT Survey Completed (If Closing): {!cr.CSAT_Survey_Completed_If_Closing__c}</b></td>
+              </tr>
+          </table>
+          
+          <hr style="clear: both"/>
+          
+          <apex:outputText rendered="{!cr.Multidisciplinary_Review__c}">
+              <table width="100%">
+                  <tr>
+                      <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Specialist Reviewer 1: </b>{!cr.Specialist_Reviewer_1__r.FullName__c}</td>
+                  </tr>
+                  <tr>
+                      <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Specialist Reviewer 2:</b> {!cr.Specialist_Reviewer_2__r.FullName__c}</td>
+                  </tr>
+                  <tr>
+                      <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Specialist Reviewer 3: </b> {!cr.Specialist_Reviewer_3__r.FullName__c}</td>
+                  </tr>
+                  <tr>
+                      <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Specialist Reviewer 4: </b> {!cr.Specialist_Reviewer_4__r.FullName__c}</td>
+                  </tr>
+              </table>
+          
+              <hr style="clear: both"/>
+          </apex:outputText>
+
+          
+          <table width="100%">
+              <tr>
+                  <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Current Situation: </b><apex:outputText escape="false" value="{!cr.Current_Situation__c}"/></td>
+              </tr>
+              <tr>
+                  <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Case Plan Goals: </b><apex:outputText escape="false" value="{!cr.Case_Plan_Goals__c}"/></td>
+              </tr>
+              <tr>
+                  <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Risks: </b><apex:outputText escape="false" value="{!cr.Risks__c}"/></td>
+              </tr>
+              <tr>
+                  <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>Contact Frequency: </b><apex:outputText escape="false" value="{!cr.Contact_Frequency__c}"/></td>
+              </tr>
+              <tr>
+                  <td width="100%" height="50px;" style="font-size: 18px; font-family: Serif;"><b>General Comments/Notes: </b><apex:outputText escape="false" value="{!cr.General_Comments_Notes__c}"/></td>
+              </tr>
+          </table>
+          
+          <div style="height: 10px; clear: both">&nbsp;</div>
+          
+          <hr style="height: 2px; color: #000000; background-color: #000000;" />
+          
+          <div style="height: 80px;">&nbsp;</div>
+      </div> 
+      </apex:repeat>
+  </body>
+</apex:page>

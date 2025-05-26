@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MMHC_No_Bridge_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>Program_Name__c = &quot;Medicare Mental Health Centre&quot; &amp;&amp;
+OR(NOT(ISPICKVAL(AOD_ClientType__c, &quot;&quot;)),
+NOT(ISPICKVAL(AOD_Accommodation__c, &quot;&quot;)),
+NOT(ISPICKVAL(AOD_PreviousServices__c, &quot;&quot;)),
+NOT(ISPICKVAL(AOD_ReferralOut__c, &quot;&quot;)),
+NOT(ISPICKVAL(AOD_MainService__c, &quot;&quot;)),
+NOT(ISPICKVAL(AOD_PDoC__c, &quot;&quot;)),
+NOT(ISPICKVAL(AOD_PDoCmethod__c, &quot;&quot;)),
+NOT(ISPICKVAL(AOD_Injecting__c, &quot;&quot;)),
+PICKLISTCOUNT(AOD_ODoC__c) &gt; 0,
+PICKLISTCOUNT(AOD_OtherService__c) &gt; 0)</errorConditionFormula>
+    <errorMessage>The Bridge fields cannot be filled in on Medicare Mental Health Centre cases.
+Please remove all values in these fields.</errorMessage>
+</ValidationRule>

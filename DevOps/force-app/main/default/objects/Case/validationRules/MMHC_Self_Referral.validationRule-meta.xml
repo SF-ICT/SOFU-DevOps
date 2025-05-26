@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MMHC_Self_Referral</fullName>
+    <active>true</active>
+    <errorConditionFormula>Program_Name__c = &quot;Medicare Mental Health Centre&quot; &amp;&amp;
+OR(
+  ISPICKVAL(Referrer_Profession__c, &quot;98&quot;) &amp;&amp;
+  NOT(ISPICKVAL(Referrer_Organisation_Type__c, &quot;98&quot;)),
+
+  ISPICKVAL(Referrer_Organisation_Type__c, &quot;98&quot;) &amp;&amp;
+  NOT(ISPICKVAL(Referrer_Profession__c, &quot;98&quot;))
+)</errorConditionFormula>
+    <errorMessage>If Referrer Organisation Type is Self Referral then Referrer Profession must also be Self Referral</errorMessage>
+</ValidationRule>

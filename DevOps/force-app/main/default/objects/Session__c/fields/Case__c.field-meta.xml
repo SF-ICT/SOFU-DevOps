@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Case</label>
+    <lookupFilter>
+        <active>false</active>
+        <errorMessage>Only Sessions related to the Case&apos;s Program may be selected</errorMessage>
+        <filterItems>
+            <field>$Source.Program__c</field>
+            <operation>equals</operation>
+            <valueField>Case.Program__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Case</referenceTo>
+    <relationshipLabel>Sessions</relationshipLabel>
+    <relationshipName>Sessions</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

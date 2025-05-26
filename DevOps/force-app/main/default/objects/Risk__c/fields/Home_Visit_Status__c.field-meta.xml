@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Home_Visit_Status__c</fullName>
+    <description>Status for each step of the process when preparing for a Home Visit</description>
+    <inlineHelpText>Status for each step of the process when preparing for a Home Visit</inlineHelpText>
+    <label>Home Visit Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Initial Assessment</fullName>
+                <default>false</default>
+                <label>Initial Assessment</label>
+            </value>
+            <value>
+                <fullName>Planning</fullName>
+                <default>false</default>
+                <label>Planning</label>
+            </value>
+            <value>
+                <fullName>Preparing for Home Visit</fullName>
+                <default>false</default>
+                <label>Preparing for Home Visit</label>
+            </value>
+            <value>
+                <fullName>Ready for Home Visit</fullName>
+                <default>false</default>
+                <label>Ready for Home Visit</label>
+            </value>
+            <value>
+                <fullName>Home Visit Completed</fullName>
+                <default>false</default>
+                <label>Home Visit Completed</label>
+            </value>
+            <value>
+                <fullName>Unauthorised</fullName>
+                <default>false</default>
+                <label>Unauthorised</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Detail_of_Restriction_Changes__c</fullName>
+    <description>If there have been any changes to the restriction since it was put in place, please provide detail of those changes and when they came into effect.</description>
+    <inlineHelpText>If there have been any changes to the restriction since it was put in place, please provide detail of those changes and when they came into effect.</inlineHelpText>
+    <label>Detail of Restriction Changes</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

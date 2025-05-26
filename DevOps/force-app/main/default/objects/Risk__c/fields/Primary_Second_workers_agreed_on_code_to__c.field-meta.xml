@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Second_workers_agreed_on_code_to__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Primary and Second workers have agreed on code to end visit.</description>
+    <inlineHelpText>Primary and Second workers have agreed on code to end visit.</inlineHelpText>
+    <label>Primary+Second workers agreed on code to</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

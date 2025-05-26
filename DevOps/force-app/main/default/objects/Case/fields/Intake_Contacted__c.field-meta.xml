@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Intake_Contacted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field that captures if the Connecting Home Intake team have contacted a prospective Participant</description>
+    <inlineHelpText>Check the box if Connecting Home Intake team have contacted a prospective Participant</inlineHelpText>
+    <label>Intake Contacted</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

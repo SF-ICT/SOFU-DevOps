@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>BPS_Participant__c</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>BPS_Plan_End_Date__c</columns>
+    <columns>BPS_LAC_Office__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>BPS_Participant_Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.LAC_Community_Connection_Plan,Case.LAC_Enquiry,Case.LAC_NDIS_Access,Case.LAC_NDIS_Plan</value>
+    </filters>
+    <filters>
+        <field>BPS_Participant_Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Expired,Closed</value>
+    </filters>
+    <label>My LAC Cases</label>
+    <sharedTo>
+        <group>All_LAC_Users</group>
+    </sharedTo>
+</ListView>

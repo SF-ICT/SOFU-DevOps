@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMHC_Enquiry_Date</fullName>
+    <active>true</active>
+    <description>Enquiry must not be before 1 January 2014 or in the Future.</description>
+    <errorConditionFormula>OR(CONTAINS(Program_Name__c, &quot;Care Connect&quot;),
+CONTAINS(Program_Name__c, &quot;Veterans Connect&quot;),
+CONTAINS(Program_Name__c, &quot;Medicare Mental Health Centre&quot;)) &amp;&amp;
+Date_of_Enquiry_or_Referral__c &lt; DATE(2014,1,1) &amp;&amp;
+Date_of_Enquiry_or_Referral__c &gt; TODAY()</errorConditionFormula>
+    <errorDisplayField>Date_of_Enquiry_or_Referral__c</errorDisplayField>
+    <errorMessage>Enquiry must not be before 1 January 2014 or in the Future.</errorMessage>
+</ValidationRule>

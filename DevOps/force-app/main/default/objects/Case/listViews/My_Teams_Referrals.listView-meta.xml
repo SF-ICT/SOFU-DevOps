@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Teams_Referrals</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Program_Name__c</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>Referral_Profile__c</columns>
+    <columns>Referral_Source__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Last_Case_Note__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Inbound_Referral,Case.Internal_Referral</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Referral,Initial Assessment,Intake,Assessment</value>
+    </filters>
+    <filters>
+        <field>Program_Name__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Hide_from_List_Views__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Program_Name__c</field>
+        <operation>notContain</operation>
+        <value>Family Connect &amp; Support</value>
+    </filters>
+    <filters>
+        <field>Program_Name__c</field>
+        <operation>notContain</operation>
+        <value>Pathfinders</value>
+    </filters>
+    <filters>
+        <field>Referral_Acceptance__c</field>
+        <operation>notEqual</operation>
+        <value>Waitlist,Declined</value>
+    </filters>
+    <label>My Program Referrals</label>
+    <sharedTo>
+        <group>All_Hende_Users</group>
+    </sharedTo>
+</ListView>

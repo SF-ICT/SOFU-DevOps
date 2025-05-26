@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Other_Contains_No_Primary_Drug</fullName>
+    <active>false</active>
+    <description>Other Drugs of Concern cannot contain the value in Primary Drug of Concern</description>
+    <errorConditionFormula>CONTAINS(Program__r.Name, &quot;The Bridge&quot;) &amp;&amp;
+CONTAINS(Other_Drug_Text__c, TEXT(AOD_PDoC__c))</errorConditionFormula>
+    <errorDisplayField>AOD_ODoC__c</errorDisplayField>
+    <errorMessage>Other Drugs of Concern cannot contain the value in Primary Drug of Concern</errorMessage>
+</ValidationRule>

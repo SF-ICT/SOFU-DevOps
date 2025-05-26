@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMHC_Cleanup</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Principle_Focus_of_Treatment_Plan__c</columns>
+    <columns>Homelessness_Flag__c</columns>
+    <columns>Labour_Force_Status__c</columns>
+    <columns>GP_Mental_Health_Treatment_Plan_Flag__c</columns>
+    <columns>Employment_Participation__c</columns>
+    <columns>Suicide_Referral_Flag__c</columns>
+    <columns>Principal_Diagnosis__c</columns>
+    <columns>Additional_Diagnosis__c</columns>
+    <columns>Referrer_Profession__c</columns>
+    <columns>Referrer_Organisation_Type__c</columns>
+    <columns>NDIS_Participant__c</columns>
+    <columns>Marital_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program_Type2__c</field>
+        <operation>equals</operation>
+        <value>Care Connect – Hunter Manning,Medicare Mental Health Centre,Veterans Connect</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Inbound_Referral</value>
+    </filters>
+    <filters>
+        <field>Referrer_Organisation_Type__c</field>
+        <operation>equals</operation>
+        <value>98</value>
+    </filters>
+    <label>PMHC Cleanup</label>
+    <sharedTo></sharedTo>
+</ListView>

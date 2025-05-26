@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEX_Cutoff_Date__c</fullName>
+    <description>Used to mark the cutoff date for DEX Reporting.</description>
+    <formula>IF(
+    AND(MONTH(Date_of_Enquiry_or_Referral__c) &gt;= 7, MONTH(Date_of_Enquiry_or_Referral__c) &lt;= 12),
+    DATE(YEAR(Date_of_Enquiry_or_Referral__c) + 1, 1, 31),  
+    IF(
+        AND(MONTH(Date_of_Enquiry_or_Referral__c) &gt;= 1, MONTH(Date_of_Enquiry_or_Referral__c) &lt;= 6),
+        DATE(YEAR(Date_of_Enquiry_or_Referral__c), 7, 31),   
+        NULL
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>DEX Cutoff Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

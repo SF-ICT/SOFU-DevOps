@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_Linkage__c</fullName>
+    <label>Linkage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>BPS_Linkage_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Child protection</fullName>
+                <default>false</default>
+                <label>Child protection</label>
+            </value>
+            <value>
+                <fullName>Employment</fullName>
+                <default>false</default>
+                <label>Employment</label>
+            </value>
+            <value>
+                <fullName>Family members</fullName>
+                <default>false</default>
+                <label>Family members</label>
+            </value>
+            <value>
+                <fullName>Friends</fullName>
+                <default>false</default>
+                <label>Friends</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Higher education</fullName>
+                <default>false</default>
+                <label>Higher education</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Justice</fullName>
+                <default>false</default>
+                <label>Justice</label>
+            </value>
+            <value>
+                <fullName>Mental health</fullName>
+                <default>false</default>
+                <label>Mental health</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+            <value>
+                <fullName>Early childhood education</fullName>
+                <default>false</default>
+                <label>Early childhood education</label>
+            </value>
+            <value>
+                <fullName>Extended family</fullName>
+                <default>false</default>
+                <label>Extended family</label>
+            </value>
+            <value>
+                <fullName>Local community people</fullName>
+                <default>false</default>
+                <label>Local community people</label>
+            </value>
+            <value>
+                <fullName>Educational or work colleagues</fullName>
+                <default>false</default>
+                <label>Educational or work colleagues</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Recreational (sports/interests/hobbies)</fullName>
+                <default>false</default>
+                <label>Recreational (sports/interests/hobbies)</label>
+            </value>
+            <value>
+                <fullName>Spiritual/Religious</fullName>
+                <default>false</default>
+                <label>Spiritual/Religious</label>
+            </value>
+            <value>
+                <fullName>Cultural</fullName>
+                <default>false</default>
+                <label>Cultural</label>
+            </value>
+            <value>
+                <fullName>Local community group</fullName>
+                <default>false</default>
+                <label>Local community group</label>
+            </value>
+            <value>
+                <fullName>Online digital community</fullName>
+                <default>false</default>
+                <label>Online digital community</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Informal</controllingFieldValue>
+            <valueName>Family members</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informal</controllingFieldValue>
+            <valueName>Friends</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informal</controllingFieldValue>
+            <valueName>Extended family</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informal</controllingFieldValue>
+            <valueName>Local community people</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informal</controllingFieldValue>
+            <valueName>Educational or work colleagues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Informal</controllingFieldValue>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>Recreational (sports/interests/hobbies)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>Spiritual/Religious</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>Cultural</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>Local community group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Community</controllingFieldValue>
+            <valueName>Online digital community</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Child protection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Employment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Higher education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Housing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Justice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Mental health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Transport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mainstream</controllingFieldValue>
+            <valueName>Early childhood education</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

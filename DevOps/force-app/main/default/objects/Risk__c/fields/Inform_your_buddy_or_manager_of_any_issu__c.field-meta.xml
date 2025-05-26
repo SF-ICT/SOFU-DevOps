@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inform_your_buddy_or_manager_of_any_issu__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Inform your buddy or manager of any issues identified.</description>
+    <inlineHelpText>Inform your buddy or manager of any issues identified.</inlineHelpText>
+    <label>Inform your buddy or manager of any issu</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

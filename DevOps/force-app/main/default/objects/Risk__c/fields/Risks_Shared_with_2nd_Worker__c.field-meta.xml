@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risks_Shared_with_2nd_Worker__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Second worker is aware of risks (if second worker attending)</description>
+    <inlineHelpText>Second worker is aware of risks (if second worker attending)</inlineHelpText>
+    <label>Risks Shared with 2nd Worker</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

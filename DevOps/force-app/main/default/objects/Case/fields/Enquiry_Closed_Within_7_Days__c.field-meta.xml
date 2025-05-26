@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_Closed_Within_7_Days__c</fullName>
+    <formula>IF(OR(
+
+Case_Closed_Date__c &lt;= KPI_EnquiryDueDate__c,
+BPS_First_Successful_Contact__c &lt;= KPI_EnquiryDueDate__c)
+
+, TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Enquiry Actioned Within 7 Days</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

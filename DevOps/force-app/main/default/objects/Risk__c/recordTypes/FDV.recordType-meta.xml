@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FDV</fullName>
+    <active>true</active>
+    <description>Recording threat of Family &amp; Domestic Violence. The DVSAT is only for use in cases of a domestic violence threat.</description>
+    <label>FDV</label>
+    <picklistValues>
+        <picklist>Abuse_or_Neglect_Rating__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Abuse_or_Neglect__c</picklist>
+        <values>
+            <fullName>Abuse %28physical%2C sexual%2C emotional%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aggression from others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Being targeted by others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Service Involvement %28ChildProtection Issues%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evidence of neglect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploitation from others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>History of abuse and neglect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Actions__c</picklist>
+        <values>
+            <fullName>DVSAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental Health Access Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28please specify%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police Notification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROSH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be Approved</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Behaviours_of_Concern_Scale__c</picklist>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scale</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Behaviours_of_Concern__c</picklist>
+        <values>
+            <fullName>Access to weapons and skills%2Fknowledge to injure others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appears or behaves in an agitated manner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assault %E2%80%93physical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assault %E2%80%93verbal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Destructiveness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exploiting others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family %2F Domestic Violence current</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family %2F Domestic Violence history</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feelings of loss of control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harassment%2Fstalking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Harm to animals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hitting or slamming objects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intimidation %E2%80%93physical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intimidation%E2%80%93verbal%28threats%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Isolated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Persistent low mood</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Property damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychological%2Femotionalabuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recent behaviour%2Flifestyle changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-harm %2F Self Injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suicideideation%2Fattempts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Use of projectiles%28throwing%29 or weapons</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Branch__c</picklist>
+        <values>
+            <fullName>Support Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TBA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Client_Management_Strategy__c</picklist>
+        <values>
+            <fullName>A single worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not to be managed in the community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not to be visited in the home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office visits only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be managed with restrictions in place</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two workers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Community_Access_Scale__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Community_Access__c</picklist>
+        <values>
+            <fullName>Independent access to community %28unsupervised%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires supervision to access community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Requires transport e%2Eg%2E daily activities%2C appointment%2C outings%2C day programs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stay at home unsupervised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Consultation__c</picklist>
+        <values>
+            <fullName>Child Protection Specialist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Police</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Line Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Futures CEO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social Futures Program Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_Associated_Issues__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_Mental_Health__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DCJ_Current_Status__c</picklist>
+        <values>
+            <fullName>Case Allocated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Case Not Allocated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DVSAT_Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Depression_Anxiety_Scale__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Depression_Anxiety__c</picklist>
+        <values>
+            <fullName>Fearfulness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feeling over-sensitive or obsessive about something</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feelings of hopelessness and worthlessness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>History of trauma</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irritability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Perceived social scrutiny</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suicide risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trouble with concentration or completing activities%2Ftasks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Enrolled_Program__c</picklist>
+        <values>
+            <fullName>Getting it Together</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Opportunity Pathways</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reconnect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Environmental_and_Social_Scale__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Environmental_and_Social__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Declined to answer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Different identity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-binary%2Fgender fluid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Have_you_addressed_Risk_Factors__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Have_you_completed_checklist__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Have_you_contacted_the_client__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Have_you_discussed_existing_risks__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Have_you_prepared_to_manage_risk__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Have_you_reviewed_all_records__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>High_Risk_Category__c</picklist>
+        <values>
+            <fullName>Risk to Organisation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk to Property</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk to Stakeholders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk to client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk to staff</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Home_Visit_Status__c</picklist>
+        <values>
+            <fullName>Home Visit Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Initial Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparing for Home Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ready for Home Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unauthorised</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>If_participant_is_known_to_Social_Future__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Local_DCJ_Office__c</picklist>
+        <values>
+            <fullName>FACS Ballina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACS Coffs Harbour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACS Grafton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACS Lismore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACS Tweed Heads</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Location__c</picklist>
+        <values>
+            <fullName>Ballina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grafton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lismore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mullumbimby</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Medical_Conditions__c</picklist>
+        <values>
+            <fullName>Allergies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chronic pain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dementia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diabetes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endocrine conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fractures%2Fcuts%2Fbruising%2Fabrasions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identified intellectual or developmental disability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impaired cognition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incontinence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mental illness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Obesity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Respiratory conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seizures%2FEpilepsy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skin conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sleep disorders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teeth and gum conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Medical_Intervention_scale__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outcome__c</picklist>
+        <values>
+            <fullName>ROSH</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Outcome_of_MRG__c</picklist>
+        <values>
+            <fullName>Document %26 Monitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immediate Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Override%3A Professional Judgement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Report to Child Services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Diagnosis_Hospitalisation__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Psychosis_Related_Scale__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Psychosis_Related__c</picklist>
+        <values>
+            <fullName>Distress%2C crying%2C high levels of anxiety and fearfulness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feeling over-sensitive or obsessive about something</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feelings of being persecuted by others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feelings of not wanting to burden others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hallucinations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of insight around psychosis and symptoms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paranoia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor understanding of reality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RAMP_Stage__c</picklist>
+        <values>
+            <fullName>CLOSE RAMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONITOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PART A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PART B</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_Closure__c</picklist>
+        <values>
+            <fullName>Associated plan cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer an issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No longer required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relationship_Sexuality_Mitigation__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Relationship_Sexuality__c</picklist>
+        <values>
+            <fullName>At risk of exploitation %28including notfully consenting%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Behaviours of concerns %28problematic sexual behaviour against children and%2For adults%2C exposing and%2For touching own private body parts in non-private settings%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Domestic violence %2F FamilyViolence</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-consensual touching %28private body parts and%2For non-private parts of another person</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %28discussing inappropriate sexual subjects%2C obscene gestures%2C disrobing in non-private settings%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsafe sex</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Safety_Action_Plan__c</picklist>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Safety_Plan_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Completed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Select_other_records_created_violence__c</picklist>
+        <values>
+            <fullName>Client Database %28Alert Section%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Client File</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Risk Alert Log</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Step__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Threat_Level__c</picklist>
+        <values>
+            <fullName>At Serious Threat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>At Threat</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unsafe_Actions__c</picklist>
+        <values>
+            <fullName>Emotionally vulnerable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gambling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Impulsive spending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inability to budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limited concept of money %28cannot recognize correct change%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not applicable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vulnerable to exploitation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Unsafe_Lifestyle_Choices_Scale__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Worker_Safety__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Conditions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preparation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

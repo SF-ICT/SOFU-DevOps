@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clubhouse_Community_Centre</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(RecordTypeId = &quot;0129s0000004IoGAAU&quot;) &amp;&amp;
+ISPICKVAL(Case__r.Outlet_Activity__r.Activity__c, &quot;47277&quot;) &amp;&amp;
+NOT(ISPICKVAL(Service__c, &quot;96&quot;) ||
+ISPICKVAL(Service__c, &quot;3&quot;) ||
+ISPICKVAL(Service__c, &quot;2&quot;) ||
+ISPICKVAL(Service__c, &quot;98&quot;))</errorConditionFormula>
+    <errorDisplayField>Service__c</errorDisplayField>
+    <errorMessage>This case has the Outlet Activity TEI Community Centre. The Service must be: Community Engagement, Education and Skills Training, Information/Advice/Referral or Social Participation</errorMessage>
+</ValidationRule>

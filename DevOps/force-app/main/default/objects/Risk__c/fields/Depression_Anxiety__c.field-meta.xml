@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Depression_Anxiety__c</fullName>
+    <label>Depression / Anxiety</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>History of trauma</fullName>
+                <default>false</default>
+                <label>History of trauma</label>
+            </value>
+            <value>
+                <fullName>Suicide risk</fullName>
+                <default>false</default>
+                <label>Suicide risk</label>
+            </value>
+            <value>
+                <fullName>Irritability</fullName>
+                <default>false</default>
+                <label>Irritability</label>
+            </value>
+            <value>
+                <fullName>Fearfulness</fullName>
+                <default>false</default>
+                <label>Fearfulness</label>
+            </value>
+            <value>
+                <fullName>Perceived social scrutiny</fullName>
+                <default>false</default>
+                <label>Perceived social scrutiny</label>
+            </value>
+            <value>
+                <fullName>Feeling over-sensitive or obsessive about something</fullName>
+                <default>false</default>
+                <label>Feeling over-sensitive or obsessive about something</label>
+            </value>
+            <value>
+                <fullName>Trouble with concentration or completing activities/tasks</fullName>
+                <default>false</default>
+                <label>Trouble with concentration or completing activities/tasks</label>
+            </value>
+            <value>
+                <fullName>Feelings of hopelessness and worthlessness</fullName>
+                <default>false</default>
+                <label>Feelings of hopelessness and worthlessness</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

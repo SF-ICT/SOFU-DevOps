@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PPED_CPED__c</fullName>
+    <formula>AND(NOT(ISBLANK(BPS_Participant__r.BPS_Current_Plan__r.BPS_Plan_End_Date__c)),  NOT(ISBLANK(BPS_Participant__r.BPS_Current_Plan__r.BPS_Plan_Approved__c)), NOT(ISBLANK(BPS_Participant__r.BPS_Previous_Plan__r.BPS_Plan_End_Date__c)),  NOT(ISBLANK(BPS_Participant__r.BPS_Previous_Plan__r.BPS_Plan_Approved__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PreviousPED&amp;CurrentPED</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

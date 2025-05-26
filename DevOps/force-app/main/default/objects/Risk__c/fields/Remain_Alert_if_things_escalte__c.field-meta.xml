@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remain_Alert_if_things_escalte__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Remain alert during the visit and if the client begins to escalate/mood changes or other people enter the home and your assessment of risk changes – leave immediately.</description>
+    <inlineHelpText>Remain alert during the visit and if the client begins to escalate/mood changes or other people enter the home and your assessment of risk changes – leave immediately.</inlineHelpText>
+    <label>Remain Alert if things escalte</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

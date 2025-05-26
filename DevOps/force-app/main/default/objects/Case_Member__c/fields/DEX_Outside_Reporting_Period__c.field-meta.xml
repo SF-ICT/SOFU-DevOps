@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEX_Outside_Reporting_Period__c</fullName>
+    <description>Checks to see if the Case Member was created in a separate reporting period to the case.</description>
+    <formula>OR(YEAR(Case__r.Date_of_Enquiry_or_Referral__c) &lt;&gt; YEAR(DATEVALUE(CreatedDate)),
+MONTH(Case__r.Date_of_Enquiry_or_Referral__c) &lt;= 6 &amp;&amp;  MONTH(DATEVALUE(CreatedDate)) &gt;= 7,
+MONTH(Case__r.Date_of_Enquiry_or_Referral__c) &gt;= 7 &amp;&amp;  MONTH(DATEVALUE(CreatedDate)) &lt;= 6)</formula>
+    <inlineHelpText>Checks to see if the Case Member was created in a separate reporting period to the case.</inlineHelpText>
+    <label>DEX Outside Reporting Period</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_Phone_is_Fully_Charged__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mobile phone is fully charged and working.</description>
+    <inlineHelpText>Mobile phone is fully charged and working.</inlineHelpText>
+    <label>Mobile Phone is Fully Charged</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

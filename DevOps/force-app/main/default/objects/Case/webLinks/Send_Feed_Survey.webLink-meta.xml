@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Feed_Survey</fullName>
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Send Feedback Survey</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>location.replace
+ (&apos;
+    /email/author/emailauthor.jsp
+    ?template_id=0Kd2x000000Gt0ICAS
+    &amp;p2_lkid={!Case.ContactId}
+    &amp;p3_lkid={!Case.Id}
+    &amp;p3={!Case.CaseNumber}
+    &amp;p5=bcc@getfeedback.com
+    &amp;p24=additional@getfeedback.com
+    &amp;p26=friends@getfeedback.com
+    &amp;retURL=/{!Case.Id}
+&apos;);</url>
+</WebLink>

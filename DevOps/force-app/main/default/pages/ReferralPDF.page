@@ -1,0 +1,254 @@
+<apex:page StandardController="Case" extensions="VFPReferralPDF" showHeader="false" applyHtmlTag="false" sidebar="false" renderAs="pdf">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Online Referral PDF</title>
+        <style type="text/css">
+            @page {
+            size: A4;
+                @bottom-center {
+                    content: "Page " counter(page) " of " counter(pages);
+                }
+                @bottom-left {
+                    content: "Date of Referral:  {!Case.Enquiry_Referral_Date_PDF__c}";
+                }    
+            }
+            body .brandTertiaryBgr {
+            background-color:  #e60774 !important;
+            padding: 0px 0px 0px 10px !important;
+            color: #FFF;
+            }
+            body { 
+            font-family: 'Roboto', sans-serif; 
+            line-height: 1.6; 
+            color: #333;
+            float: left;
+            } 
+            h1, h2, h3, h4, h5, h6 { 
+            font-weight: 900;
+            } 
+            h1 { 
+            font-size: 2.5rem;
+            } 
+            h2 { 
+            font-size: 2rem;
+            text-align: center;
+            } 
+            h3 { 
+            font-size: 1.5rem; 
+            }
+            /* Footer */ 
+            footer { 
+            background-color: #333; 
+            color: #fff; 
+            padding: 1rem; 
+            text-align: center; 
+            }
+        </style>   
+    </head>
+        <apex:image url="{!$Resource.SF_CF_Logo}" alt="Care Finder Logo" style="float: left; margin-right: 5px;" width="45%"/>
+        <apex:image url="{!$Resource.SF_PHN_Logo}" alt="PHN Logo" style="float: right;" width="45%"/>
+    <body>
+        <h2>Referral Form</h2>
+        <p>Care Connect is an aftercare program for anyone in the Hunter Manning and Hunter Central Coast region who has attempted suicide and needs support accessing and engaging with the services available to help them. Care Connect is a free program designed to support participants following a suicide attempt, to build their capacity to selfmanage, and to ensure long-term plans are in place by connecting with other services and community supports.</p>
+        <apex:form >
+            <apex:pageBlock >
+                <apex:pageBlockSection title="Referring Organisation Details" columns="2">
+                <apex:pageBlockSectionItem dataStyle="width:30%" labelStyle="width:29%">
+                    <apex:outputLabel value="Organisation:"/>
+                    <apex:outputField value="{!referralfields.Referring_Organisation_Service_Name__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Contact Person:"/>
+                    <apex:outputField value="{!referralfields.Referrers_Contact_Name__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Phone:"/>
+                    <apex:outputField value="{!referralfields.Referrers_Contact_Phone__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Email:"/>
+                    <apex:outputField value="{!referralfields.Referrers_Contact_Email__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Date:"/>
+                    <apex:outputField value="{!referralfields.Assessment_Date__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem />
+                <apex:pageBlockSectionItem />
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Participant Details" columns="2">
+                    <apex:pageBlockSectionItem dataStyle="width:33%" labelStyle="width:29%">
+                        <apex:outputLabel value="First Name:"/>
+                        <apex:outputField value="{!participantfields.FirstName}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Last Name:"/>
+                        <apex:outputField value="{!participantfields.LastName}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Preferred Name:"/>
+                        <apex:outputField value="{!participantfields.Preferred_Name__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Date of Birth:"/>
+                        <apex:outputField value="{!participantfields.Birthdate}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Phone:"/>
+                        <apex:outputField value="{!participantfields.MobilePhone}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Email:"/>
+                        <apex:outputField value="{!participantfields.Email}"/>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection showHeader="false" columns="1">
+                    <apex:pageBlockSectionItem labelStyle="width:50%" dataStyle="width:33%">
+                        <apex:outputLabel value="Preferred Method of Contact:"/>
+                        <apex:outputField value="{!participantfields.Preferred_Communication_Method__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem />
+                </apex:pageBlockSection>
+                <apex:pageBlockSection showHeader="false" columns="1">
+                    <apex:pageBlockSectionItem labelStyle="width:41%">
+                        <apex:outputLabel value="Street:"/>
+                        <apex:outputField value="{!participantfields.OtherStreet}"/>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection showHeader="false" columns="2">
+                    <apex:pageBlockSectionItem dataStyle="width:40%" labelStyle="width:35%">
+                        <apex:outputLabel value="City:"/>
+                        <apex:outputField value="{!participantfields.OtherCity}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="State:"/>
+                        <apex:outputField value="{!participantfields.OtherState}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Country:"/>
+                        <apex:outputField value="{!participantfields.OtherCountry}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Postcode:"/>
+                        <apex:outputField value="{!participantfields.OtherPostalCode}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem />
+                    <apex:pageBlockSectionItem />
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Participant Demographics" columns="1">
+                    <apex:pageBlockSectionItem dataStyle="width:25%" labelStyle="width:30%">
+                        <apex:outputLabel value="Gender:"/>
+                        <apex:outputField value="{!participantfields.Sex__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Identifies As:"/>
+                        <apex:outputField value="{!participantfields.Identifies_As__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Indigenous Status:"/>
+                        <apex:outputField value="{!participantfields.Indigenous_Status__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Country of Birth:"/>
+                        <apex:outputField value="{!participantfields.Country_of_Birth__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Main Language Spoken:"/>
+                        <apex:outputField value="{!participantfields.Main_Language_Spoken_at_Home__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Do you identify as a person with a disability?:"/>
+                        <apex:outputField value="{!participantfields.Primary_Disability__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem />
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Hospital Presentation (If Applicable)" columns="1">
+                    <apex:pageBlockSectionItem dataStyle="width:25%" labelStyle="width:30%">
+                        <apex:outputLabel value="Did the participant present to hospital following a suicide attempt?:"/>
+                        <apex:outputField value="{!referralfields.Hospital_following_a_suicide_attempt__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Is the participant currently an in-patient?"/>
+                        <apex:outputField value="{!referralfields.Are_they_currently_an_inpatient__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Hospital / Facility:"/>
+                        <apex:outputField value="{!referralfields.Hospital_Factility_Name__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Discharge Date:"/>
+                        <apex:outputField value="{!referralfields.Discharge_Date__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem />
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Medical & Safety Details" columns="1">
+                    <apex:pageBlockSectionItem dataStyle="width:25%" labelStyle="width:30%">
+                        <apex:outputLabel value="Is there a Mental Health Care Plan in place?"/>
+                        <apex:outputField value="{!referralfields.Mental_Health_Treatment_plan_in_place__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="If yes, who with:"/>
+                        <apex:outputField value="{!referralfields.Who_is_the_Mental_Health_Care_Plan_with__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Current Medications:"/>
+                        <apex:outputField value="{!referralfields.Medication_details__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Are there any safety concerns for this person, including self-harm, suicidal thoughts, abuse, domestic violence, risk taking behaviours, harmful substance use, or any other challenges?" style="font-weight: bold"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputField value="{!referralfields.Known_safety_risks_home_environment__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="What are the primary reasons you would like assistance from Care Connect?"/>
+                        <apex:outputField value="{!referralfields.Impacting_Psychosocial_Factors__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Other Details:" style="font-weight: bold"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputField value="{!referralfields.Service_Reason_Element__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Is there anything else we should know?" style="font-weight: bold"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputField value="{!referralfields.Other_Reasons__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <apex:pageBlockSectionItem />
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Consent" columns="1">
+                    <apex:pageBlockSectionItem dataStyle="width:25%" labelStyle="width:30%">
+                        <apex:outputLabel value="Has the participant given verbal consent that they would like to engage with Social Futures and are willing to be contacted?"/>
+                        <apex:outputField value="{!referralfields.Client_Consent__c}"/>
+                    </apex:pageBlockSectionItem>
+                    <hr/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Date Consented:"/>
+                        <apex:outputField value="{!referralfields.Consent_Date__c}"/>
+                    </apex:pageBlockSectionItem>
+                </apex:pageBlockSection> 
+            </apex:pageBlock>  
+        </apex:form>
+    </body>
+</apex:page>

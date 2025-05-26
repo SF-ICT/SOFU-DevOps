@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medical_Conditions__c</fullName>
+    <label>Medical Conditions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fractures/cuts/bruising/abrasions</fullName>
+                <default>false</default>
+                <label>Fractures/cuts/bruising/abrasions</label>
+            </value>
+            <value>
+                <fullName>Seizures/Epilepsy</fullName>
+                <default>false</default>
+                <label>Seizures/Epilepsy</label>
+            </value>
+            <value>
+                <fullName>Respiratory conditions</fullName>
+                <default>false</default>
+                <label>Respiratory conditions</label>
+            </value>
+            <value>
+                <fullName>Allergies</fullName>
+                <default>false</default>
+                <label>Allergies</label>
+            </value>
+            <value>
+                <fullName>Skin conditions</fullName>
+                <default>false</default>
+                <label>Skin conditions</label>
+            </value>
+            <value>
+                <fullName>Endocrine conditions</fullName>
+                <default>false</default>
+                <label>Endocrine conditions</label>
+            </value>
+            <value>
+                <fullName>Diabetes</fullName>
+                <default>false</default>
+                <label>Diabetes</label>
+            </value>
+            <value>
+                <fullName>Sleep disorders</fullName>
+                <default>false</default>
+                <label>Sleep disorders</label>
+            </value>
+            <value>
+                <fullName>Incontinence</fullName>
+                <default>false</default>
+                <label>Incontinence</label>
+            </value>
+            <value>
+                <fullName>Mental illness</fullName>
+                <default>false</default>
+                <label>Mental illness</label>
+            </value>
+            <value>
+                <fullName>Dementia</fullName>
+                <default>false</default>
+                <label>Dementia</label>
+            </value>
+            <value>
+                <fullName>Chronic pain</fullName>
+                <default>false</default>
+                <label>Chronic pain</label>
+            </value>
+            <value>
+                <fullName>Identified intellectual or developmental disability</fullName>
+                <default>false</default>
+                <label>Identified intellectual or developmental disability</label>
+            </value>
+            <value>
+                <fullName>Impaired cognition</fullName>
+                <default>false</default>
+                <label>Impaired cognition</label>
+            </value>
+            <value>
+                <fullName>Obesity</fullName>
+                <default>false</default>
+                <label>Obesity</label>
+            </value>
+            <value>
+                <fullName>Teeth and gum conditions</fullName>
+                <default>false</default>
+                <label>Teeth and gum conditions</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Not applicable</fullName>
+                <default>false</default>
+                <label>Not applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_and_Details_of_Service_Provider__c</fullName>
+    <description>Date and Details of Service Provider</description>
+    <inlineHelpText>If the box is checked, yes, then please record the Service Provider details and the Date that they were notified</inlineHelpText>
+    <label>Date and Details of Service Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Care_Connect_Hunter_Central_Coast</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Care Connect - Hunter Central Coast</label>
+        <sharedTo>
+            <group>Care_Connect_Hunter_Central_Coast</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Care Connect - Hunter Central Coast</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Connecting_Home_Adult_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Connecting Home - Adult - COI</label>
+        <sharedTo>
+            <group>Connecting_Home_Adult_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Connecting Home - Adult - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Connecting_Home_Adult_Complex_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Connecting Home - Adult Complex - COI</label>
+        <sharedTo>
+            <group>Connecting_Home_Adult_Complex_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Connecting Home - Adult Complex - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Connecting_Home_Byron_Assertive_Outreach_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Connecting Home Byron Assertive Outreach - COI</label>
+        <sharedTo>
+            <group>Connecting_Home_Byron_AO_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Connecting Home Byron Assertive Outreach - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Connecting_Home_HYAP_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Connecting Home - HYAP - COI</label>
+        <sharedTo>
+            <group>Connecting_You_HYAP_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Connecting Home - HYAP - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Connecting_Home_Northern_Youth_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Connecting Home - Northern Youth - COI</label>
+        <sharedTo>
+            <group>Connecting_Home_Northern_Youth_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Connecting Home - Northern Youth - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Connecting_Home_Tweed_Assertive_Outreach_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Connecting Home Tweed Assertive Outreach - COI</label>
+        <sharedTo>
+            <group>Connecting_Home_Tweed_AO_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Connecting Home Tweed Assertive Outreach - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Connecting_Home_Youth_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Connecting Home - Youth - COI</label>
+        <sharedTo>
+            <group>Connecting_Home_Youth_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Connecting Home - Youth - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Elements_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Elements - COI</label>
+        <sharedTo>
+            <group>Elements_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Elements - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Reconnect_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Reconnect - COI</label>
+        <sharedTo>
+            <group>Reconnect_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Reconnect - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Resilient_Kids_COI</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Resilient Kids - COI</label>
+        <sharedTo>
+            <group>Resilient_Kids_COI</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Sharing_Criteria__c</field>
+            <operation>equals</operation>
+            <value>Resilient Kids - COI</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

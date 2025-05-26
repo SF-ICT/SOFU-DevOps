@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Engagement_and_reliability__c</fullName>
+    <description>Used in the Intake process for Care Connect Hunter Manning &amp; Care Connect Hunter Central Coast</description>
+    <inlineHelpText>Engagement and reliability</inlineHelpText>
+    <label>Engagement and reliability</label>
+    <length>10000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

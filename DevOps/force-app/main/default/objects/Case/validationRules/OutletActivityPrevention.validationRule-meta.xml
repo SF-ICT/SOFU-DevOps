@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OutletActivityPrevention</fullName>
+    <active>true</active>
+    <description>Prevent users from selecting certain Outlet Activities</description>
+    <errorConditionFormula>CONTAINS(Outlet_Activity__r.Outlet_Name__c, &quot;Keen&quot;) &amp;&amp;
+Date_of_Enquiry_or_Referral__c &gt;= DATE(2023,11,28)</errorConditionFormula>
+    <errorDisplayField>Outlet_Activity__c</errorDisplayField>
+    <errorMessage>We no longer have office locations at Keen St. Please select appropriate outlet activity.</errorMessage>
+</ValidationRule>

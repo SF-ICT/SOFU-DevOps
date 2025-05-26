@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Property_Agreement</fullName>
+    <active>true</active>
+    <description>Checks if any field is populated, all fields must be populated</description>
+    <errorConditionFormula>IF(
+OR(
+AND(
+ISBLANK( TEXT( Property_Agreement_Outcome__c )),
+ISNULL( Date_of_Property_Agreement__c )
+),
+AND(
+NOT( ISBLANK( TEXT( Property_Agreement_Outcome__c ))),
+NOT( ISNULL( Date_of_Property_Agreement__c ))
+)
+
+),
+false, true
+)</errorConditionFormula>
+    <errorMessage>You must fill in all fields in the property agreement outcome section, or they must all be blank.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referred_by_Social_Futures_Staff_Member__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>The Social Futures worker who referred this Participant</inlineHelpText>
+    <label>Referred by Social Futures Staff Member</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>ReferredCases</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

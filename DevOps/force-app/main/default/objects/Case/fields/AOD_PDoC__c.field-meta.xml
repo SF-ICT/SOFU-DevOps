@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AOD_PDoC__c</fullName>
+    <label>Principal Drug of Concern/Gambling</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0000</fullName>
+                <default>false</default>
+                <label>Inadequately Described</label>
+            </value>
+            <value>
+                <fullName>0001</fullName>
+                <default>false</default>
+                <label>Not Stated</label>
+            </value>
+            <value>
+                <fullName>0005</fullName>
+                <default>false</default>
+                <label>Pharmaceutical opioids, nfd</label>
+            </value>
+            <value>
+                <fullName>0006</fullName>
+                <default>false</default>
+                <label>Psychostimulants, nfd</label>
+            </value>
+            <value>
+                <fullName>0009</fullName>
+                <default>false</default>
+                <label>Gambling</label>
+            </value>
+            <value>
+                <fullName>1202</fullName>
+                <default>false</default>
+                <label>Heroin</label>
+            </value>
+            <value>
+                <fullName>1305</fullName>
+                <default>false</default>
+                <label>Methadone</label>
+            </value>
+            <value>
+                <fullName>2101</fullName>
+                <default>false</default>
+                <label>Alcohol</label>
+            </value>
+            <value>
+                <fullName>2400</fullName>
+                <default>false</default>
+                <label>Benzodiazepines, nfd</label>
+            </value>
+            <value>
+                <fullName>3100</fullName>
+                <default>false</default>
+                <label>Amphetamines, nfd</label>
+            </value>
+            <value>
+                <fullName>3405</fullName>
+                <default>false</default>
+                <label>MDMA/Ecstasy</label>
+            </value>
+            <value>
+                <fullName>3901</fullName>
+                <default>false</default>
+                <label>Caffeine</label>
+            </value>
+            <value>
+                <fullName>3903</fullName>
+                <default>false</default>
+                <label>Cocaine</label>
+            </value>
+            <value>
+                <fullName>3906</fullName>
+                <default>false</default>
+                <label>Nicotine</label>
+            </value>
+            <value>
+                <fullName>7100</fullName>
+                <default>false</default>
+                <label>Cannabinoids and related Drugs, nfd</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

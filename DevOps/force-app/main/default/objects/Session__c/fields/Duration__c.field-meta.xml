@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duration__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status__c, &quot;Cancelled&quot;) || ISPICKVAL(Status__c, &quot;No-show&quot;), &quot;0&quot;,
+IF(Duration_In_Hours__c * 60 = 0, &quot;0&quot;,
+IF(Duration_In_Hours__c * 60 &gt; 0 &amp;&amp; Duration_In_Hours__c * 60 &lt; 16, &quot;1&quot;,
+IF(Duration_In_Hours__c * 60 &gt;= 16 &amp;&amp; Duration_In_Hours__c * 60 &lt; 31, &quot;2&quot;,
+IF(Duration_In_Hours__c * 60 &gt;= 31 &amp;&amp; Duration_In_Hours__c * 60 &lt; 46, &quot;3&quot;,
+IF(Duration_In_Hours__c * 60 &gt;= 46 &amp;&amp; Duration_In_Hours__c * 60 &lt; 61, &quot;4&quot;,
+IF(Duration_In_Hours__c * 60 &gt;= 61 &amp;&amp; Duration_In_Hours__c * 60 &lt; 76, &quot;5&quot;,
+IF(Duration_In_Hours__c * 60 &gt;= 76 &amp;&amp; Duration_In_Hours__c * 60 &lt; 91, &quot;6&quot;,
+IF(Duration_In_Hours__c * 60 &gt;= 91 &amp;&amp; Duration_In_Hours__c * 60 &lt; 106, &quot;7&quot;,
+IF(Duration_In_Hours__c * 60 &gt;= 106 &amp;&amp; Duration_In_Hours__c * 60 &lt; 120, &quot;8&quot;,
+&quot;9&quot;))))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Duration</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

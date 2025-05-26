@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LAC_Navigator_Layout</fullName>
+    <fields>BPS_Participant__c</fields>
+    <fields>Case__c</fields>
+    <fields>BPS_Linkage_Name__c</fields>
+    <fields>BPS_Linkage_Type__c</fields>
+    <label>LAC Navigator Layout</label>
+</CompactLayout>

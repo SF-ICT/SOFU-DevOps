@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Needs_Outcome__c</fullName>
+    <description>FRS program only: during a the referral and initial needs assessment an FRS worker uses professional judgement to determine whether a case is going to be simple, complex or only information will be provided</description>
+    <inlineHelpText>FRS: during a the referral and/ initial needs assessment, use professional judgement to determine whether a case is going to be simple, complex or whether only information will be provided</inlineHelpText>
+    <label>Needs Outcome</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Simple Referral</fullName>
+                <default>false</default>
+                <label>Simple Referral</label>
+            </value>
+            <value>
+                <fullName>Complex Referral</fullName>
+                <default>false</default>
+                <label>Complex Referral</label>
+            </value>
+            <value>
+                <fullName>Information Only</fullName>
+                <default>false</default>
+                <label>Information Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

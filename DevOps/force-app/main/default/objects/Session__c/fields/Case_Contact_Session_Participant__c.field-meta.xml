@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Contact_Session_Participant__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>If the Case&apos;s Contact was a Participant in this Session, this will be the Session Participant record.</inlineHelpText>
+    <label>Case Contact Session Participant</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Session Participant Value does not exist or does not match filter criteria.</errorMessage>
+        <filterItems>
+            <field>Session_Participant__c.Session__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Id</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Session_Participant__c</referenceTo>
+    <relationshipLabel>Sessions</relationshipLabel>
+    <relationshipName>Sessions</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

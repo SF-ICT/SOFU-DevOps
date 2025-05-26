@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Park_the_car_in_an_area_that_is_visible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Park the car in an area that is visible to public and is accessible with room to pull away quickly.</description>
+    <inlineHelpText>Park the car in an area that is visible to public and is accessible with room to pull away quickly.</inlineHelpText>
+    <label>Park the car in an area that is visible</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

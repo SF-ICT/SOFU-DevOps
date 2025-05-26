@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>c</description>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>MMHC - Initial Assessment</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Medicare_Mental_Health_Centre</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

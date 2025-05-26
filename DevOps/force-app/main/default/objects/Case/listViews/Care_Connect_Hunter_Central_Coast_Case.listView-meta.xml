@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Care_Connect_Hunter_Central_Coast_Case</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Care Connect - Hunter Central Coast</label>
+    <queue>Care_Connect_Hunter_Central_Coast</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

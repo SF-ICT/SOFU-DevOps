@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEX_Skipped_Sessions</fullName>
+    <booleanFilter>2 AND (1 OR 3) AND 4</booleanFilter>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Dex_Sync_Status__c</field>
+        <operation>equals</operation>
+        <value>Skipped</value>
+    </filters>
+    <filters>
+        <field>Session_DEX_Cutoff_Date__c</field>
+        <operation>equals</operation>
+        <value>7/31/2024</value>
+    </filters>
+    <filters>
+        <field>Dex_Session_Assessments_Sync_Status__c</field>
+        <operation>equals</operation>
+        <value>Skipped</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Session__c.Case_Related</value>
+    </filters>
+    <label>DEX Skipped Sessions</label>
+</ListView>

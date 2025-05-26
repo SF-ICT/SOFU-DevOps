@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_Planning_Contact_Status__c</fullName>
+    <label>Appointment Contact Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TBA</fullName>
+                <default>false</default>
+                <label>TBA</label>
+            </value>
+            <value>
+                <fullName>Contact Attempted</fullName>
+                <default>false</default>
+                <label>Contact Attempted</label>
+            </value>
+            <value>
+                <fullName>Contact Successful</fullName>
+                <default>false</default>
+                <label>Contact Successful</label>
+            </value>
+            <value>
+                <fullName>Letter Sent</fullName>
+                <default>false</default>
+                <label>Letter Sent</label>
+            </value>
+            <value>
+                <fullName>UTP Complete in CRM</fullName>
+                <default>false</default>
+                <label>UTP Complete in CRM</label>
+            </value>
+            <value>
+                <fullName>UTC Complete in CRM</fullName>
+                <default>false</default>
+                <label>UTC Complete in CRM</label>
+            </value>
+            <value>
+                <fullName>Participant re-engaged after UTC/UTP</fullName>
+                <default>false</default>
+                <label>Participant re-engaged after UTC/UTP</label>
+            </value>
+            <value>
+                <fullName>Reschedule Required</fullName>
+                <default>false</default>
+                <label>Reschedule Required</label>
+            </value>
+            <value>
+                <fullName>Successful</fullName>
+                <default>false</default>
+                <label>Successful</label>
+            </value>
+            <value>
+                <fullName>Unsuccessful</fullName>
+                <default>false</default>
+                <label>Unsuccessful</label>
+            </value>
+            <value>
+                <fullName>Contact Not Required</fullName>
+                <default>false</default>
+                <label>Contact Not Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

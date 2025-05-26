@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_5__c</fullName>
+    <description>Checks if LOC is Level 5</description>
+    <formula>IF(
+/* Level 5 Check */
+	OR(
+		TEXT(iar_dst_domain_1__c) = &quot;4&quot;,
+		TEXT(iar_dst_domain_2__c) = &quot;4&quot;,
+		TEXT(iar_dst_domain_3__c) = &quot;4&quot;
+	),
+	True, 
+	False
+)</formula>
+    <inlineHelpText>Checks if LOC is Level 5</inlineHelpText>
+    <label>Level 5</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

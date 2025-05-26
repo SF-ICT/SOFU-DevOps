@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Local_DCJ_Office__c</fullName>
+    <label>Local DCJ Office</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>FACS Ballina</fullName>
+                <default>false</default>
+                <label>FACS Ballina</label>
+            </value>
+            <value>
+                <fullName>FACS Coffs Harbour</fullName>
+                <default>false</default>
+                <label>FACS Coffs Harbour</label>
+            </value>
+            <value>
+                <fullName>FACS Grafton</fullName>
+                <default>false</default>
+                <label>FACS Grafton</label>
+            </value>
+            <value>
+                <fullName>FACS Lismore</fullName>
+                <default>false</default>
+                <label>FACS Lismore</label>
+            </value>
+            <value>
+                <fullName>FACS Tweed Heads</fullName>
+                <default>false</default>
+                <label>FACS Tweed Heads</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

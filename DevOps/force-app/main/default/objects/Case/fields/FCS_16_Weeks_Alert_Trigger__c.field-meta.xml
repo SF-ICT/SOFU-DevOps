@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FCS_16_Weeks_Alert_Trigger__c</fullName>
+    <description>Checks to see if the FCS 16 Weeks Timestamp field has a date it in. If so, this will show an alert on the Case page.</description>
+    <formula>NOT(ISBLANK(FCS_16_Weeks_Timestamp__c))</formula>
+    <label>FCS &gt; 16 Weeks Alert Trigger</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

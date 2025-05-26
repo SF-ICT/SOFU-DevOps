@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Close_Date_after_Enquiry_Date</fullName>
+    <active>true</active>
+    <description>Prevents a case close date from being before an Enquiry/Referral Date or from being in the future.</description>
+    <errorConditionFormula>AND(Case_Closed_Date__c &lt; Date_of_Enquiry_or_Referral__c || Case_Closed_Date__c &gt; Today(),
+NOT( Program_Name__c = &quot;NDIA Local Area Coordination&quot;))</errorConditionFormula>
+    <errorDisplayField>Case_Closed_Date__c</errorDisplayField>
+    <errorMessage>Case Closure Date cannot be before the Enquiry/Referral Date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CH_Participant_Age_Requirements</fullName>
+    <active>true</active>
+    <description>Ensures the Participant is in the correct age range when a case is being created.</description>
+    <errorConditionFormula>AND(OR((Date_of_Enquiry_or_Referral__c-Contact.Birthdate)/365.2425 &lt; 12, (Date_of_Enquiry_or_Referral__c-Contact.Birthdate)/365.2425 &gt;= 16), ISBLANK(ParentId), CONTAINS(Program_Name__c, &apos;Connecting You - HYAP&apos;)) ||
+AND(OR((Date_of_Enquiry_or_Referral__c-Contact.Birthdate)/365.2425 &lt; 16, (Date_of_Enquiry_or_Referral__c-Contact.Birthdate)/365.2425 &gt;= 25), ISBLANK(ParentId), CONTAINS(Program_Name__c, &apos;Connecting Home - Youth&apos;)) ||
+AND((Date_of_Enquiry_or_Referral__c-Contact.Birthdate)/365.2425 &lt; 25, ISBLANK(ParentId), CONTAINS(Program_Name__c, &apos;Connecting Home - Adult&apos;)) ||
+AND((Date_of_Enquiry_or_Referral__c-Contact.Birthdate)/365.2425 &lt; 16, ISBLANK(ParentId), CONTAINS(Program_Name__c, &apos;Connecting Home Tweed Assertive Outreach&apos;))</errorConditionFormula>
+    <errorDisplayField>Program__c</errorDisplayField>
+    <errorMessage>The Program you have assigned is incorrect for the Participants age, please assign to the correct program as follows:
+Connecting You - HYAP: 12-15 
+Connecting Home - Youth: - 16-24 
+Connecting Home - Adult: 25+
+Connecting Home TAO: 16+</errorMessage>
+</ValidationRule>

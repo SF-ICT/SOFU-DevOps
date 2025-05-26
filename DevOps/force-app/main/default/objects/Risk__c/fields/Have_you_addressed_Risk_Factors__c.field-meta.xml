@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Have_you_addressed_Risk_Factors__c</fullName>
+    <description>Addressing Risk Factors identified in Review Process
+
+If the home visit is going ahead, document how you are addressing risk factors at the bottom of the checklist.</description>
+    <inlineHelpText>Addressing Risk Factors identified in Review Process
+
+If the home visit is going ahead, document how you are addressing risk factors at the bottom of the checklist.</inlineHelpText>
+    <label>Have you addressed Risk Factors?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

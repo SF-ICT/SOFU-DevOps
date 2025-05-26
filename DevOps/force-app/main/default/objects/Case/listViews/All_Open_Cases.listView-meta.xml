@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Cases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>Program__c</columns>
+    <columns>Case_Owner_Full_Name__c</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Referral,Planning,Intake,Service Delivery</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Allocated_Case,Case.Inbound_Referral,Case.Internal_Referral</value>
+    </filters>
+    <label>All Open Cases</label>
+</ListView>

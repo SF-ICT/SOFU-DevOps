@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>User</baseObject>
+    <category>accounts</category>
+    <deployed>true</deployed>
+    <description>LAC - Users w/ or w/out Tasks</description>
+    <join>
+        <outerJoin>true</outerJoin>
+        <relationship>Activity$OwnerId</relationship>
+    </join>
+    <label>LAC - Users w/ or w/out Tasks</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>About Me</displayNameOverride>
+            <field>AboutMe</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account</displayNameOverride>
+            <field>Account</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Active</displayNameOverride>
+            <field>IsActive</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Address</displayNameOverride>
+            <field>Address</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Admin Info Emails</displayNameOverride>
+            <field>ReceivesAdminInfoEmails</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Alias</displayNameOverride>
+            <field>Alias</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Allow Forecasting</displayNameOverride>
+            <field>ForecastEnabled</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ATSI Cultural Training</displayNameOverride>
+            <field>ATSI_Cultural_Training__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>ATSI Status</displayNameOverride>
+            <field>ATSI_Status__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Call Center</displayNameOverride>
+            <field>CallCenter</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Chatter Adoption Stage</displayNameOverride>
+            <field>ChatterAdoptionStage</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Chatter Adoption Stage Modified Date</displayNameOverride>
+            <field>ChatterAdoptionStageModifiedDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Chatter Email Highlights Frequency</displayNameOverride>
+            <field>DigestFrequency</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>City</displayNameOverride>
+            <field>City</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Company Name</displayNameOverride>
+            <field>CompanyName</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contact</displayNameOverride>
+            <field>Contact</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Country</displayNameOverride>
+            <field>Country</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DB Region</displayNameOverride>
+            <field>DB_Region__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Default Notification Frequency when Joining Groups</displayNameOverride>
+            <field>DefaultGroupNotificationFrequency</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Department</displayNameOverride>
+            <field>Department</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>DEX Worker</displayNameOverride>
+            <field>DEX_Worker__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Disable All Duplicate Check triggers</displayNameOverride>
+            <field>dupcheck__dc3DisableDCTriggers__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Disable Duplicate Check</displayNameOverride>
+            <field>dupcheck__dc3DisableDuplicateCheck__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Division</displayNameOverride>
+            <field>Division</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email</displayNameOverride>
+            <field>Email</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email Encoding</displayNameOverride>
+            <field>EmailEncodingKey</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email Sender Address</displayNameOverride>
+            <field>SenderEmail</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email Sender Name</displayNameOverride>
+            <field>SenderName</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Email Signature</displayNameOverride>
+            <field>Signature</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Employee Number</displayNameOverride>
+            <field>EmployeeNumber</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>End of Day</displayNameOverride>
+            <field>EndDay</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Extension</displayNameOverride>
+            <field>Extension</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Failed Login Attempts</displayNameOverride>
+            <field>NumberOfFailedLogins</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Fax</displayNameOverride>
+            <field>Fax</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>First Name</displayNameOverride>
+            <field>FirstName</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Full Name</displayNameOverride>
+            <field>Name</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Full Name</displayNameOverride>
+            <field>FullName__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Geocode Accuracy</displayNameOverride>
+            <field>GeocodeAccuracy</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Global Identity GID</displayNameOverride>
+            <field>GlobalIdentity</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Has Profile Photo</displayNameOverride>
+            <field>IsProfilePhotoActive</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Individual</displayNameOverride>
+            <field>Individual</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Info Emails</displayNameOverride>
+            <field>ReceivesInfoEmails</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Internal Subtype</displayNameOverride>
+            <field>UserSubtype</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Care Connect Only</displayNameOverride>
+            <field>Is_Care_Connect_Only__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Controlled By System</displayNameOverride>
+            <field>IsSystemControlled</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Language</displayNameOverride>
+            <field>LanguageLocaleKey</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Login</displayNameOverride>
+            <field>LastLoginDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Name</displayNameOverride>
+            <field>LastName</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Password Change or Reset</displayNameOverride>
+            <field>LastPasswordChangeDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Latitude</displayNameOverride>
+            <field>Latitude</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Locale</displayNameOverride>
+            <field>LocaleSidKey</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Longitude</displayNameOverride>
+            <field>Longitude</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Manager</displayNameOverride>
+            <field>Manager</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Middle Name</displayNameOverride>
+            <field>MiddleName</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Mobile</displayNameOverride>
+            <field>MobilePhone</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Nickname</displayNameOverride>
+            <field>CommunityNickname</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Offline Edition Trial Expiration Date</displayNameOverride>
+            <field>OfflineTrialExpirationDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PHN Active</displayNameOverride>
+            <field>PHN_Active__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Phone</displayNameOverride>
+            <field>Phone</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Preferred Pronouns</displayNameOverride>
+            <field>Preferred_Pronouns__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Primary Service Location Id 18</displayNameOverride>
+            <field>Primary_Service_Location_Id_18__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Profile</displayNameOverride>
+            <field>Profile</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Region</displayNameOverride>
+            <field>BPS_Region__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Role</displayNameOverride>
+            <field>UserRole</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Safe Space Secondary Approver</displayNameOverride>
+            <field>Safe_Space_Secondary_Approver__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sales Anywhere Trial Expiration Date</displayNameOverride>
+            <field>OfflinePdaTrialExpirationDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Salesforce User License</displayNameOverride>
+            <field>Salesforce_User_License__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SAML Federation ID</displayNameOverride>
+            <field>FederationIdentifier</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sex</displayNameOverride>
+            <field>Sex__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Start of Day</displayNameOverride>
+            <field>StartDay</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>State/Province</displayNameOverride>
+            <field>State</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Stay-in-Touch Email Note</displayNameOverride>
+            <field>StayInTouchNote</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Stay-in-Touch Email Signature</displayNameOverride>
+            <field>StayInTouchSignature</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Stay-in-Touch Email Subject</displayNameOverride>
+            <field>StayInTouchSubject</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Street</displayNameOverride>
+            <field>Street</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SU Access Expiration Date</displayNameOverride>
+            <field>SuAccessExpirationDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SU Org Admin Expiration Date</displayNameOverride>
+            <field>SuOrgAdminExpirationDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time Zone</displayNameOverride>
+            <field>TimeZoneSidKey</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Title</displayNameOverride>
+            <field>Title</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User ID</displayNameOverride>
+            <field>Id</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User ID 18</displayNameOverride>
+            <field>User_ID_18__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Username</displayNameOverride>
+            <field>Username</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>User Type</displayNameOverride>
+            <field>UserType</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Wireless Trial Expiration Date</displayNameOverride>
+            <field>WirelessTrialExpirationDate</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Year of Birth</displayNameOverride>
+            <field>Year_of_Birth__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Zip/Postal Code</displayNameOverride>
+            <field>PostalCode</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Hours Per Week</displayNameOverride>
+            <field>FTE__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Stream</displayNameOverride>
+            <field>Stream__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PMHC Worker</displayNameOverride>
+            <field>PMHC_Worker__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LAC_Region__c</field>
+            <table>User</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>COI_Case_Worker__c</field>
+            <table>User</table>
+        </columns>
+        <masterLabel>Users</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Activity ID</displayNameOverride>
+            <field>Id</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assigned To</displayNameOverride>
+            <field>Owner</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>AssignedToID_18</displayNameOverride>
+            <field>BPS_AssignedToID_18__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Case</displayNameOverride>
+            <field>Case__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Check-In</displayNameOverride>
+            <field>BPS_Check_In__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Check-In Id 18</displayNameOverride>
+            <field>BPS_Check_In_Id_18__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date</displayNameOverride>
+            <field>ActivityDate</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>LAC Region</displayNameOverride>
+            <field>BPS_LAC_Region__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>LAC Office</displayNameOverride>
+            <field>BPS_LAC_Office__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Current Plan</displayNameOverride>
+            <field>BPS_Is_Current_Plan__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Due Time</displayNameOverride>
+            <field>ActivityTimeOnly</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Participant Region</displayNameOverride>
+            <field>BPS_Participant_Region__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner Name</displayNameOverride>
+            <field>Owner_Name__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Name</displayNameOverride>
+            <field>Who</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Plan End Date</displayNameOverride>
+            <field>BPS_Current_Expiry__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Participant Status</displayNameOverride>
+            <field>BPS_Participant_Status__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Participant LGA</displayNameOverride>
+            <field>BPS_Participant_LGA__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Related Record</displayNameOverride>
+            <field>Related_Record__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Related To</displayNameOverride>
+            <field>What</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Task/Meeting Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>Status</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Related To ID</displayNameOverride>
+            <field>BPS_Related_To_ID__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subject</displayNameOverride>
+            <field>Subject</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Related Record Type</displayNameOverride>
+            <field>Related_Record_Type__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>TaskID_18</displayNameOverride>
+            <field>BPS_TaskID_18__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Task Time</displayNameOverride>
+            <field>Time_to_Complete__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time</displayNameOverride>
+            <field>ActivityDateTime</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time</displayNameOverride>
+            <field>Time__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Record Count</displayNameOverride>
+            <field>Record_Count__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CB&amp;E Task Time</displayNameOverride>
+            <field>CB_E_Task_Time__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>CB&amp;E</displayNameOverride>
+            <field>CB_E__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Navigator_Customer__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BPS_IsCurrentPlan__c</field>
+            <table>User.Activity$OwnerId</table>
+        </columns>
+        <masterLabel>Activities</masterLabel>
+    </sections>
+</ReportType>

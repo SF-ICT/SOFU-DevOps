@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Summary_of_presenting_issues_self_harm__c</fullName>
+    <description>CC - Summary of presenting issues/self-harm</description>
+    <inlineHelpText>CC - Summary of presenting issues/self-harm</inlineHelpText>
+    <label>Summary of presenting issues/self-harm</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

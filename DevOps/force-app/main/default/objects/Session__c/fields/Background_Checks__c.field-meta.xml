@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Background_Checks__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Has a background check been completed with FaCS, Police, JJ, other agency?</description>
+    <inlineHelpText>Has a background check been completed with FaCS, Police, JJ, other agency?</inlineHelpText>
+    <label>Background Checks</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

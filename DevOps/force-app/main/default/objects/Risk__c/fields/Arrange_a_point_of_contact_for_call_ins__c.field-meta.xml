@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arrange_a_point_of_contact_for_call_ins__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Arrange a point of contact for call-ins at start and end of visit.</description>
+    <inlineHelpText>Arrange a point of contact for call-ins at start and end of visit.</inlineHelpText>
+    <label>Arrange a point of contact for call-ins</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>The_Bridge_Sessions</fullName>
+    <columns>NAME</columns>
+    <columns>Postcode__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program_Name__c</field>
+        <operation>equals</operation>
+        <value>The Bridge</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Session__c.Case_Related,Session__c.Program_Related,Session__c.Safe_Space_Visit,Session__c.Safe_Space</value>
+    </filters>
+    <filters>
+        <field>Case__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>The Bridge Sessions</label>
+    <sharedTo></sharedTo>
+</ListView>

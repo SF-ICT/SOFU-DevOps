@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flood_Assistance_Counselling__c</fullName>
+    <formula>IF(INCLUDES(Flood_Assistance_Services__c, &apos;Counselling&apos;), true, false)</formula>
+    <label>Flood Assistance - Counselling</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

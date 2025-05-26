@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Did_the_FCS_complete_a_case_plan__c</fullName>
+    <inlineHelpText>FCS - Did the FCS complete a case plan?</inlineHelpText>
+    <label>Did the FCS complete a case plan?</label>
+    <summaryForeignKey>Case_Plan__c.Case__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

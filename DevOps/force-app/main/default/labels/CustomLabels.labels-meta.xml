@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>SMS_SafeSpace_Confirmed_Arrival</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SMS SafeSpace Confirmed Arrival</shortDescription>
+        <value>Hi &quot;&quot;, we have confirmed your arrival.
+Any further sms messages will not be understood until the departure sms is sent.</value>
+    </labels>
+    <labels>
+        <fullName>SMS_SafeSpace_Confirmed_Departure</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SMS SafeSpace Confirmed Departure</shortDescription>
+        <value>Hi &quot;&quot;, we have confirmed your departure.</value>
+    </labels>
+</CustomLabels>

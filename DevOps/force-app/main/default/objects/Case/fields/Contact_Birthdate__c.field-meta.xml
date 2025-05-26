@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Birthdate__c</fullName>
+    <description>Contact Birthdate</description>
+    <formula>Contact.Birthdate</formula>
+    <inlineHelpText>Contact Birthdate</inlineHelpText>
+    <label>Contact Birthdate</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

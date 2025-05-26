@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_Support_Connection_s_Related_To__c</fullName>
+    <label>Support Connection/s Related To:</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aboriginal Specific Service</fullName>
+                <default>false</default>
+                <label>Aboriginal Specific Service</label>
+            </value>
+            <value>
+                <fullName>Ask Izzy Website</fullName>
+                <default>false</default>
+                <label>Ask Izzy Website</label>
+            </value>
+            <value>
+                <fullName>Carers Gateway</fullName>
+                <default>false</default>
+                <label>Carers Gateway</label>
+            </value>
+            <value>
+                <fullName>Centrelink</fullName>
+                <default>false</default>
+                <label>Centrelink</label>
+            </value>
+            <value>
+                <fullName>Community/Neighbourhood Centre</fullName>
+                <default>false</default>
+                <label>Community/Neighbourhood Centre</label>
+            </value>
+            <value>
+                <fullName>Disability Advocacy</fullName>
+                <default>false</default>
+                <label>Disability Advocacy</label>
+            </value>
+            <value>
+                <fullName>Disability Specific Peak Body</fullName>
+                <default>false</default>
+                <label>Disability Specific Peak Body</label>
+            </value>
+            <value>
+                <fullName>Domestic Violence Support</fullName>
+                <default>false</default>
+                <label>Domestic Violence Support</label>
+            </value>
+            <value>
+                <fullName>ECA</fullName>
+                <default>false</default>
+                <label>ECA</label>
+            </value>
+            <value>
+                <fullName>Education &amp; Training</fullName>
+                <default>false</default>
+                <label>Education &amp; Training</label>
+            </value>
+            <value>
+                <fullName>Family Connect and Support</fullName>
+                <default>false</default>
+                <label>Family Connect and Support</label>
+            </value>
+            <value>
+                <fullName>Financial Counselling</fullName>
+                <default>false</default>
+                <label>Financial Counselling</label>
+            </value>
+            <value>
+                <fullName>GP</fullName>
+                <default>false</default>
+                <label>GP</label>
+            </value>
+            <value>
+                <fullName>Housing Support</fullName>
+                <default>false</default>
+                <label>Housing Support</label>
+            </value>
+            <value>
+                <fullName>LGBTISB+</fullName>
+                <default>false</default>
+                <label>LGBTISB+</label>
+            </value>
+            <value>
+                <fullName>Mainstream Health Supports</fullName>
+                <default>false</default>
+                <label>Mainstream Health Supports</label>
+            </value>
+            <value>
+                <fullName>Mental Health Care Plan</fullName>
+                <default>false</default>
+                <label>Mental Health Care Plan</label>
+            </value>
+            <value>
+                <fullName>NDIS Website</fullName>
+                <default>false</default>
+                <label>NDIS Website</label>
+            </value>
+            <value>
+                <fullName>Other Mental Health Support</fullName>
+                <default>false</default>
+                <label>Other Mental Health Support</label>
+            </value>
+            <value>
+                <fullName>Transport Supports</fullName>
+                <default>false</default>
+                <label>Transport Supports</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cases_with_Dex_Errors</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Program__c</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>Dex_Sync_Status__c</columns>
+    <columns>Dex_Child_Sync_Status__c</columns>
+    <columns>Dex_Sync_Message__c</columns>
+    <columns>Dex_Ignore_Cutoff_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DEX_Cutoff_Date__c</field>
+        <operation>equals</operation>
+        <value>1/31/2024</value>
+    </filters>
+    <filters>
+        <field>Program_is_Dex_Reporter__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Date_Of_Last_Session__c</field>
+        <operation>greaterThan</operation>
+        <value>1/31/2024</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Allocated_Case</value>
+    </filters>
+    <label>Cases with Dex Errors</label>
+    <sharedTo>
+        <group>All_Hende_Users</group>
+    </sharedTo>
+</ListView>

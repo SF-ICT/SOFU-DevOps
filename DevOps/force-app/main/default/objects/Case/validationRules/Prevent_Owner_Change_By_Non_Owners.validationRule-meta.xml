@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Owner_Change_By_Non_Owners</fullName>
+    <active>true</active>
+    <description>Prevents users from changing the owner of a case unless they are the current owner, team leader or program manager.</description>
+    <errorConditionFormula>IF(
+    OR(
+        CONTAINS(Program_Name__c, &quot;Connecting Home&quot;), 
+        CONTAINS(Program_Name__c, &quot;NDIA&quot;),
+        CONTAINS(Program_Name__c, &quot;The Bridge&quot;),
+        CONTAINS(Program_Name__c, &quot;Medicare Mental Health Centre&quot;)
+    ),
+    FALSE, 
+    Owner:User.Id &lt;&gt; PRIORVALUE(OwnerId) &amp;&amp;
+    NOT(ISBLANK(Owner:User.Id)) &amp;&amp;
+    ISBLANK(Owner:Queue.Id) &amp;&amp;
+    $Profile.Name &lt;&gt; &quot;Program Manager&quot; &amp;&amp;
+    $Profile.Name &lt;&gt; &quot;Team Leader&quot; &amp;&amp;
+    $Profile.Name &lt;&gt; &quot;LAC Admin&quot; &amp;&amp;
+    $Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp;
+    RecordTypeId &lt;&gt; &apos;012RF0000002sRAYAY&apos; &amp;&amp;
+    RecordTypeId &lt;&gt; &apos;012RF0000002sRBYAY&apos; &amp;&amp;
+    RecordTypeId &lt;&gt; &apos;012RF0000002sRCYAY&apos; &amp;&amp;
+    RecordTypeId &lt;&gt; &apos;012RF0000002sRDYAY&apos; &amp;&amp; 
+    RecordTypeId &lt;&gt; &apos;012RF0000002sREYAY&apos; &amp;&amp;
+    $User.Id &lt;&gt; PRIORVALUE(OwnerId)
+)</errorConditionFormula>
+    <errorMessage>Only the current case owner, a team leader or a program manager can change the case owner.</errorMessage>
+</ValidationRule>

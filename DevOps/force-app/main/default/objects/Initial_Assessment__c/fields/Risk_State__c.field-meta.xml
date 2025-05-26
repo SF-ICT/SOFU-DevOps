@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_State__c</fullName>
+    <description>Created for Care Connect HCC, used in Intake: Care Connect flow</description>
+    <inlineHelpText>Risk State: How does the risk compare to other times in the participant’s life when they were at suicide risk?</inlineHelpText>
+    <label>Risk State</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

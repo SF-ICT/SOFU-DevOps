@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Level_1__c</fullName>
+    <description>Checks if LOC is Level 1</description>
+    <formula>IF(
+	OR(
+		AND(
+			TEXT(iar_dst_domain_1__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_2__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_3__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_4__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_5__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_6__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_7__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_8__c) &lt;= &quot;1&quot;
+		),
+		AND(
+			TEXT(iar_dst_domain_1__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_2__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_3__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_4__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_5__c) &lt;= &quot;2&quot;,
+			TEXT(iar_dst_domain_6__c) &lt;= &quot;2&quot;,
+			TEXT(iar_dst_domain_7__c) &lt;= &quot;2&quot;,
+			TEXT(iar_dst_domain_8__c) &lt;= &quot;1&quot;,
+			OR(
+					TEXT(Age_Group__c) == &quot;Child&quot;,
+					TEXT(Age_Group__c) == &quot;Adolescent&quot;
+			)
+		),
+		AND(
+			TEXT(iar_dst_domain_1__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_2__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_3__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_4__c) &lt;= &quot;1&quot;,
+			TEXT(iar_dst_domain_5__c) &lt;= &quot;2&quot;,
+			TEXT(iar_dst_domain_6__c) &lt;= &quot;3&quot;,
+			TEXT(iar_dst_domain_8__c) &lt;= &quot;1&quot;,
+			OR(
+					TEXT(Age_Group__c) == &quot;Adult&quot;,
+					TEXT(Age_Group__c) == &quot;Older Adult&quot;
+			)
+		)
+	),
+	True,
+False
+)</formula>
+    <inlineHelpText>Checks if LOC is Level 1</inlineHelpText>
+    <label>Level 1</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

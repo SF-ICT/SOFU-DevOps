@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Getting_it_Together</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>NAME</columns>
+    <columns>Case_Owner_Full_Name__c</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program__c</field>
+        <operation>equals</operation>
+        <value>Getting it Together</value>
+    </filters>
+    <label>All Getting it Together</label>
+    <sharedTo>
+        <group>Getting_it_Together</group>
+    </sharedTo>
+</ListView>

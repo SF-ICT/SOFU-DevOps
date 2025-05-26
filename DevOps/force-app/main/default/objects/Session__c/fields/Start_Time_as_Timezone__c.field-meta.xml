@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Time_as_Timezone__c</fullName>
+    <description>Session Start Time in correct Timezone</description>
+    <inlineHelpText>Session Start Time in correct Timezone</inlineHelpText>
+    <label>Start Time as Timezone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

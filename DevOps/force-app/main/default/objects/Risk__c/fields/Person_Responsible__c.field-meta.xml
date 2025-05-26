@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Person_Responsible__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Person Responsible: Contact Record TypeEQUALSProvider, Worker</description>
+    <label>Person Responsible</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipName>Risks6</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

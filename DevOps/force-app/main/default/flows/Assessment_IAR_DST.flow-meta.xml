@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>61.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Domains</name>
+        <label>Assign Domains</label>
+        <locationX>974</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>IAR_DST.iar_dst_domain_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Domain_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IAR_DST.iar_dst_domain_2__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Domain_2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IAR_DST.iar_dst_domain_3__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Domain_3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IAR_DST.iar_dst_domain_4__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Domain_4</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IAR_DST.iar_dst_domain_5__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Domain_5</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IAR_DST.iar_dst_domain_6__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Domain_6</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IAR_DST.iar_dst_domain_7__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Domain_7</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IAR_DST.iar_dst_domain_8__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Domain_8</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>IAR_DST.Age_Group__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Age_Group</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Determine_Recommended_Level</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_IAR_DST_ID</name>
+        <label>Assign IAR-DST ID</label>
+        <locationX>974</locationX>
+        <locationY>974</locationY>
+        <assignmentItems>
+            <assignToReference>assessmentId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Create_IAR_DST</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_New_IAR_DST</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_RLoC_Lv1</name>
+        <label>Assign RLoC Lv1</label>
+        <locationX>578</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>RLoC</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Level 1 - Self Management</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RLOCExtract</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>1</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_IAR_DST</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_RLoC_Lv2</name>
+        <label>Assign RLoC Lv2</label>
+        <locationX>842</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>RLoC</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Level 2 - Low Intensity Services</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RLOCExtract</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>2</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_IAR_DST</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_RLoC_Lv2Plus</name>
+        <label>Assign RLoC Lv2+</label>
+        <locationX>1634</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>RLoC</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Level 2 or above - Review assessment on Contextual Domains to determine most appropriate placement</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RLOCExtract</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>2+</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_IAR_DST</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_RLoC_Lv3</name>
+        <label>Assign RLoC Lv3</label>
+        <locationX>1106</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>RLoC</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Level 3 or above - Review assessment on Contextual Domains to determine most appropriate placement</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RLOCExtract</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>3+</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_IAR_DST</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_RLoC_Lv4</name>
+        <label>Assign RLoC Lv4</label>
+        <locationX>1370</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>RLoC</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Level 4 or above - Review assessment on Contextual Domains to determine most appropriate placement</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RLOCExtract</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>4+</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_IAR_DST</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_RLoC_Lv5</name>
+        <label>Assign RLoC Lv5</label>
+        <locationX>314</locationX>
+        <locationY>674</locationY>
+        <assignmentItems>
+            <assignToReference>RLoC</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Level 5 - Acute and Specialist Community Mental Health Services</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>RLOCExtract</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>5</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_IAR_DST</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Check_for_IAR_DST</name>
+        <label>Check for IAR-DST</label>
+        <locationX>512</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>IAR_DST_Details</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Does Not Exist</defaultConnectorLabel>
+        <rules>
+            <name>Exists</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_IAR_DST</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>IAR_DST_Exists_Screen</targetReference>
+            </connector>
+            <label>Exists</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Determine_Recommended_Level</name>
+        <label>Determine Recommended Level</label>
+        <locationX>974</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>Assign_RLoC_Lv2Plus</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Level 2+</defaultConnectorLabel>
+        <rules>
+            <name>Level_5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Level5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_RLoC_Lv5</targetReference>
+            </connector>
+            <label>Level 5</label>
+        </rules>
+        <rules>
+            <name>Level_1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Level1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_RLoC_Lv1</targetReference>
+            </connector>
+            <label>Level 1</label>
+        </rules>
+        <rules>
+            <name>Level_2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Level2</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_RLoC_Lv2</targetReference>
+            </connector>
+            <label>Level 2</label>
+        </rules>
+        <rules>
+            <name>Level_3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Level3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_RLoC_Lv3</targetReference>
+            </connector>
+            <label>Level 3</label>
+        </rules>
+        <rules>
+            <name>Level_4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Level4</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_RLoC_Lv4</targetReference>
+            </connector>
+            <label>Level 4</label>
+        </rules>
+    </decisions>
+    <description>Test page (record triggered flow testing)</description>
+    <dynamicChoiceSets>
+        <name>Choice_AgeGroup</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Age_Group__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Level_Of_Care_Selection</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_practitioner_level_of_care__c</picklistField>
+        <picklistObject>Case</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Picklist_IAR1</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_domain_1__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Picklist_IAR2</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_domain_2__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Picklist_IAR3</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_domain_3__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Picklist_IAR4</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_domain_4__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Picklist_IAR5</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_domain_5__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Picklist_IAR6</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_domain_6__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Picklist_IAR7</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_domain_7__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>Picklist_IAR8</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>iar_dst_domain_8__c</picklistField>
+        <picklistObject>Assessment_IAR__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <name>Level1</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+AND(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_5__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_6__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_7__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_8__c})) &lt;= 1
+),
+AND(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_5__c})) &lt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_6__c})) &lt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_7__c})) &lt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_8__c})) &lt;= 1,
+OR(
+TEXT({!IAR_DST.Age_Group__c}) == &quot;Child&quot;,
+TEXT({!IAR_DST.Age_Group__c}) == &quot;Adolescent&quot;
+)
+),
+AND(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_5__c})) &lt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_6__c})) &lt;= 3,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_8__c})) &lt;= 1,
+OR(
+TEXT({!IAR_DST.Age_Group__c}) == &quot;Adult&quot;,
+TEXT({!IAR_DST.Age_Group__c}) == &quot;Older Adult&quot;
+)
+)
+),
+True,
+False
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Level2</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+AND(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_5__c})) &lt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_6__c})) &lt;= 2,
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_7__c})) &gt; 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_8__c})) &gt; 1
+),
+OR(
+TEXT({!IAR_DST.Age_Group__c}) == &quot;Child&quot;,
+TEXT({!IAR_DST.Age_Group__c}) == &quot;Adolescent&quot;
+)
+),
+AND(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_5__c})) &lt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_6__c})) &lt;= 3,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_8__c})) &gt; 1,
+OR(
+TEXT({!IAR_DST.Age_Group__c}) == &quot;Adult&quot;,
+TEXT({!IAR_DST.Age_Group__c}) == &quot;Older Adult&quot;
+)
+)
+),
+True,
+False
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Level3</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+AND(
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &gt;= 2
+),
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) = 0,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) = 1
+),
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &gt;= 3
+)
+),
+AND(
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &gt;= 2
+),
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) = 2,
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &gt;= 2
+)
+),
+AND(
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &gt;= 2
+),
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) = 3,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &lt;= 1,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &lt;= 1
+)
+),
+True,
+False
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Level4</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+AND(
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &gt;= 2
+),
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) = 3,
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) &gt;= 2,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_4__c})) &gt;= 2
+)
+),
+True,
+False
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Level5</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+OR(
+VALUE(TEXT({!IAR_DST.iar_dst_domain_1__c})) = 4,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_2__c})) = 4,
+VALUE(TEXT({!IAR_DST.iar_dst_domain_3__c})) = 4
+),
+True,
+False
+)</expression>
+    </formulas>
+    <interviewLabel>Assessment: IAR-DST {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Assessment: IAR-DST</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_IAR_DST</name>
+        <label>Create IAR-DST</label>
+        <locationX>974</locationX>
+        <locationY>866</locationY>
+        <connector>
+            <targetReference>Assign_IAR_DST_ID</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Age_Group__c</field>
+            <value>
+                <elementReference>Age_Group</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Assessment_Date__c</field>
+            <value>
+                <elementReference>Assessment_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Case__c</field>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Level_Of_Care__c</field>
+            <value>
+                <elementReference>RLoC</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>RecordTypeId</field>
+            <value>
+                <stringValue>012RF0000038f98YAA</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_domain_1__c</field>
+            <value>
+                <elementReference>Domain_1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_domain_2__c</field>
+            <value>
+                <elementReference>Domain_2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_domain_3__c</field>
+            <value>
+                <elementReference>Domain_3</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_domain_4__c</field>
+            <value>
+                <elementReference>Domain_4</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_domain_5__c</field>
+            <value>
+                <elementReference>Domain_5</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_domain_6__c</field>
+            <value>
+                <elementReference>Domain_6</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_domain_7__c</field>
+            <value>
+                <elementReference>Domain_7</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_domain_8__c</field>
+            <value>
+                <elementReference>Domain_8</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>iar_dst_recommended_level_of_care__c</field>
+            <value>
+                <elementReference>RLOCExtract</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Assessment_IAR__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_IAR_DST</name>
+        <label>Get IAR-DST</label>
+        <locationX>512</locationX>
+        <locationY>134</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Check_for_IAR_DST</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Case__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Assessment_IAR__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_New_IAR_DST</name>
+        <label>Get New IAR-DST</label>
+        <locationX>974</locationX>
+        <locationY>1082</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>IAR_DST_Complete</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Create_IAR_DST</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Assessment_IAR__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Case</name>
+        <label>Update Case</label>
+        <locationX>974</locationX>
+        <locationY>1298</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>iar_dst_practitioner_level_of_care__c</field>
+            <value>
+                <elementReference>Pracitioner_Level_Of_Care</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <screens>
+        <name>IAR_DST_Complete</name>
+        <label>IAR-DST Complete</label>
+        <locationX>974</locationX>
+        <locationY>1190</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Update_Case</targetReference>
+        </connector>
+        <fields>
+            <name>IARDST_Completed_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;IAR-DST Assessment Completed&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Recommended Level Of Care Result:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;{!RLoC}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Pracitioner_Level_Of_Care</name>
+            <choiceReferences>Level_Of_Care_Selection</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>Get_New_IAR_DST.Case__r.iar_dst_practitioner_level_of_care__c</elementReference>
+            </defaultValue>
+            <fieldText>Pracitioner Level Of Care</fieldText>
+            <fieldType>RadioButtons</fieldType>
+            <helpText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(252, 252, 252); font-size: 12px; color: rgb(64, 64, 64);&quot;&gt;The individualised level of care assessed by the practitioner for the referral. This option allows a different level of care to be selected if deemed appropriate. This field can be found on the &lt;/span&gt;&lt;strong style=&quot;background-color: rgb(252, 252, 252); font-size: 12px; color: rgb(64, 64, 64);&quot;&gt;Case &lt;/strong&gt;&lt;span style=&quot;background-color: rgb(252, 252, 252); font-size: 12px; color: rgb(64, 64, 64);&quot;&gt;page.&lt;/span&gt;&lt;/p&gt;</helpText>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>IAR_DST_Details</name>
+        <label>IAR-DST Details</label>
+        <locationX>974</locationX>
+        <locationY>350</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assign_Domains</targetReference>
+        </connector>
+        <fields>
+            <name>Details</name>
+            <fieldText>Details:</fieldText>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Details_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Assessment_Date</name>
+                    <dataType>Date</dataType>
+                    <defaultValue>
+                        <elementReference>sessiondate</elementReference>
+                    </defaultValue>
+                    <fieldText>Assessment Date:</fieldText>
+                    <fieldType>InputField</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <validationRule>
+                        <errorMessage>&lt;p&gt;Date cannot be in the future.&lt;/p&gt;</errorMessage>
+                        <formulaExpression>{!Assessment_Date} &lt;= Today()</formulaExpression>
+                    </validationRule>
+                </fields>
+                <fields>
+                    <name>Age_Group</name>
+                    <choiceReferences>Choice_AgeGroup</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Age Group:</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Primary_Domains</name>
+            <fieldText>Primary Domains:</fieldText>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Primary_Domains_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Domain_1</name>
+                    <choiceReferences>Picklist_IAR1</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Domain 1: Symptom severity and distress</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Domain_3</name>
+                    <choiceReferences>Picklist_IAR3</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Domain 3: Functioning</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Primary_Domains_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Domain_2</name>
+                    <choiceReferences>Picklist_IAR2</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Domain 2: Harm</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Domain_4</name>
+                    <choiceReferences>Picklist_IAR4</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Domain 4: Impact of co-existing conditions</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Contextual_Domains</name>
+            <fieldText>Contextual Domains:</fieldText>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Contextual_Domains_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Domain_5</name>
+                    <choiceReferences>Picklist_IAR5</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Domain 5: Service use and response history</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Domain_7</name>
+                    <choiceReferences>Picklist_IAR7</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Domain 7: Family and other supports</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <fields>
+                <name>Contextual_Domains_Column2</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Domain_6</name>
+                    <choiceReferences>Picklist_IAR6</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Domain 6: Social and environmental stressors</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Domain_8</name>
+                    <choiceReferences>Picklist_IAR8</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Domain 8: Engagement and motivation</fieldText>
+                    <fieldType>RadioButtons</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithHeader</regionContainerType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>IAR_DST_Exists_Screen</name>
+        <label>IAR-DST Exists Screen</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>IAR_DST_Exists_Text</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;IAR-DST Already Exists&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;An &lt;strong&gt;IAR-DST Assessment&lt;/strong&gt; already exists on this case. It can be viewed in the &lt;strong&gt;Assessments&lt;/strong&gt; Tab.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>386</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_IAR_DST</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>assessmentId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>IAR_DST</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Assessment_IAR__c</objectType>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>RLoC</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>RLOCExtract</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>sessiondate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

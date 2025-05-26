@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Session_Date_between_Start_End</fullName>
+    <active>true</active>
+    <description>Session Date has to be between the start and end date.</description>
+    <errorConditionFormula>AND(Program__c = &quot;a13RF00000DBcXCYA1&quot;,
+OR(Session_Date__c &lt; Case__r.Date_of_Enquiry_or_Referral__c,
+Session_Date__c &gt; Case__r.Case_Closed_Date__c))</errorConditionFormula>
+    <errorDisplayField>Start_Date_Time__c</errorDisplayField>
+    <errorMessage>Session Date cannot be before the Enquiry/Referral Date or after the End Date of the Case.</errorMessage>
+</ValidationRule>

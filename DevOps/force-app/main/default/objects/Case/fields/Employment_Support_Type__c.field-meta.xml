@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employment_Support_Type__c</fullName>
+    <description>Referral data field required by Opportunity Pathways Program to record whether pre- or post-employment support is being provided to the Participant</description>
+    <inlineHelpText>SS - choose whether pre- or post-employment support for the Participant</inlineHelpText>
+    <label>Employment Support Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-employment Support</fullName>
+                <default>false</default>
+                <label>Pre-employment Support</label>
+            </value>
+            <value>
+                <fullName>Post-employment Support</fullName>
+                <default>false</default>
+                <label>Post-employment Support</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

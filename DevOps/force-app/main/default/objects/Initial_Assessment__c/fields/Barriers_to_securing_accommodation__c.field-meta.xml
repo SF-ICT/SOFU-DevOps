@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Barriers_to_securing_accommodation__c</fullName>
+    <label>Barriers to securing accommodation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affordability</fullName>
+                <default>false</default>
+                <label>Affordability</label>
+            </value>
+            <value>
+                <fullName>Applying but not getting approved</fullName>
+                <default>false</default>
+                <label>Applying but not getting approved</label>
+            </value>
+            <value>
+                <fullName>Disability and requires additional support transport</fullName>
+                <default>false</default>
+                <label>Disability and requires additional support transport</label>
+            </value>
+            <value>
+                <fullName>Complex AOD</fullName>
+                <default>false</default>
+                <label>Complex AOD</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+            <value>
+                <fullName>IT Literacy</fullName>
+                <default>false</default>
+                <label>IT Literacy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

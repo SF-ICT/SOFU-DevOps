@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TA_Location__c</fullName>
+    <label>TA Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Australian Hotel</fullName>
+                <default>false</default>
+                <label>Australian Hotel</label>
+            </value>
+            <value>
+                <fullName>Soorley Street</fullName>
+                <default>false</default>
+                <label>Soorley Street</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

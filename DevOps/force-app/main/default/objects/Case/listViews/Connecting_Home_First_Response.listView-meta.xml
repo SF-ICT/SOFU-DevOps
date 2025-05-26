@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connecting_Home_First_Response</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Case_Owner_Full_Name__c</field>
+        <operation>equals</operation>
+        <value>Connecting Home - Lismore Youth</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Enquiry_New,Enquiry - In Progress,Referral,Planning,Intake,Service Delivery</value>
+    </filters>
+    <label>Connecting Home First Response</label>
+    <sharedTo>
+        <group>Connecting_Home_All</group>
+    </sharedTo>
+</ListView>

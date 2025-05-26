@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_unable_to_provide_service__c</fullName>
+    <label>Reason unable to provide service</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Case_Close_Reason__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Client does not think they need help</fullName>
+                <default>false</default>
+                <label>Client does not think they need help</label>
+            </value>
+            <value>
+                <fullName>Client does not think they will get anything from participating</fullName>
+                <default>false</default>
+                <label>Client does not think they will get anything from participating</label>
+            </value>
+            <value>
+                <fullName>Client wants to continue with existing case manager</fullName>
+                <default>false</default>
+                <label>Client wants to continue with existing case manager</label>
+            </value>
+            <value>
+                <fullName>Contacted parents but not client</fullName>
+                <default>false</default>
+                <label>Contacted parents but not client</label>
+            </value>
+            <value>
+                <fullName>Could not locate at court</fullName>
+                <default>false</default>
+                <label>Could not locate at court</label>
+            </value>
+            <value>
+                <fullName>Deemed unsafe to work with risk assessment</fullName>
+                <default>false</default>
+                <label>Deemed unsafe to work with risk assessment</label>
+            </value>
+            <value>
+                <fullName>Does not answer or return phone calls or letters</fullName>
+                <default>false</default>
+                <label>Does not answer or return phone calls or letters</label>
+            </value>
+            <value>
+                <fullName>Existing case manager declines YOT</fullName>
+                <default>false</default>
+                <label>Existing case manager declines YOT</label>
+            </value>
+            <value>
+                <fullName>Family already linked with service</fullName>
+                <default>false</default>
+                <label>Family already linked with service</label>
+            </value>
+            <value>
+                <fullName>Family declined</fullName>
+                <default>false</default>
+                <label>Family declined</label>
+            </value>
+            <value>
+                <fullName>Family engaged with services</fullName>
+                <default>false</default>
+                <label>Family engaged with services</label>
+            </value>
+            <value>
+                <fullName>Family referred back to CS</fullName>
+                <default>false</default>
+                <label>Family referred back to CS</label>
+            </value>
+            <value>
+                <fullName>Family will self-refer</fullName>
+                <default>false</default>
+                <label>Family will self-refer</label>
+            </value>
+            <value>
+                <fullName>Further assessment required</fullName>
+                <default>false</default>
+                <label>Further assessment required</label>
+            </value>
+            <value>
+                <fullName>Incorrect address details</fullName>
+                <default>false</default>
+                <label>Incorrect address details</label>
+            </value>
+            <value>
+                <fullName>Incorrect phone details</fullName>
+                <default>false</default>
+                <label>Incorrect phone details</label>
+            </value>
+            <value>
+                <fullName>Information provided only</fullName>
+                <default>false</default>
+                <label>Information provided only</label>
+            </value>
+            <value>
+                <fullName>Lived too far outside LAC</fullName>
+                <default>false</default>
+                <label>Lived too far outside LAC</label>
+            </value>
+            <value>
+                <fullName>Moved out of the area</fullName>
+                <default>false</default>
+                <label>Moved out of the area</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>No available contact information</fullName>
+                <default>false</default>
+                <label>No available contact information</label>
+            </value>
+            <value>
+                <fullName>No need identified</fullName>
+                <default>false</default>
+                <label>No need identified</label>
+            </value>
+            <value>
+                <fullName>Open child protection order</fullName>
+                <default>false</default>
+                <label>Open child protection order</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Parents do not think they need help</fullName>
+                <default>false</default>
+                <label>Parents do not think they need help</label>
+            </value>
+            <value>
+                <fullName>Parents do not want people knowing their business</fullName>
+                <default>false</default>
+                <label>Parents do not want people knowing their business</label>
+            </value>
+            <value>
+                <fullName>Participant can&apos;t be contacted</fullName>
+                <default>false</default>
+                <label>Participant can&apos;t be contacted</label>
+            </value>
+            <value>
+                <fullName>Participant doesn&apos;t meet service criteria</fullName>
+                <default>false</default>
+                <label>Participant doesn&apos;t meet service criteria</label>
+            </value>
+            <value>
+                <fullName>Service(s) at capacity</fullName>
+                <default>false</default>
+                <label>Service(s) at capacity</label>
+            </value>
+            <value>
+                <fullName>Unable to be contacted after initial face to face contact</fullName>
+                <default>false</default>
+                <label>Unable to be contacted after initial face to face contact</label>
+            </value>
+            <value>
+                <fullName>Unable to be contacted after initial phone contact</fullName>
+                <default>false</default>
+                <label>Unable to be contacted after initial phone contact</label>
+            </value>
+            <value>
+                <fullName>Waitlist Expired</fullName>
+                <default>false</default>
+                <label>Waitlist Expired</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Poor Health (Physical Health)</controllingFieldValue>
+            <controllingFieldValue>1</controllingFieldValue>
+            <controllingFieldValue>Poor Health (Mental Health)</controllingFieldValue>
+            <controllingFieldValue>8</controllingFieldValue>
+            <controllingFieldValue>Issue with Provider</controllingFieldValue>
+            <controllingFieldValue>4</controllingFieldValue>
+            <controllingFieldValue>Caring Responsibilities</controllingFieldValue>
+            <controllingFieldValue>5</controllingFieldValue>
+            <controllingFieldValue>Incarceration</controllingFieldValue>
+            <controllingFieldValue>12</controllingFieldValue>
+            <controllingFieldValue>Drug and Alcohol Misuse</controllingFieldValue>
+            <controllingFieldValue>99</controllingFieldValue>
+            <controllingFieldValue>Life Event</controllingFieldValue>
+            <controllingFieldValue>Lack of Family and Peer Support</controllingFieldValue>
+            <controllingFieldValue>Cultural Reasons</controllingFieldValue>
+            <controllingFieldValue>Reason for Disengagement Unknown</controllingFieldValue>
+            <controllingFieldValue>Completed Engagement</controllingFieldValue>
+            <controllingFieldValue>Fear of Losing Benefit</controllingFieldValue>
+            <controllingFieldValue>Consult &amp; Enquiry</controllingFieldValue>
+            <controllingFieldValue>Supported by other agency</controllingFieldValue>
+            <controllingFieldValue>Family/Individual no longer requires support</controllingFieldValue>
+            <controllingFieldValue>Referred to other Agency</controllingFieldValue>
+            <controllingFieldValue>Other (specify in notes)</controllingFieldValue>
+            <controllingFieldValue>3</controllingFieldValue>
+            <controllingFieldValue>Fear of losing tenancy</controllingFieldValue>
+            <controllingFieldValue>7</controllingFieldValue>
+            <controllingFieldValue>Not Eligible or Suitable</controllingFieldValue>
+            <controllingFieldValue>11</controllingFieldValue>
+            <controllingFieldValue>Client did not Engage</controllingFieldValue>
+            <controllingFieldValue>Lack of Program Capacity</controllingFieldValue>
+            <controllingFieldValue>Case plan goal achieved</controllingFieldValue>
+            <controllingFieldValue>Eligibility criteria no longer met</controllingFieldValue>
+            <controllingFieldValue>Family/Individual declined service</controllingFieldValue>
+            <controllingFieldValue>Family/Individual relocated out of area</controllingFieldValue>
+            <controllingFieldValue>Family/Individual withdrew</controllingFieldValue>
+            <controllingFieldValue>Family/Individual not engaging with service</controllingFieldValue>
+            <controllingFieldValue>Transfer to different worker in same funding program</controllingFieldValue>
+            <controllingFieldValue>Transfer to different worker &amp; finding program</controllingFieldValue>
+            <controllingFieldValue>10</controllingFieldValue>
+            <controllingFieldValue>9</controllingFieldValue>
+            <controllingFieldValue>Successfully completed program</controllingFieldValue>
+            <controllingFieldValue>6</controllingFieldValue>
+            <controllingFieldValue>No longer meet eligibility requirements</controllingFieldValue>
+            <controllingFieldValue>2</controllingFieldValue>
+            <valueName>N/A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exited from Waitlist</controllingFieldValue>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <controllingFieldValue>Client did not Engage</controllingFieldValue>
+            <controllingFieldValue>Eligibility criteria no longer met</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exited from Waitlist</controllingFieldValue>
+            <valueName>Waitlist Expired</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Family already linked with service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Family declined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Family engaged with services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Family referred back to CS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Family will self-refer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Further assessment required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Information provided only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>No need identified</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Open child protection order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Participant can&apos;t be contacted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Participant doesn&apos;t meet service criteria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Unable to provide service</controllingFieldValue>
+            <valueName>Service(s) at capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <valueName>Client does not think they need help</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <valueName>Client does not think they will get anything from participating</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <valueName>Client wants to continue with existing case manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <valueName>Contacted parents but not client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <valueName>Parents do not think they need help</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <valueName>Parents do not want people knowing their business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <valueName>Unable to be contacted after initial face to face contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client Declined</controllingFieldValue>
+            <valueName>Unable to be contacted after initial phone contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client did not Engage</controllingFieldValue>
+            <valueName>Could not locate at court</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client did not Engage</controllingFieldValue>
+            <valueName>Does not answer or return phone calls or letters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client did not Engage</controllingFieldValue>
+            <valueName>Incorrect address details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client did not Engage</controllingFieldValue>
+            <valueName>Incorrect phone details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client did not Engage</controllingFieldValue>
+            <valueName>Moved out of the area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Client did not Engage</controllingFieldValue>
+            <valueName>No available contact information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eligibility criteria no longer met</controllingFieldValue>
+            <valueName>Deemed unsafe to work with risk assessment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eligibility criteria no longer met</controllingFieldValue>
+            <valueName>Existing case manager declines YOT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Eligibility criteria no longer met</controllingFieldValue>
+            <valueName>Lived too far outside LAC</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

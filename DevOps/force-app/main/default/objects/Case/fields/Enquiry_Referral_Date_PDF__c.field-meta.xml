@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enquiry_Referral_Date_PDF__c</fullName>
+    <description>Date in Text format for PDF - Not for Page Use</description>
+    <externalId>false</externalId>
+    <formula>TEXT(DAY(Date_of_Enquiry_or_Referral__c)) &amp; &quot;-&quot; &amp; TEXT(MONTH(Date_of_Enquiry_or_Referral__c)) &amp; &quot;-&quot; &amp; TEXT(YEAR(Date_of_Enquiry_or_Referral__c))</formula>
+    <inlineHelpText>Date in Text format for PDF - Not for Page Use</inlineHelpText>
+    <label>Enquiry/Referral Date PDF</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

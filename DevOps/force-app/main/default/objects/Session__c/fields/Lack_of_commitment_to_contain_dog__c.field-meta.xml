@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lack_of_commitment_to_contain_dog__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Was there a lack of commitment to containing dogs or having them on a leash prior to the visit?</inlineHelpText>
+    <label>Lack of commitment to contain dog</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

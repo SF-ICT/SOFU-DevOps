@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flood_Assistance_Comments__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a place to note down any services that are not accurately described using the multi-picklist options above, or to expand on what&apos;s been selected. Note, this field is limited to 255 characters and is not meant to replace Case Notes</inlineHelpText>
+    <label>Flood Assistance Comments</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

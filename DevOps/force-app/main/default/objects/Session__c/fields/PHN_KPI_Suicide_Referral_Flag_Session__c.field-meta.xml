@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PHN_KPI_Suicide_Referral_Flag_Session__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will store the first session that matches the criteria for counting the contact attempt for a case that is a suicide referral for PMHC reporters.</description>
+    <label>PHN KPI Suicide Referral Flag Session</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

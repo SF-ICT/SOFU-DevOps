@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMHC_Closed_Date</fullName>
+    <active>true</active>
+    <description>Where the Completion Status has been recorded using one of the ‘Episode closed’ responses the Case must have an End Date, and/or Cases that have an End Date must have a Completion Status.</description>
+    <errorConditionFormula>ISBLANK(Case_Closed_Date__c) &amp;&amp; 
+OR(CONTAINS(Program_Name__c, &quot;Care Connect&quot;),
+CONTAINS(Program_Name__c, &quot;Veterans Connect&quot;),
+CONTAINS(Program_Name__c, &quot;Medicare Mental Health Centre&quot;)) &amp;&amp;
+(ISPICKVAL(Completion_Status__c, &quot;1&quot;) ||
+ISPICKVAL(Completion_Status__c, &quot;2&quot;) ||
+ISPICKVAL(Completion_Status__c, &quot;3&quot;) ||
+ISPICKVAL(Completion_Status__c, &quot;4&quot;) ||
+ISPICKVAL(Completion_Status__c, &quot;5&quot;) ||
+ISPICKVAL(Completion_Status__c, &quot;6&quot;))</errorConditionFormula>
+    <errorDisplayField>Case_Closed_Date__c</errorDisplayField>
+    <errorMessage>Cases with a Completion Status with Episode Ended must have a Close Date.</errorMessage>
+</ValidationRule>

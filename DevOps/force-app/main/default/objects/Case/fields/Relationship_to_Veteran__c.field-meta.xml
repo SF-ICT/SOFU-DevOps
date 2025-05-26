@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_to_Veteran__c</fullName>
+    <description>VCC - Relationship to Veteran</description>
+    <inlineHelpText>VCC - Relationship to Veteran</inlineHelpText>
+    <label>Relationship to Veteran</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Self</fullName>
+                <default>false</default>
+                <label>Self</label>
+            </value>
+            <value>
+                <fullName>Child</fullName>
+                <default>false</default>
+                <label>Child</label>
+            </value>
+            <value>
+                <fullName>Spouse/Partner</fullName>
+                <default>false</default>
+                <label>Spouse/Partner</label>
+            </value>
+            <value>
+                <fullName>Parent/Guardian</fullName>
+                <default>false</default>
+                <label>Parent/Guardian</label>
+            </value>
+            <value>
+                <fullName>Sibling</fullName>
+                <default>false</default>
+                <label>Sibling</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

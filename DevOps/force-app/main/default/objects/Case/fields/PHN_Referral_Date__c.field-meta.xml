@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PHN_Referral_Date__c</fullName>
+    <description>PHN - Converts Enquiry/Referral date to the format DDMMYYYY for PHN uploads.</description>
+    <externalId>false</externalId>
+    <formula>IF(LEN(TEXT(DAY(Date_of_Enquiry_or_Referral__c))) &lt; 2,&apos;0&apos; + TEXT(DAY(Date_of_Enquiry_or_Referral__c)), TEXT(DAY(Date_of_Enquiry_or_Referral__c))) + IF(LEN(TEXT(MONTH(Date_of_Enquiry_or_Referral__c))) &lt; 2,&apos;0&apos; + TEXT(MONTH(Date_of_Enquiry_or_Referral__c)), TEXT(MONTH(Date_of_Enquiry_or_Referral__c))) + TEXT(YEAR(Date_of_Enquiry_or_Referral__c))</formula>
+    <label>PHN Referral Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

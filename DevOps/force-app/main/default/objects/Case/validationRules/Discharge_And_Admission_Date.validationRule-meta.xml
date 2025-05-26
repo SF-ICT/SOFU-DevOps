@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Discharge_And_Admission_Date</fullName>
+    <active>true</active>
+    <description>Ensures the discharge date is after the admission date.</description>
+    <errorConditionFormula>Admission_Date__c &gt; Inpatient_Discharge_Date__c</errorConditionFormula>
+    <errorDisplayField>Inpatient_Discharge_Date__c</errorDisplayField>
+    <errorMessage>Discharge date cannot be before Admission date.</errorMessage>
+</ValidationRule>

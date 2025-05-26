@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEX_Prevent_Outlet_Activity_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED(Outlet_Activity__c) &amp;&amp;
+Program__r.DEX_Reporter__c &amp;&amp;
+OR(NOT(ISBLANK(Dex_Last_Sync__c)), 
+NOT(ISNULL(Dex_Last_Sync__c)))</errorConditionFormula>
+    <errorDisplayField>Outlet_Activity__c</errorDisplayField>
+    <errorMessage>The Outlet Activity cannot be changed once the case has been synced to DEX.</errorMessage>
+</ValidationRule>

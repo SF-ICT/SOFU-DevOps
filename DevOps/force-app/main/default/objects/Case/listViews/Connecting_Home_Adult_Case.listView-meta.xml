@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connecting_Home_Adult_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Date_Of_Last_Session__c</columns>
+    <columns>Case_Owner_Full_Name__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>Connecting Home waitlist - Lismore Adult</label>
+    <queue>Connecting_Home_Lismore_Adult</queue>
+    <sharedTo>
+        <group>Connecting_Home_Adult</group>
+        <group>Connecting_Home_Adult_Complex</group>
+        <group>Connecting_Home_Intake</group>
+        <group>Customer_Experience</group>
+    </sharedTo>
+</ListView>

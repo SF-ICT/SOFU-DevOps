@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Risk_Updated__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used in Automated flow to prevent endless loop</description>
+    <inlineHelpText>Used in Automated flow to prevent endless loop</inlineHelpText>
+    <label>Risk Updated</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

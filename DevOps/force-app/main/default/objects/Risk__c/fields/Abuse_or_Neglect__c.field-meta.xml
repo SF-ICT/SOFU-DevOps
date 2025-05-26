@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Abuse_or_Neglect__c</fullName>
+    <label>Abuse or Neglect</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abuse (physical, sexual, emotional)</fullName>
+                <default>false</default>
+                <label>Abuse (physical, sexual, emotional)</label>
+            </value>
+            <value>
+                <fullName>Evidence of neglect</fullName>
+                <default>false</default>
+                <label>Evidence of neglect</label>
+            </value>
+            <value>
+                <fullName>History of abuse and neglect</fullName>
+                <default>false</default>
+                <label>History of abuse and neglect</label>
+            </value>
+            <value>
+                <fullName>Community Service Involvement (ChildProtection Issues)</fullName>
+                <default>false</default>
+                <label>Community Service Involvement (ChildProtection Issues)</label>
+            </value>
+            <value>
+                <fullName>Aggression from others</fullName>
+                <default>false</default>
+                <label>Aggression from others</label>
+            </value>
+            <value>
+                <fullName>Exploitation from others</fullName>
+                <default>false</default>
+                <label>Exploitation from others</label>
+            </value>
+            <value>
+                <fullName>Being targeted by others</fullName>
+                <default>false</default>
+                <label>Being targeted by others</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+                <label>Unknown</label>
+            </value>
+            <value>
+                <fullName>Not Applicable</fullName>
+                <default>false</default>
+                <label>Not Applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

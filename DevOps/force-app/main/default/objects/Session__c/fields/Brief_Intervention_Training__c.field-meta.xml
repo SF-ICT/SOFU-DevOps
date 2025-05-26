@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brief_Intervention_Training__c</fullName>
+    <label>Brief Intervention Training</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Communicating with confidence</fullName>
+                <default>false</default>
+                <label>Communicating with confidence</label>
+            </value>
+            <value>
+                <fullName>Understanding my anger</fullName>
+                <default>false</default>
+                <label>Understanding my anger</label>
+            </value>
+            <value>
+                <fullName>Physical activity for wellbeing</fullName>
+                <default>false</default>
+                <label>Physical activity for wellbeing</label>
+            </value>
+            <value>
+                <fullName>Understanding and managing my moods and anxiety</fullName>
+                <default>false</default>
+                <label>Understanding and managing my moods and anxiety</label>
+            </value>
+            <value>
+                <fullName>Problem-solving skills</fullName>
+                <default>false</default>
+                <label>Problem-solving skills</label>
+            </value>
+            <value>
+                <fullName>Mindfulness and relaxation</fullName>
+                <default>false</default>
+                <label>Mindfulness and relaxation</label>
+            </value>
+            <value>
+                <fullName>Understanding and Accepting myself</fullName>
+                <default>false</default>
+                <label>Understanding and Accepting myself</label>
+            </value>
+            <value>
+                <fullName>Sleeping Well</fullName>
+                <default>false</default>
+                <label>Sleeping Well</label>
+            </value>
+            <value>
+                <fullName>Nutrition for Wellbeing</fullName>
+                <default>false</default>
+                <label>Nutrition for Wellbeing</label>
+            </value>
+            <value>
+                <fullName>Psychoeducation provided to family and/or guardian to supplement supports provided to participant</fullName>
+                <default>false</default>
+                <label>Psychoeducation provided to family and/or guardian to supplement supports provided to participant</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>9</visibleLines>
+</CustomField>

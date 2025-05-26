@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParentId</fullName>
+    <inlineHelpText>Leave this field blank if the Case represents a Family Case and the Primary Participant, or link this Case to an appropriate Family Case file if this is one of the related Cases/Participants such as a child or other family member.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

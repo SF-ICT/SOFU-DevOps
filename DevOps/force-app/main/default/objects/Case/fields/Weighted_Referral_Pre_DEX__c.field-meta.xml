@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weighted_Referral_Pre_DEX__c</fullName>
+    <description>Calculates the Weighted Referral based on time accumulated in Sessions and Case Notes - Pre-DEX</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(Direct_Hours_Total__c &gt; 2, Direct_Hours_Total__c &lt;= 5),0.5,
+IF(AND(Direct_Hours_Total__c &gt; 5, Direct_Hours_Total__c &lt; 15),1.2,
+IF(Direct_Hours_Total__c &gt;= 15,3.4,0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Calculates the Weighted Referral based on time accumulated in Sessions and Case Notes - Pre-DEX</inlineHelpText>
+    <label>Weighted Referral Pre-DEX</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

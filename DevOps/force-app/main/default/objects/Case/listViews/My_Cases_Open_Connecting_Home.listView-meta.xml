@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Cases_Open_Connecting_Home</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Date_Of_Last_Session__c</columns>
+    <columns>Program__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>equals</operation>
+        <value>Planning,Intake,Service Delivery</value>
+    </filters>
+    <filters>
+        <field>Hide_from_List_Views__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>My Cases (Open) - Connecting Home</label>
+    <sharedTo>
+        <group>Connecting_Home_All</group>
+        <group>Connecting_Home_Youth</group>
+    </sharedTo>
+</ListView>

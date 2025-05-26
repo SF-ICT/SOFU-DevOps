@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Principle_Drug_Change</fullName>
+    <active>true</active>
+    <description>Prevents Principal Drug from being changed.</description>
+    <errorConditionFormula>Program_Name__c = &quot;The Bridge&quot; &amp;&amp;
+NADAbase_Extracted__c = true &amp;&amp;
+ISCHANGED(AOD_PDoC__c)</errorConditionFormula>
+    <errorDisplayField>AOD_PDoC__c</errorDisplayField>
+    <errorMessage>Principal Drug of Concern/Gambling cannot be changed. If a new Principal Drug of Concern/Gambling needs to be set a new case must be created.</errorMessage>
+</ValidationRule>

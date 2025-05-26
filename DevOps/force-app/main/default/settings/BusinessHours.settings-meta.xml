@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>17:00:00.000Z</fridayEndTime>
+        <fridayStartTime>08:30:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>08:30:00.000Z</mondayStartTime>
+        <name>Default</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>08:30:00.000Z</thursdayStartTime>
+        <timeZoneId>Australia/Sydney</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>08:30:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>08:30:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <businessHours>
+        <active>true</active>
+        <default>false</default>
+        <fridayEndTime>17:00:00.000Z</fridayEndTime>
+        <fridayStartTime>08:30:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>08:30:00.000Z</mondayStartTime>
+        <name>Weekend Business Hours</name>
+        <saturdayEndTime>17:00:00.000Z</saturdayEndTime>
+        <saturdayStartTime>08:30:00.000Z</saturdayStartTime>
+        <sundayEndTime>17:00:00.000Z</sundayEndTime>
+        <sundayStartTime>08:30:00.000Z</sundayStartTime>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>08:30:00.000Z</thursdayStartTime>
+        <timeZoneId>Australia/Sydney</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>08:30:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>08:30:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <activityDate>2021-04-25</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Anzac Day</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-04-27</activityDate>
+        <description>Monday Holiday as Anzac Day is on the Saturday</description>
+        <isRecurring>false</isRecurring>
+        <name>Anzac Day Holiday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-01-26</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Australia Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Boxing Day</name>
+        <recurrenceDayOfMonth>26</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2020-12-26</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2020-12-28</activityDate>
+        <description>Monday holiday as boxing day falls on a weekend.</description>
+        <isRecurring>false</isRecurring>
+        <name>Boxing Day Holiday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-12-28</activityDate>
+        <description>Tuesday Holiday as Boxing Day is on a Sunday</description>
+        <isRecurring>false</isRecurring>
+        <name>Boxing Day Holiday</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Christmas Day</name>
+        <recurrenceDayOfMonth>25</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2020-12-25</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2021-12-27</activityDate>
+        <description>Monday Holiday as Christmas is on a Saturday</description>
+        <isRecurring>false</isRecurring>
+        <name>Christmas Holiday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-04-05</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Easter Monday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-04-02</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Good Friday</name>
+    </holidays>
+    <holidays>
+        <activityDate>2021-10-04</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Labour Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>New Years Day</name>
+        <recurrenceDayOfMonth>1</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2021-01-01</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2021-06-14</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Queen&apos;s Birthday</name>
+    </holidays>
+</BusinessHoursSettings>

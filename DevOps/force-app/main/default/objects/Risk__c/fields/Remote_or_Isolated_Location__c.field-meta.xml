@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remote_or_Isolated_Location__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Do they live in an isolated or remote location?</description>
+    <inlineHelpText>Do they live in an isolated or remote location?</inlineHelpText>
+    <label>Remote or Isolated Location</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

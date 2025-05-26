@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Session_Participants</fullName>
+    <active>true</active>
+    <description>No session participants and unidentified clients =0 or &gt; same field on the Case record.</description>
+    <errorConditionFormula>OR(Case__r.Total_Number_of_Unidentified_Clients__c &gt;  Total_Number_of_Unidentified_Clients__c,  Total_Number_of_Unidentified_Clients__c = 0) &amp;&amp;  ISBLANK(Case_Contact_Session_Participant__c) &amp;&amp;  Case__r.RecordTypeId = &quot;0124a0000004LBKAA2&quot;</errorConditionFormula>
+    <errorMessage>People attending a session cannot be 0. Record # of Unidentified Clients or Add Session Participant/s.</errorMessage>
+</ValidationRule>

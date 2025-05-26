@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Known_Record_of_Violence_Aggression__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Has the client been identified by NSW Health, Housing NSW, NSW Family and Community Services, Police or any other NSW, interstate, commonwealth or community agency as having issues relating to violence or aggression in the past?</description>
+    <inlineHelpText>Has the client been identified by NSW Health, Housing NSW, NSW Family and Community Services, Police or any other NSW, interstate, commonwealth or community agency as having issues relating to violence or aggression in the past?</inlineHelpText>
+    <label>Known Record of Violence / Aggression</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

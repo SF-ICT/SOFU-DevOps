@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome_of_MRG__c</fullName>
+    <description>Outcome after completing the online MRG Decision Tree</description>
+    <inlineHelpText>Outcome after completing the online MRG Decision Tree. If you decide to override the MRG, please provide a brief justification in the text box below</inlineHelpText>
+    <label>Outcome of MRG</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Immediate Report</fullName>
+                <default>false</default>
+                <label>Immediate Report</label>
+            </value>
+            <value>
+                <fullName>Report to Child Services</fullName>
+                <default>false</default>
+                <label>Report to Child Services</label>
+            </value>
+            <value>
+                <fullName>Document &amp; Monitor</fullName>
+                <default>false</default>
+                <label>Document &amp; Monitor</label>
+            </value>
+            <value>
+                <fullName>Override: Professional Judgement</fullName>
+                <default>false</default>
+                <label>Override: Professional Judgement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

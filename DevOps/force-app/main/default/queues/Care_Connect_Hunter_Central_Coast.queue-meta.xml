@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Care Connect - Hunter Central Coast</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Care_Connect_Hunter_Central_Coast</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Program__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ServiceResource</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ServiceTerritory</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

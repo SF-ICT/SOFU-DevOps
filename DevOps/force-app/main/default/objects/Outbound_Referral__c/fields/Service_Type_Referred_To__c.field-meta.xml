@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Type_Referred_To__c</fullName>
+    <description>RCC - Service the Client was Referred for</description>
+    <inlineHelpText>Service the Client was Referred for</inlineHelpText>
+    <label>Service Type Referred To</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A - no referral made</fullName>
+                <default>false</default>
+                <label>N/A - no referral made</label>
+            </value>
+            <value>
+                <fullName>Adventure Therapy</fullName>
+                <default>false</default>
+                <label>Adventure Therapy</label>
+            </value>
+            <value>
+                <fullName>Aged Care</fullName>
+                <default>false</default>
+                <label>Aged Care</label>
+            </value>
+            <value>
+                <fullName>Allied Health</fullName>
+                <default>false</default>
+                <label>Allied Health</label>
+            </value>
+            <value>
+                <fullName>Builders</fullName>
+                <default>false</default>
+                <label>Builders</label>
+            </value>
+            <value>
+                <fullName>Centrelink</fullName>
+                <default>false</default>
+                <label>Centrelink</label>
+            </value>
+            <value>
+                <fullName>Child Protection Helpline</fullName>
+                <default>false</default>
+                <label>Child Protection Helpline</label>
+            </value>
+            <value>
+                <fullName>Community Transport</fullName>
+                <default>false</default>
+                <label>Community Transport</label>
+            </value>
+            <value>
+                <fullName>Disability</fullName>
+                <default>false</default>
+                <label>Disability</label>
+            </value>
+            <value>
+                <fullName>Disability Counselling</fullName>
+                <default>false</default>
+                <label>Disability Counselling</label>
+            </value>
+            <value>
+                <fullName>Domestic Violence Support</fullName>
+                <default>false</default>
+                <label>Domestic Violence Support</label>
+            </value>
+            <value>
+                <fullName>Drug and alcohol</fullName>
+                <default>false</default>
+                <label>Drug and alcohol</label>
+            </value>
+            <value>
+                <fullName>Early childhood education</fullName>
+                <default>false</default>
+                <label>Early childhood education</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Environmental Access</fullName>
+                <default>false</default>
+                <label>Environmental Access</label>
+            </value>
+            <value>
+                <fullName>Financial Counselling</fullName>
+                <default>false</default>
+                <label>Financial Counselling</label>
+            </value>
+            <value>
+                <fullName>Food Relief</fullName>
+                <default>false</default>
+                <label>Food Relief</label>
+            </value>
+            <value>
+                <fullName>Gambling counselling</fullName>
+                <default>false</default>
+                <label>Gambling counselling</label>
+            </value>
+            <value>
+                <fullName>Geotechnical Assessment</fullName>
+                <default>false</default>
+                <label>Geotechnical Assessment</label>
+            </value>
+            <value>
+                <fullName>GP</fullName>
+                <default>false</default>
+                <label>GP</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Indigenous Counselling</fullName>
+                <default>false</default>
+                <label>Indigenous Counselling</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>In-Kind Support</fullName>
+                <default>false</default>
+                <label>In-Kind Support</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Material Aid</fullName>
+                <default>false</default>
+                <label>Material Aid</label>
+            </value>
+            <value>
+                <fullName>Mental health</fullName>
+                <default>false</default>
+                <label>Mental health</label>
+            </value>
+            <value>
+                <fullName>Other counselling</fullName>
+                <default>false</default>
+                <label>Other counselling</label>
+            </value>
+            <value>
+                <fullName>Parent/family support</fullName>
+                <default>false</default>
+                <label>Parent/family support</label>
+            </value>
+            <value>
+                <fullName>Police/Justice</fullName>
+                <default>false</default>
+                <label>Police/Justice</label>
+            </value>
+            <value>
+                <fullName>Property Assessment</fullName>
+                <default>false</default>
+                <label>Property Assessment</label>
+            </value>
+            <value>
+                <fullName>Social Group</fullName>
+                <default>false</default>
+                <label>Social Group</label>
+            </value>
+            <value>
+                <fullName>Sport and recreation</fullName>
+                <default>false</default>
+                <label>Sport and recreation</label>
+            </value>
+            <value>
+                <fullName>Supported playgroup</fullName>
+                <default>false</default>
+                <label>Supported playgroup</label>
+            </value>
+            <value>
+                <fullName>TAFE</fullName>
+                <default>false</default>
+                <label>TAFE</label>
+            </value>
+            <value>
+                <fullName>Welfare</fullName>
+                <default>false</default>
+                <label>Welfare</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

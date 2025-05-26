@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Connecting_Home_queue_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Date_Of_Last_Session__c</columns>
+    <columns>Case_Owner_Full_Name__c</columns>
+    <columns>Relationship_to_Parent_Case__c</columns>
+    <columns>Date_of_Last_CP__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>Connecting Home waitlist - Tweed</label>
+    <queue>Connecting_Home_Tweed</queue>
+    <sharedTo>
+        <group>Connecting_Home_All</group>
+        <group>Customer_Experience</group>
+    </sharedTo>
+</ListView>

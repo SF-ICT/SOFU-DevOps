@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GIT_Targeted_Services</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(RecordTypeId = &quot;0129s0000004IoG&quot;) &amp;&amp;
+ISPICKVAL(Case__r.Outlet_Activity__r.Activity__c, &quot;47327&quot;) &amp;&amp; 
+NOT(ISPICKVAL(Service__c, &quot;5&quot;) || 
+ISPICKVAL(Service__c, &quot;3&quot;) ||
+ISPICKVAL(Service__c, &quot;13&quot;) ||
+ISPICKVAL(Service__c, &quot;150&quot;) ||
+ISPICKVAL(Service__c, &quot;153&quot;) ||
+ISPICKVAL(Service__c, &quot;2&quot;) || 
+ISPICKVAL(Service__c, &quot;1&quot;) || 
+ISPICKVAL(Service__c, &quot;99&quot;) || 
+ISPICKVAL(Service__c, &quot;12&quot;) ||
+ISPICKVAL(Service__c, &quot;154&quot;) ||
+ISPICKVAL(Service__c, &quot;155&quot;))</errorConditionFormula>
+    <errorDisplayField>Service__c</errorDisplayField>
+    <errorMessage>This case has the Outlet Activity TEI Targeted Support. The Service must be: Counselling, Edu and Skills, Family Capacity, Indigenous Social or Support, Information/Advice/Referral, Intake/Assessment, Material Aid, Mentoring, Parenting, Playgroups.</errorMessage>
+</ValidationRule>

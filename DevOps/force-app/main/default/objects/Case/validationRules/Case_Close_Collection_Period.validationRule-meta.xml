@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Close_Collection_Period</fullName>
+    <active>true</active>
+    <errorConditionFormula>Program__r.Name  &lt;&gt; &quot;Connecting Home Tweed Assertive Outreach&quot; &amp;&amp;
+Collection_Periods_Completion__c &lt;&gt; 1 &amp;&amp; NOT(ISNULL(Collection_Periods_Completion__c)) &amp;&amp;
+ISPICKVAL(Status, &quot;Closed&quot;)</errorConditionFormula>
+    <errorMessage>All collection periods must be completed (100%) before you can close the case.  Please review the completion tab and complete any incomplete data fields.</errorMessage>
+</ValidationRule>

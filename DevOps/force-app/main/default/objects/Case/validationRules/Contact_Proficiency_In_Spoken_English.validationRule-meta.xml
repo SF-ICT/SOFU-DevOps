@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Proficiency_In_Spoken_English</fullName>
+    <active>true</active>
+    <description>AIHW/SHS only, if they don&apos;t speak English at home, and are over the age of five, their level of English proficiency must be recorded.</description>
+    <errorConditionFormula>AND
+(
+   CreatedDate != LastModifiedDate, /* Always allow a case to be created */
+   Program__r.AIHW_Reporter__c = true,
+   TEXT(Contact.Main_Language_Spoken_at_Home__c) != &apos;1201&apos;, /* English = 1201 */
+   TEXT(Contact.Proficiency_In_Spoken_English__c) = &apos;0&apos;, /* Not Applicable = 0 */
+   NOT(ISBLANK(Contact.Age__c)),
+   Contact.Age__c &gt; 5
+)</errorConditionFormula>
+    <errorMessage>If the Participant doesn&apos;t speak English at home, and are over the age of 5, their level of English proficiency must be recorded (On the Contact record).</errorMessage>
+</ValidationRule>

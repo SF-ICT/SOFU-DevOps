@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Contact_At_Referred_To_Organisation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Key Contact At Referred To Organisation</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Only contacts working for the Referred To organisation can be selected</errorMessage>
+        <filterItems>
+            <field>$Source.Referred_To_Organisation__c</field>
+            <operation>equals</operation>
+            <valueField>Contact.AccountId</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Outbound Referrals</relationshipLabel>
+    <relationshipName>Outbound_Referrals</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

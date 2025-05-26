@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMHC_CPI</fullName>
+    <active>true</active>
+    <description>If Participant is set to &quot;Individual Contact&quot; then Client Participation Indicator must be &quot;Yes&quot;</description>
+    <errorConditionFormula>AND(
+    SessionPassed__c = true,
+    OR(
+        CONTAINS(Program_Name__c, &quot;Care Connect&quot;),
+        CONTAINS(Program_Name__c, &quot;Veterans Connect&quot;),
+        CONTAINS(Program_Name__c, &quot;Medicare Mental Health Centre&quot;)
+    ),
+    RecordTypeId &lt;&gt; &quot;0129s0000004IoG&quot;,
+    ISPICKVAL(Participants__c, &quot;1&quot;),
+    ISPICKVAL(Client_Participation_Indicator__c, &quot;2&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Client_Participation_Indicator__c</errorDisplayField>
+    <errorMessage>If Participant is set to &quot;Individual Contact&quot; then Client Participation Indicator must be &quot;Yes&quot;</errorMessage>
+</ValidationRule>

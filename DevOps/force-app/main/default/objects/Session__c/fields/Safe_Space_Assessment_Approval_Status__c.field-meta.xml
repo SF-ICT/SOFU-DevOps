@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Safe_Space_Assessment_Approval_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE
+(
+  TEXT(Safe_Space_Assessment__r.Approval_Status__c),
+  &apos;Unsubmitted&apos;, &apos;🔵 Unsubmitted&apos;,
+  &apos;Submit For Approval&apos;, &apos;🟡 Submit For Approval&apos;,
+  &apos;Awaiting Approval&apos;, &apos;🟠 Awaiting Approval&apos;,
+  &apos;Approved&apos;, &apos;🟢 Approved&apos;,
+  &apos;Rejected&apos;, &apos;🟣 Rejected&apos;,
+  null
+)</formula>
+    <label>Safe Space Assessment Approval Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Veterans_Connect_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Case_ID_18__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program_Type2__c</field>
+        <operation>equals</operation>
+        <value>Veterans Connect</value>
+    </filters>
+    <label>All Cases - Veterans Connect</label>
+    <sharedTo>
+        <group>All_Hende_Users</group>
+    </sharedTo>
+</ListView>

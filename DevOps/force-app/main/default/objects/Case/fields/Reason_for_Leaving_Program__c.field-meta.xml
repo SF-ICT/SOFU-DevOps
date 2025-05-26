@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Leaving_Program__c</fullName>
+    <description>OPP: Reason for leaving program</description>
+    <inlineHelpText>OPP: Enter the reason the participant left the program for DCJ reporting</inlineHelpText>
+    <label>Reason for Leaving Program</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Successfully completed program</fullName>
+                <default>false</default>
+                <label>Successfully completed program</label>
+            </value>
+            <value>
+                <fullName>No longer meet eligibility requirements</fullName>
+                <default>false</default>
+                <label>No longer meet eligibility requirements</label>
+            </value>
+            <value>
+                <fullName>Poor health (physical health)</fullName>
+                <default>false</default>
+                <label>Poor health (physical health)</label>
+            </value>
+            <value>
+                <fullName>Poor health (mental health)</fullName>
+                <default>false</default>
+                <label>Poor health (mental health)</label>
+            </value>
+            <value>
+                <fullName>Issue with provider</fullName>
+                <default>false</default>
+                <label>Issue with provider</label>
+            </value>
+            <value>
+                <fullName>Fear of losing tenancy</fullName>
+                <default>false</default>
+                <label>Fear of losing tenancy</label>
+            </value>
+            <value>
+                <fullName>Caring responsibilities</fullName>
+                <default>false</default>
+                <label>Caring responsibilities</label>
+            </value>
+            <value>
+                <fullName>Incarceration</fullName>
+                <default>false</default>
+                <label>Incarceration</label>
+            </value>
+            <value>
+                <fullName>Drug and alcohol misuse</fullName>
+                <default>false</default>
+                <label>Drug and alcohol misuse</label>
+            </value>
+            <value>
+                <fullName>Life event</fullName>
+                <default>false</default>
+                <label>Life event</label>
+            </value>
+            <value>
+                <fullName>Lack of family and peer support</fullName>
+                <default>false</default>
+                <label>Lack of family and peer support</label>
+            </value>
+            <value>
+                <fullName>Cultural reasons</fullName>
+                <default>false</default>
+                <label>Cultural reasons</label>
+            </value>
+            <value>
+                <fullName>Reason for disengagement unknown</fullName>
+                <default>false</default>
+                <label>Reason for disengagement unknown</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

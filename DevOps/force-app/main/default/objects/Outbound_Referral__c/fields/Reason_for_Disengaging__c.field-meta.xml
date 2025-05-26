@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Disengaging__c</fullName>
+    <description>CF - Reason a participant has disengaged with a service</description>
+    <inlineHelpText>CF - Reason a participant has disengaged with a service</inlineHelpText>
+    <label>Reason for Disengaging</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Longer Required Services</fullName>
+                <default>false</default>
+                <label>No Longer Required Services</label>
+            </value>
+            <value>
+                <fullName>Dissatisfied with Services Received</fullName>
+                <default>false</default>
+                <label>Dissatisfied with Services Received</label>
+            </value>
+            <value>
+                <fullName>Only Required Short-Term Services</fullName>
+                <default>false</default>
+                <label>Only Required Short-Term Services</label>
+            </value>
+            <value>
+                <fullName>Difficulty Accessing Service on an Ongoing Basis</fullName>
+                <default>false</default>
+                <label>Difficulty Accessing Service on an Ongoing Basis</label>
+            </value>
+            <value>
+                <fullName>Able to Access Supports External to the Aged Care System</fullName>
+                <default>false</default>
+                <label>Able to Access Supports External to the Aged Care System</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Unable to Determine Primary Reason</fullName>
+                <default>false</default>
+                <label>Unable to Determine Primary Reason</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

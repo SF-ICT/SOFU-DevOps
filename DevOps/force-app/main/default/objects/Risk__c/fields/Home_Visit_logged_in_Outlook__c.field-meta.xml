@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Home_Visit_logged_in_Outlook__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>You have logged the visit with first name of client, address, car registration number, mobile phone number you can be contacted on, arrival time and planned exit time in Outlook calendar.</description>
+    <inlineHelpText>You have logged the visit with first name of client, address, car registration number, mobile phone number you can be contacted on, arrival time and planned exit time in Outlook calendar.</inlineHelpText>
+    <label>Home Visit logged in Outlook</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

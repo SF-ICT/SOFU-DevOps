@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsCurrentOrPrevious__c</fullName>
+    <formula>OR(Id = BPS_Participant__r.BPS_Current_Plan__r.Id, Id =  BPS_Participant__r.BPS_Previous_Plan__r.Id)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>IsCurrentOrPrevious</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

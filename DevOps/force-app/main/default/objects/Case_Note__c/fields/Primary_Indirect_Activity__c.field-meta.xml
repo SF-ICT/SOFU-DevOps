@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Indirect_Activity__c</fullName>
+    <label>Primary Indirect Activity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Case Note</fullName>
+                <default>false</default>
+                <label>Case Note</label>
+            </value>
+            <value>
+                <fullName>General Admin</fullName>
+                <default>false</default>
+                <label>General Admin</label>
+            </value>
+            <value>
+                <fullName>Case Discussion</fullName>
+                <default>false</default>
+                <label>Case Discussion</label>
+            </value>
+            <value>
+                <fullName>Case Conference</fullName>
+                <default>false</default>
+                <label>Case Conference</label>
+            </value>
+            <value>
+                <fullName>Agency / Provider Engagement</fullName>
+                <default>false</default>
+                <label>Agency / Provider Engagement</label>
+            </value>
+            <value>
+                <fullName>CH16a Information Request</fullName>
+                <default>false</default>
+                <label>CH16a Information Request</label>
+            </value>
+            <value>
+                <fullName>High Risk Consult</fullName>
+                <default>false</default>
+                <label>High Risk Consult</label>
+            </value>
+            <value>
+                <fullName>Case Review</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Case Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

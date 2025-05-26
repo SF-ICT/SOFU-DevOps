@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FC_S_Mandatory_School</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(CONTAINS(Program__r.Name, &quot;Family Connect - Schools&quot;), ISBLANK(School__c))</errorConditionFormula>
+    <errorDisplayField>School__c</errorDisplayField>
+    <errorMessage>FC-S cases require a school. Please enter a School.</errorMessage>
+</ValidationRule>

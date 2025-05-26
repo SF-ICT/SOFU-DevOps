@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Self_referral_picklist_check</fullName>
+    <active>true</active>
+    <description>Checks if Referral Profile values match Referral Source if value = Self-referred</description>
+    <errorConditionFormula>ISPICKVAL(Referral_Source__c, &quot;Self-Referred&quot;) &amp;&amp; (  ISPICKVAL(Referral_Profile__c, &quot;Agency&quot;) ||  
+ISPICKVAL(Referral_Profile__c, &quot;Provider&quot;)  || 
+ISPICKVAL(Referral_Profile__c, &quot;Justice&quot;) || 
+ISPICKVAL(Referral_Profile__c, &quot;Health&quot;))</errorConditionFormula>
+    <errorDisplayField>Referral_Profile__c</errorDisplayField>
+    <errorMessage>If the Referral Source = Self-Referred, then please choose either Walk-in, Phone or Email.</errorMessage>
+</ValidationRule>

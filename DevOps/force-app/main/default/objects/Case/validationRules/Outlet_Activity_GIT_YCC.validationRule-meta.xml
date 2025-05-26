@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outlet_Activity_GIT_YCC</fullName>
+    <active>true</active>
+    <description>Prevents YCC or GIT from leaving Outlet Activity NULL</description>
+    <errorConditionFormula>IF(OR(Program_Name__c = &quot;Youth Connections Clubhouse&quot;, Program_Name__c = &quot;Getting it Together&quot;) &amp;&amp; RecordTypeID18__c != &apos;0122x0000000DkiAAE&apos;,  IF(ISBLANK(Outlet_Activity__c), ISBLANK(Owner:Queue.Id), FALSE), FALSE)  &amp;&amp;  Date_of_Enquiry_or_Referral__c  &gt;=  DATE(2020,7,1)</errorConditionFormula>
+    <errorDisplayField>Outlet_Activity__c</errorDisplayField>
+    <errorMessage>Outlet Activity cannot be Blank. For Getting it Together you must select either GiT - TEI Community Support or GiT - TEI Targeted Support. For Youth Connections Clubhouse you must select either YCC - TEI Community Centres or YCC - TEI Community Support.</errorMessage>
+</ValidationRule>

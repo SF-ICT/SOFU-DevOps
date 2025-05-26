@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Receiving_an_Income_Source__c</fullName>
+    <description>Used in the Intake process for Care Connect Hunter Manning and Hunter Central Coast</description>
+    <inlineHelpText>Are you receiving any money from wages, benefits or elsewhere?</inlineHelpText>
+    <label>Receiving an Income Source?</label>
+    <length>5000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

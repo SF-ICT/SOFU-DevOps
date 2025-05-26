@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Returning_to_Work_after_the_Home_Visit__c</fullName>
+    <description>Returning to Work after the Home Visit Note</description>
+    <inlineHelpText>Returning to Work after the Home Visit Note</inlineHelpText>
+    <label>Returning to Work after the Home Visit</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bridge_Injection_Drug_Use</fullName>
+    <active>true</active>
+    <description>When Injecting Drug Use is &apos;Never injected&apos;, Method of Use for Principal Drug of Concern should not be &apos;Inject&apos;.</description>
+    <errorConditionFormula>Program__c = &quot;a13RF00000DBcXCYA1&quot; &amp;&amp;
+ISPICKVAL(AOD_PDoCmethod__c, &quot;3&quot;) &amp;&amp;
+ISPICKVAL(AOD_Injecting__c, &quot;4&quot;)</errorConditionFormula>
+    <errorDisplayField>AOD_PDoCmethod__c</errorDisplayField>
+    <errorMessage>When Injecting Drug Use is &apos;Never injected&apos;, Method of Use for Principal Drug of Concern cannot be &apos;Inject&apos;.</errorMessage>
+</ValidationRule>

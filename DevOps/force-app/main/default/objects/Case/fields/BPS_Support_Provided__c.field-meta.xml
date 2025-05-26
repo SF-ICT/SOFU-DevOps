@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_Support_Provided__c</fullName>
+    <label>Support Provided</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>BPS_Who_Received_The_Support__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>General Enquiry</fullName>
+                <default>false</default>
+                <label>General Enquiry</label>
+            </value>
+            <value>
+                <fullName>Make connections to community/mainstream</fullName>
+                <default>false</default>
+                <label>Make connections to community/mainstream</label>
+            </value>
+            <value>
+                <fullName>Organise to develop a Community Connections Plan</fullName>
+                <default>false</default>
+                <label>Organise to develop a Community Connections Plan</label>
+            </value>
+            <value>
+                <fullName>Person provided feedback</fullName>
+                <default>false</default>
+                <label>Person provided feedback</label>
+            </value>
+            <value>
+                <fullName>Person without consent</fullName>
+                <default>false</default>
+                <label>Person without consent</label>
+            </value>
+            <value>
+                <fullName>Planning &amp; monitoring</fullName>
+                <default>false</default>
+                <label>Planning &amp; monitoring</label>
+            </value>
+            <value>
+                <fullName>Provided access information</fullName>
+                <default>false</default>
+                <label>Provided access information</label>
+            </value>
+            <value>
+                <fullName>Provided general information</fullName>
+                <default>false</default>
+                <label>Provided general information</label>
+            </value>
+            <value>
+                <fullName>Updated person details</fullName>
+                <default>false</default>
+                <label>Updated person details</label>
+            </value>
+            <value>
+                <fullName>UTC Complete in CRM</fullName>
+                <default>false</default>
+                <label>UTC Complete in CRM</label>
+            </value>
+            <value>
+                <fullName>Other admin task</fullName>
+                <default>false</default>
+                <label>Other admin task</label>
+            </value>
+            <value>
+                <fullName>Navigator offer</fullName>
+                <default>false</default>
+                <label>Navigator offer</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <controllingFieldValue>Family or Carer</controllingFieldValue>
+            <controllingFieldValue>Third Party Providing Support</controllingFieldValue>
+            <controllingFieldValue>Participant</controllingFieldValue>
+            <valueName>Make connections to community/mainstream</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <valueName>Organise to develop a Community Connections Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <controllingFieldValue>Family or Carer</controllingFieldValue>
+            <controllingFieldValue>Third Party Providing Support</controllingFieldValue>
+            <controllingFieldValue>Participant</controllingFieldValue>
+            <valueName>Person provided feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <controllingFieldValue>Family or Carer</controllingFieldValue>
+            <controllingFieldValue>Third Party Providing Support</controllingFieldValue>
+            <controllingFieldValue>Participant</controllingFieldValue>
+            <valueName>Person without consent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <controllingFieldValue>Family or Carer</controllingFieldValue>
+            <controllingFieldValue>Third Party Providing Support</controllingFieldValue>
+            <controllingFieldValue>Participant</controllingFieldValue>
+            <valueName>Planning &amp; monitoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <controllingFieldValue>Family or Carer</controllingFieldValue>
+            <controllingFieldValue>Third Party Providing Support</controllingFieldValue>
+            <controllingFieldValue>Participant</controllingFieldValue>
+            <valueName>Provided access information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <controllingFieldValue>Family or Carer</controllingFieldValue>
+            <controllingFieldValue>Third Party Providing Support</controllingFieldValue>
+            <controllingFieldValue>Participant</controllingFieldValue>
+            <valueName>Provided general information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <controllingFieldValue>Family or Carer</controllingFieldValue>
+            <controllingFieldValue>Third Party Providing Support</controllingFieldValue>
+            <controllingFieldValue>Participant</controllingFieldValue>
+            <valueName>Updated person details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <controllingFieldValue>Family or Carer</controllingFieldValue>
+            <controllingFieldValue>Third Party Providing Support</controllingFieldValue>
+            <controllingFieldValue>Participant</controllingFieldValue>
+            <valueName>Other admin task</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Person With a Disability</controllingFieldValue>
+            <valueName>Navigator offer</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

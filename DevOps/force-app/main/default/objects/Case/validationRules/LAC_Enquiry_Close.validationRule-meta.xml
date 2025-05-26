@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LAC_Enquiry_Close</fullName>
+    <active>false</active>
+    <description>Checks to ensure &quot;Hours&quot;, Minutes&quot;, &quot;Enquirer Location&quot; and &quot;Mode of Enquiry&quot; are not NULL if &quot;Support Provided&quot; is set.</description>
+    <errorConditionFormula>NOT(ISBLANK(TEXT(BPS_Support_Provided__c))) &amp;&amp;
+OR(ISPICKVAL(BPS_Hours__c, &quot;&quot;),
+ISPICKVAL(BPS_Minutes__c, &quot;&quot;),
+ISPICKVAL(BPS_Enquirer_Location__c, &quot;&quot;),
+ISPICKVAL(BPS_Mode_of_Enquiry__c, &quot;&quot;))</errorConditionFormula>
+    <errorDisplayField>BPS_Support_Provided__c</errorDisplayField>
+    <errorMessage>If Support Provided is set then Hours, Minutes, Enquirer Location and Mode of Enquiry must be entered.</errorMessage>
+</ValidationRule>

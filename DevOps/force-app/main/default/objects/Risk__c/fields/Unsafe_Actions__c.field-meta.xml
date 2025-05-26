@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unsafe_Actions__c</fullName>
+    <label>Unsafe Actions</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Emotionally vulnerable</fullName>
+                <default>false</default>
+                <label>Emotionally vulnerable</label>
+            </value>
+            <value>
+                <fullName>Limited concept of money (cannot recognize correct change)</fullName>
+                <default>false</default>
+                <label>Limited concept of money (cannot recognize correct change)</label>
+            </value>
+            <value>
+                <fullName>Inability to budget</fullName>
+                <default>false</default>
+                <label>Inability to budget</label>
+            </value>
+            <value>
+                <fullName>Vulnerable to exploitation</fullName>
+                <default>false</default>
+                <label>Vulnerable to exploitation</label>
+            </value>
+            <value>
+                <fullName>Impulsive spending</fullName>
+                <default>false</default>
+                <label>Impulsive spending</label>
+            </value>
+            <value>
+                <fullName>Gambling</fullName>
+                <default>false</default>
+                <label>Gambling</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Not applicable</fullName>
+                <default>false</default>
+                <label>Not applicable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

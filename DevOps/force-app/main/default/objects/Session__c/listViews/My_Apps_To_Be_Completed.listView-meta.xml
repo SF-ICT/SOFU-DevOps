@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Apps_To_Be_Completed</fullName>
+    <booleanFilter>(1 AND 2 AND 4) OR (3 AND 4)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Case__c</columns>
+    <columns>Case_Contact_Full_Name__c</columns>
+    <columns>Start_Date_Time__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SessionPassed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Completed,Cancelled,No-show</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Declined</value>
+    </filters>
+    <filters>
+        <field>Buddy__c</field>
+        <operation>equals</operation>
+        <value>$USER</value>
+    </filters>
+    <label>My Appointments to be Completed</label>
+</ListView>

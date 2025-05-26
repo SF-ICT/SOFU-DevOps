@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Access_Case_Submitted_Within_28_Days__c</fullName>
+    <formula>IF(KPI_AccessDueDate__c + BPS_Delay_Days__c &gt;= BPS_Plan_Submitted_to_NDIA__c, TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Access Case Submitted Within 28 Days</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

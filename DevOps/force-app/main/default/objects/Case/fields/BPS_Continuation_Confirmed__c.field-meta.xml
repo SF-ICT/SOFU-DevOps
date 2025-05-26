@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_Continuation_Confirmed__c</fullName>
+    <formula>AND(BPS_IsCurrentPlan__c = TRUE, ISPICKVAL( BPS_Participant__r.BPS_Current_Plan__r.BPS_Review_Type__c, &quot;Continuation&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Continuation Confirmed</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

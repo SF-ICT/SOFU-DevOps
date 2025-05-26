@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AOD_EpisodePostcode__c</fullName>
+    <description>The postcode of the client’s usual place of residence at the commencement of the Service Episode.&quot;</description>
+    <label>Episode Postcode</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

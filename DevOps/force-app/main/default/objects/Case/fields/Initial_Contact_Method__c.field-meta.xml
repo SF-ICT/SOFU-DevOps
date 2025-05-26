@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Initial_Contact_Method__c</fullName>
+    <description>Manner of 1st contact between FRS and family</description>
+    <inlineHelpText>FRS: Manner of 1st contact between FRS and family</inlineHelpText>
+    <label>Initial Contact Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Inbound Phone Call</fullName>
+                <default>false</default>
+                <label>Inbound Phone Call</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Outbound Phone Call</fullName>
+                <default>false</default>
+                <label>Outbound Phone Call</label>
+            </value>
+            <value>
+                <fullName>Outreach Visit</fullName>
+                <default>false</default>
+                <label>Outreach Visit</label>
+            </value>
+            <value>
+                <fullName>Unable to Contact Family</fullName>
+                <default>false</default>
+                <label>Unable to Contact Family</label>
+            </value>
+            <value>
+                <fullName>Undefined</fullName>
+                <default>false</default>
+                <label>Undefined</label>
+            </value>
+            <value>
+                <fullName>Walk In</fullName>
+                <default>false</default>
+                <label>Walk In</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

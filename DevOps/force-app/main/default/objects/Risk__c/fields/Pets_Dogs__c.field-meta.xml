@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pets_Dogs__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Asked if the client has pets?
+
+Was there a lack of commitment to containing dogs or having them on a leash prior to the visit?</description>
+    <inlineHelpText>Asked if the client has pets?
+
+Was there a lack of commitment to containing dogs or having them on a leash prior to the visit?</inlineHelpText>
+    <label>Pets / Dogs</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

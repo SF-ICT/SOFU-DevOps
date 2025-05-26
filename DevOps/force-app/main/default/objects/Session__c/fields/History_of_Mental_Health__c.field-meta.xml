@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>History_of_Mental_Health__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is there identified history of a mental health illness?</description>
+    <inlineHelpText>Is there identified history of a mental health illness?</inlineHelpText>
+    <label>History of Mental Health</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

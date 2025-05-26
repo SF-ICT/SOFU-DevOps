@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Program_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>Program__c != PRIORVALUE(Program__c) &amp;&amp;
+ISBLANK(PRIORVALUE(Program__c)) == false &amp;&amp;
+ISNULL(PRIORVALUE(Program__c)) == false &amp;&amp;
+$Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp;
+$Profile.Name &lt;&gt; &quot;Intake Worker&quot; &amp;&amp;
+$User.User_ID_18__c &lt;&gt; &quot;0059s000000ICQsAAO&quot; &amp;&amp;
+$User.User_ID_18__c &lt;&gt; &quot;0059s000000IDR0AAO&quot;</errorConditionFormula>
+    <errorDisplayField>Program__c</errorDisplayField>
+    <errorMessage>Sorry, you cannot change this Case&apos;s Program, if it was incorrectly assigned please submit a Freshservice ticket.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Referral_Profile__c</fullName>
+    <label>Referral Profile</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Origin</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Social Futures Worker</fullName>
+                <default>false</default>
+                <label>Social Futures Worker</label>
+            </value>
+            <value>
+                <fullName>Agency</fullName>
+                <default>false</default>
+                <label>Agency</label>
+            </value>
+            <value>
+                <fullName>Provider</fullName>
+                <default>false</default>
+                <label>Provider</label>
+            </value>
+            <value>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+                <label>Walk-in</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Justice</fullName>
+                <default>false</default>
+                <label>Justice</label>
+            </value>
+            <value>
+                <fullName>Web</fullName>
+                <default>false</default>
+                <label>Web</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Walk-in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Justice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From External Source</controllingFieldValue>
+            <controllingFieldValue>Enquiry</controllingFieldValue>
+            <valueName>Web</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral From Internal Source</controllingFieldValue>
+            <valueName>Social Futures Worker</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

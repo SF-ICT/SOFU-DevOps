@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Agency_Restrictions__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Records whether an external agency has any restrictions in place for the client in question</description>
+    <inlineHelpText>Tick the checkbox if you are aware of any restrictions in place by external agencies</inlineHelpText>
+    <label>Other Agency Restrictions</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

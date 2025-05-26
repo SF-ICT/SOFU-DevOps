@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_outbound_service_provider_accessed__c</fullName>
+    <description>Date outbound service provider accessed</description>
+    <inlineHelpText>FCS - Date outbound service provider accessed</inlineHelpText>
+    <label>Date outbound service provider accessed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Listen_for_sounds_of_escalated_behaviour__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Listen for sounds of escalated behaviour or violence before knocking.</description>
+    <inlineHelpText>Listen for sounds of escalated behaviour or violence before knocking.</inlineHelpText>
+    <label>Listen for sounds of escalated behaviour</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

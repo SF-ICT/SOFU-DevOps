@@ -1,0 +1,369 @@
+<apex:page StandardController="Case" extensions="VFPReferralPDF" showHeader="false" applyHtmlTag="false" sidebar="false" renderAs="pdf">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Connecting Home - Online Referral PDF</title>
+        <style type="text/css">
+            @page {
+            size: A4;
+                @bottom-center {
+                    content: "Page " counter(page) " of " counter(pages);
+                }
+                @bottom-left {
+                    content: "Date of Referral:  {!Case.Enquiry_Referral_Date_PDF__c}";
+                }    
+            }
+            body .brandTertiaryBgr {
+                background-color:  #e60774 !important;
+                padding: 0px 0px 0px 10px !important;
+                color: #FFF;
+            }
+            .sections {
+                page-break-inside: avoid;
+                page-break-before: auto;
+                page-break-after: auto;
+                word-wrap: break-word;
+                white-space: normal;
+                display: block;
+                margin: 0 auto;
+                width: 100%;
+            }
+            .bold {
+                font-weight: bold;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            body { 
+                font-family: 'Roboto', sans-serif; 
+                line-height: 1.6; 
+                color: #333;
+                float: left;
+            } 
+            h1, h2, h3, h4, h5, h6 { 
+                font-weight: 900;
+            } 
+            h1 { 
+                font-size: 2.5rem;
+            } 
+            h2 { 
+                font-size: 2rem;
+                text-align: center;
+            } 
+            h3 { 
+                font-size: 1.5rem; 
+            }
+            /* Footer */ 
+            footer { 
+                background-color: #333; 
+                color: #fff; 
+                padding: 1rem; 
+                text-align: center; 
+            }
+        </style>   
+    </head>
+    <div class="center" style="">
+        <apex:image url="{!$Resource.SF_CH_Logo}" alt="Care Finder Logo" width="500"/>
+    </div>
+    <body>
+        <b><center>Referral and Needs Assessment Form</center></b>
+        <p>A service for Adults and Young people who are experiencing or at risk of experiencing homelessness from Grafton up to Tweed Heads.</p>
+        <p>Please note: Momentum Collective provides housing and homelessness support for people who identify as Aboriginal or Torres Strait Islander, and all Women who are experiencing domestic and family violence 1300 355 305.</p>
+        <apex:form >
+            <apex:pageBlock >
+                <div class="sections">
+                    <apex:pageBlockSection title="Referring Organisation/Service" columns="1">
+                        <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="font-size: 18px; font-family: Serif;"><b>Organisation: </b>{!referralfields.Referring_Organisation_Service_Name__c}</td>
+                    </tr>
+                    <hr style="width:100%;"/>
+                    <tr>
+                        <td style="font-size: 18px; font-family: Serif;"><b>Contact Person: </b>{!referralfields.Referrers_Contact_Name__c}</td>
+                    </tr>
+                    <hr/>
+                    <tr>
+                        <td style="font-size: 18px; font-family: Serif;"><b>Phone: </b>{!referralfields.Referrers_Contact_Phone__c}</td>
+                    </tr>
+                    <hr/>
+                    <tr>
+                        <td style="font-size: 18px; font-family: Serif;"><b>Email: </b>{!referralfields.Referrers_Contact_Email__c}</td>
+                    </tr>
+                    <hr/>
+                    <tr>
+                        <td style="font-size: 18px; font-family: Serif;"><b>Referral Date: </b>{!referralfields.Assessment_Date__c}</td>
+                    </tr>
+                    <hr/>
+                    <tr>
+                        <td style="font-size: 18px; font-family: Serif;"><b>Can be contacted in relation to referral: </b>{!referralfields.Can_the_Referrer_be_contacted__c}</td>
+                    </tr>
+                    <hr/>
+                </table>
+                    </apex:pageBlockSection>
+                </div>
+                <div class="sections">
+                    <apex:pageBlockSection title="Client Details" columns="1">
+                        <apex:pageBlockSectionItem dataStyle="min-width: 50%; !important" labelStyle="min-width: 50%; !important">
+                            <apex:outputLabel value="First Name:"/>
+                            <apex:outputField value="{!participantfields.FirstName}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Last Name:"/>
+                            <apex:outputField value="{!participantfields.LastName}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Country of Birth:"/>
+                            <apex:outputField value="{!participantfields.Country_of_Birth__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Aboriginal or TSI:"/>
+                            <apex:outputField value="{!participantfields.Indigenous_Status__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Date of Birth:"/>
+                            <apex:outputField value="{!participantfields.Birthdate}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Age:"/>
+                            <apex:outputField value="{!participantfields.Age__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Phone:"/>
+                            <apex:outputField value="{!participantfields.MobilePhone}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Email:"/>
+                            <apex:outputField value="{!participantfields.Email}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Street:"/>
+                            <apex:outputField value="{!participantfields.OtherStreet}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="City:"/>
+                            <apex:outputField value="{!participantfields.OtherCity}"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="State:"/>
+                            <apex:outputField value="{!participantfields.OtherState}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:25%" labelStyle="width:30%">
+                            <apex:outputLabel value="Country:"/>
+                            <apex:outputField value="{!participantfields.OtherCountry}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Postcode:"/>
+                            <apex:outputField value="{!participantfields.OtherPostalCode}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Preferred Method of Contact:"/>
+                            <apex:outputField value="{!participantfields.Preferred_Communication_Method__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                </div>
+                <div class="sections">
+                    <apex:pageBlockSection title="Guardian Details" rendered="{!guardianfields != null}" columns="1">
+                        <apex:repeat var="Guardian" value="{!guardianfields}">
+                            <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                                <apex:outputLabel value="First Name:"/>
+                                <apex:outputField value="{!Guardian.Related_Contact__r.FirstName}"/>
+                            </apex:pageBlockSectionItem>
+                        <hr/>
+                            <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                                <apex:outputLabel value="Last Name:"/>
+                                <apex:outputField value="{!Guardian.Related_Contact__r.LastName}"/>
+                            </apex:pageBlockSectionItem>
+                        <hr/>
+                            <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                                <apex:outputLabel value="Date of Birth:"/>
+                                <apex:outputField value="{!Guardian.Related_Contact__r.Birthdate}"/>
+                            </apex:pageBlockSectionItem>
+                        <hr/>
+                            <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            </apex:pageBlockSectionItem>
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                </div>
+                <div class="sections">
+                    <apex:pageBlockSection title="Child Details" rendered="{!childfields != null}" columns="1">
+                        <apex:repeat var="Children" value="{!childfields}">
+                            <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                                <apex:outputLabel value="First Name:"/>
+                                <apex:outputField value="{!Children.Related_Contact__r.FirstName}"/>
+                            </apex:pageBlockSectionItem>
+                        <hr/>
+                            <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                                <apex:outputLabel value="Last Name:"/>
+                                <apex:outputField value="{!Children.Related_Contact__r.LastName}"/>
+                            </apex:pageBlockSectionItem>
+                        <hr/>
+                            <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                                <apex:outputLabel value="Date of Birth:"/>
+                                <apex:outputField value="{!Children.Related_Contact__r.Birthdate}"/>
+                            </apex:pageBlockSectionItem>
+                        <hr/>
+                            <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            </apex:pageBlockSectionItem>
+                        </apex:repeat>
+                    </apex:pageBlockSection>
+                </div>
+                <div class="sections">
+                    <apex:pageBlockSection title="Youth Information" rendered="{!IF(participantfields.Age__c < 18,true,false)}" columns="1">
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="History of FACS Involvement/OHC in past/current?"/>
+                            <apex:outputField value="{!referralfields.History_of_FACS_OHC__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="When/who?"/>
+                            <apex:outputField value="{!referralfields.FACS_OHC_Details__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Are you/they studying?"/>
+                            <apex:outputField value="{!referralfields.Are_you_studying__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Where and is there a contact/support person?"/>
+                            <apex:outputField value="{!referralfields.Study_Location_and_Support_Contact__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                </div>
+                <div class="sections">
+                    <apex:pageBlockSection title="Centerlink Information" columns="1">
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Centrelink Benefit – Type:"/>
+                            <apex:outputField value="{!participantfields.Centrelink_Income_Support__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Next Pay:"/>
+                            <apex:outputField value="{!referralfields.Next_Pay_Date__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Weekly amount:"/>
+                            <apex:outputField value="{!referralfields.Weekly_Amount__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="On HNSW register:"/>
+                            <apex:outputField value="{!referralfields.On_HNSW_Register__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                </div>
+                <div class="sections">
+                    <apex:pageBlockSection title="Address Information" columns="1">
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Length of stay at current address:"/>
+                            <apex:outputField value="{!referralfields.Length_of_stay_at_current_address__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="How long can you/they stay?"/>
+                            <apex:outputField value="{!referralfields.How_long_can_they_stay_at_address__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Previous rental history:"/>
+                            <apex:outputField value="{!referralfields.Previous_Rental_History__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Do you/they have somewhere to stay tonight?"/>
+                            <apex:outputField value="{!referralfields.Do_you_have_somewhere_to_stay_tonight__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Have you/they contacted Link2Home?"/>
+                            <apex:outputField value="{!referralfields.Have_you_contacted_Link2Home__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Do you/they feel safe where you are staying?"/>
+                            <apex:outputField value="{!referralfields.Do_you_feel_safe_where_you_are_staying__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                </div>
+                <div class="sections">
+                    <apex:pageBlockSection title="Client Circumstances" columns="1">
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Have you/they experienced domestic and/or family violence?"/>
+                            <apex:outputField value="{!referralfields.Family_Domestic_Violence_Issues__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Family/Domestic Violence details:"/>
+                            <apex:outputField value="{!referralfields.Family_Domestic_Violence_Issues_Details__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Any Legal Issue (Child Protection/AVOs/Fines etc.)?"/>
+                            <apex:outputField value="{!referralfields.Legal_Issues__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Legal Issue Details:"/>
+                            <apex:outputField value="{!referralfields.Legal_Issues_Details__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Do you/they need any support with your physical/mental health?"/>
+                            <apex:outputField value="{!referralfields.Mental_Physical_health_support_needed__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Do you/they have supports/other services involved?"/>
+                            <apex:outputField value="{!referralfields.Supports_other_services_involved__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="List all supports in place"/>
+                            <apex:outputField value="{!referralfields.List_all_current_supports_in_place__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="What would you/they like to achieve working with Connecting Home:"/>
+                            <apex:outputField value="{!referralfields.What_would_you_like_to_achieve_with_CH__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                            <apex:outputLabel value="Supporting Information:"/>
+                            <apex:outputField value="{!referralfields.Additional_Information_Element__c}"/>
+                        </apex:pageBlockSectionItem>
+                        <hr/>
+                        <apex:pageBlockSectionItem dataStyle="width:45%" labelStyle="width:45%">
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection>
+                </div>
+            </apex:pageBlock>  
+        </apex:form>
+    </body>
+</apex:page>

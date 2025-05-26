@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Export_Case_Reviews</fullName>
+    <availability>online</availability>
+    <description>Generate a PDF document containing details on the case and all related case reviews</description>
+    <displayType>button</displayType>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>page</linkType>
+    <masterLabel>Export Case Reviews</masterLabel>
+    <openType>newWindow</openType>
+    <page>CaseReviewPDF</page>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+</WebLink>

@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Close_Reason__c</fullName>
+    <inlineHelpText>Select a reason for closing the case. If you are unable to provide services, select this option from the bottom of the list and then pick a reason why unable to service from the sub-list below.</inlineHelpText>
+    <label>Case Close Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Program_Type2__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consult &amp; Enquiry</fullName>
+                <default>false</default>
+                <label>Consult &amp; Enquiry</label>
+            </value>
+            <value>
+                <fullName>Completed Engagement</fullName>
+                <default>false</default>
+                <label>Completed Engagement</label>
+            </value>
+            <value>
+                <fullName>Case plan goal achieved</fullName>
+                <default>false</default>
+                <label>Case plan goal achieved</label>
+            </value>
+            <value>
+                <fullName>Referred to other Agency</fullName>
+                <default>false</default>
+                <label>Referred to other Agency</label>
+            </value>
+            <value>
+                <fullName>Unable to provide service</fullName>
+                <default>false</default>
+                <label>Unable to provide service</label>
+            </value>
+            <value>
+                <fullName>Eligibility criteria no longer met</fullName>
+                <default>false</default>
+                <label>Eligibility criteria no longer met</label>
+            </value>
+            <value>
+                <fullName>Family/Individual declined service</fullName>
+                <default>false</default>
+                <label>Family/Individual declined service</label>
+            </value>
+            <value>
+                <fullName>Family/Individual no longer requires support</fullName>
+                <default>false</default>
+                <label>Family/Individual no longer requires support</label>
+            </value>
+            <value>
+                <fullName>Family/Individual not engaging with service</fullName>
+                <default>false</default>
+                <label>Family/Individual not engaging with service</label>
+            </value>
+            <value>
+                <fullName>Family/Individual relocated out of area</fullName>
+                <default>false</default>
+                <label>Family/Individual relocated out of area</label>
+            </value>
+            <value>
+                <fullName>Family/Individual withdrew</fullName>
+                <default>false</default>
+                <label>Family/Individual withdrew</label>
+            </value>
+            <value>
+                <fullName>Fear of losing tenancy</fullName>
+                <default>false</default>
+                <label>Fear of losing tenancy</label>
+            </value>
+            <value>
+                <fullName>Other (specify in notes)</fullName>
+                <default>false</default>
+                <label>Other (specify in notes)</label>
+            </value>
+            <value>
+                <fullName>Transfer to different worker &amp; finding program</fullName>
+                <default>false</default>
+                <label>Transfer to different worker &amp; finding program</label>
+            </value>
+            <value>
+                <fullName>Transfer to different worker in same funding program</fullName>
+                <default>false</default>
+                <label>Transfer to different worker in same funding program</label>
+            </value>
+            <value>
+                <fullName>Not Eligible or Suitable</fullName>
+                <default>false</default>
+                <label>Not Eligible or Suitable</label>
+            </value>
+            <value>
+                <fullName>Client did not Engage</fullName>
+                <default>false</default>
+                <label>Client did not Engage</label>
+            </value>
+            <value>
+                <fullName>Lack of Program Capacity</fullName>
+                <default>false</default>
+                <label>Lack of Program Capacity</label>
+            </value>
+            <value>
+                <fullName>Successfully completed program</fullName>
+                <default>false</default>
+                <label>Successfully completed program</label>
+            </value>
+            <value>
+                <fullName>No longer meet eligibility requirements</fullName>
+                <default>false</default>
+                <label>No longer meet eligibility requirements</label>
+            </value>
+            <value>
+                <fullName>Poor Health (Physical Health)</fullName>
+                <default>false</default>
+                <label>Poor Health (Physical Health)</label>
+            </value>
+            <value>
+                <fullName>Poor Health (Mental Health)</fullName>
+                <default>false</default>
+                <label>Poor Health (Mental Health)</label>
+            </value>
+            <value>
+                <fullName>Issue with Provider</fullName>
+                <default>false</default>
+                <label>Issue with Provider</label>
+            </value>
+            <value>
+                <fullName>Caring Responsibilities</fullName>
+                <default>false</default>
+                <label>Caring Responsibilities</label>
+            </value>
+            <value>
+                <fullName>Incarceration</fullName>
+                <default>false</default>
+                <label>Incarceration</label>
+            </value>
+            <value>
+                <fullName>Drug and Alcohol Misuse</fullName>
+                <default>false</default>
+                <label>Drug and Alcohol Misuse</label>
+            </value>
+            <value>
+                <fullName>Life Event</fullName>
+                <default>false</default>
+                <label>Life Event</label>
+            </value>
+            <value>
+                <fullName>Lack of Family and Peer Support</fullName>
+                <default>false</default>
+                <label>Lack of Family and Peer Support</label>
+            </value>
+            <value>
+                <fullName>Cultural Reasons</fullName>
+                <default>false</default>
+                <label>Cultural Reasons</label>
+            </value>
+            <value>
+                <fullName>Reason for Disengagement Unknown</fullName>
+                <default>false</default>
+                <label>Reason for Disengagement Unknown</label>
+            </value>
+            <value>
+                <fullName>Fear of Losing Benefit</fullName>
+                <default>false</default>
+                <label>Fear of Losing Benefit</label>
+            </value>
+            <value>
+                <fullName>Supported by other agency</fullName>
+                <default>false</default>
+                <label>Supported by other agency</label>
+            </value>
+            <value>
+                <fullName>Exited from Waitlist</fullName>
+                <default>false</default>
+                <label>Exited from Waitlist</label>
+            </value>
+            <value>
+                <fullName>Client Declined</fullName>
+                <default>false</default>
+                <label>Client Declined</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Client&apos;s immediate needs met/case management goals achieved</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>Client did not turn up</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>Client died</label>
+            </value>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>Client incarcerated</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>Client institutionalised</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>Client no longer requested assistance</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Client referred to a mainstream agency</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Client referred to another specialist homelessness agency</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>Lost contact with client</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>Maximum service period reached</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>Service withdrawn from client and no referral made</label>
+            </value>
+            <value>
+                <fullName>12</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>99</fullName>
+                <default>false</default>
+                <label>Not stated/unknown</label>
+            </value>
+            <value>
+                <fullName>#N/A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>#N/A</label>
+            </value>
+            <value>
+                <fullName>Family/Individual unable to be located/contacted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Family/Individual unable to be located/contacted</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Consult &amp; Enquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Completed Engagement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Case plan goal achieved</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Referred to other Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Unable to provide service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Eligibility criteria no longer met</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Family/Individual declined service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Family/Individual no longer requires support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Family/Individual not engaging with service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Family/Individual relocated out of area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Family/Individual withdrew</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Fear of losing tenancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Other (specify in notes)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Transfer to different worker &amp; finding program</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Transfer to different worker in same funding program</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Not Eligible or Suitable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Client did not Engage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>Veterans Connect</controllingFieldValue>
+            <controllingFieldValue>Care Finder</controllingFieldValue>
+            <controllingFieldValue>Care Connect - Hunter Manning</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Resilient Kids</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Medicare Mental Health Centre</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>The Indie Project</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Lack of Program Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Standby Response Service</controllingFieldValue>
+            <controllingFieldValue>Care Connect</controllingFieldValue>
+            <controllingFieldValue>Standing Strong</controllingFieldValue>
+            <controllingFieldValue>Old Byron Hospital</controllingFieldValue>
+            <controllingFieldValue>CETS</controllingFieldValue>
+            <controllingFieldValue>Recovery Connect</controllingFieldValue>
+            <controllingFieldValue>Strong Minds in the Early Years</controllingFieldValue>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Bathurst Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Broken Hill Clubhouse</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <controllingFieldValue>Headspace</controllingFieldValue>
+            <controllingFieldValue>Reconnect</controllingFieldValue>
+            <controllingFieldValue>Getting it Together</controllingFieldValue>
+            <controllingFieldValue>Ballina Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Clubhouse</controllingFieldValue>
+            <controllingFieldValue>Family Connect - Schools</controllingFieldValue>
+            <controllingFieldValue>Elements</controllingFieldValue>
+            <controllingFieldValue>Family Referral Service (FRS)</controllingFieldValue>
+            <controllingFieldValue>Mijung Jarjums Kids in Mind</controllingFieldValue>
+            <controllingFieldValue>Family Connect &amp; Support</controllingFieldValue>
+            <controllingFieldValue>Pathfinders FCS</controllingFieldValue>
+            <valueName>Supported by other agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Successfully completed program</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>No longer meet eligibility requirements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Poor Health (Physical Health)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Poor Health (Mental Health)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Issue with Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Caring Responsibilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Incarceration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Drug and Alcohol Misuse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Life Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Lack of Family and Peer Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Cultural Reasons</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Reason for Disengagement Unknown</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>Opportunity Pathways</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Fear of Losing Benefit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Exited from Waitlist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NDIS</controllingFieldValue>
+            <controllingFieldValue>NDIA Local Area Coordination</controllingFieldValue>
+            <valueName>Client Declined</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecting Home</controllingFieldValue>
+            <valueName>99</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

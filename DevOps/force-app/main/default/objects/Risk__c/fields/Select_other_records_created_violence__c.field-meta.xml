@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Select_other_records_created_violence__c</fullName>
+    <description>Where violence has been indicated as a risk in this assessment, a record must be made for future reference (tick one or more when record has been completed):</description>
+    <inlineHelpText>Where violence has been indicated as a risk in this assessment, a record must be made for future reference (tick one or more when record has been completed):</inlineHelpText>
+    <label>Select other records created - violence</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Client Database (Alert Section)</fullName>
+                <default>false</default>
+                <label>Client Database (Alert Section)</label>
+            </value>
+            <value>
+                <fullName>Client File</fullName>
+                <default>false</default>
+                <label>Client File</label>
+            </value>
+            <value>
+                <fullName>High Risk Alert Log</fullName>
+                <default>false</default>
+                <label>High Risk Alert Log</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

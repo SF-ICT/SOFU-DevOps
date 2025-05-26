@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Young_Person_Challenges__c</fullName>
+    <description>Please tell us the challenges the Young Person is experiencing that they would like help with.
+Note - If the Young People is needing support with something that is not listed, please let us know. This is not a comprehensive list of the supports we provide.</description>
+    <inlineHelpText>Please tell us the challenges the Young Person is experiencing that they would like help with.
+Note - If the Young People is needing support with something that is not listed, please let us know. This is not a comprehensive list of the supports we provide.</inlineHelpText>
+    <label>Young Person Challenges</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Feeling down or stressed</fullName>
+                <default>false</default>
+                <label>Feeling down or stressed</label>
+            </value>
+            <value>
+                <fullName>Wanting to see a GP</fullName>
+                <default>false</default>
+                <label>Wanting to see a GP</label>
+            </value>
+            <value>
+                <fullName>Sexual health (including contraception and sexual health checks)</fullName>
+                <default>false</default>
+                <label>Sexual health (including contraception and sexual health checks)</label>
+            </value>
+            <value>
+                <fullName>Support with work or study</fullName>
+                <default>false</default>
+                <label>Support with work or study</label>
+            </value>
+            <value>
+                <fullName>Alcohol or other drugs negatively impacting Young Person&apos;s life</fullName>
+                <default>false</default>
+                <label>Alcohol or other drugs negatively impacting Young Person&apos;s life</label>
+            </value>
+            <value>
+                <fullName>Relationship issues</fullName>
+                <default>false</default>
+                <label>Relationship issues</label>
+            </value>
+            <value>
+                <fullName>Troubles with family or friends</fullName>
+                <default>false</default>
+                <label>Troubles with family or friends</label>
+            </value>
+            <value>
+                <fullName>Want to talk about sexuality or gender identity</fullName>
+                <default>false</default>
+                <label>Want to talk about sexuality or gender identity</label>
+            </value>
+            <value>
+                <fullName>Issues with bullying and or harassment</fullName>
+                <default>false</default>
+                <label>Issues with bullying and or harassment</label>
+            </value>
+            <value>
+                <fullName>Physical health issues</fullName>
+                <default>false</default>
+                <label>Physical health issues</label>
+            </value>
+            <value>
+                <fullName>Issues with self-harm</fullName>
+                <default>false</default>
+                <label>Issues with self-harm</label>
+            </value>
+            <value>
+                <fullName>Body image or eating</fullName>
+                <default>false</default>
+                <label>Body image or eating</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

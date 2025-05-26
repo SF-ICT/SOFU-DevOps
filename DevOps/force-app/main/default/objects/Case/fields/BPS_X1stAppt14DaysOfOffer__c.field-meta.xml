@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_X1stAppt14DaysOfOffer__c</fullName>
+    <formula>IF( Initial_Appointment_Held__c -  BPS_Participant__r.BPS_Navigator_Offer_Outcome_Date__c &lt;=14, TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>1stAppt14DaysOfOffer</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

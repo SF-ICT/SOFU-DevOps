@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEX_Score_Sessions</fullName>
+    <columns>NAME</columns>
+    <columns>Start_Date_Time__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Total_Scores_Completed__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Program_is_Dex_Reporter__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Session__c.Case_Related</value>
+    </filters>
+    <label>DEX Score Sessions</label>
+</ListView>

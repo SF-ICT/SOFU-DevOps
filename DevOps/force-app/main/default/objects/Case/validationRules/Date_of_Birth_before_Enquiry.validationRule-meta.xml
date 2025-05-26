@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_of_Birth_before_Enquiry</fullName>
+    <active>true</active>
+    <description>Prevents contact Date of Birth from being after Enquiry/Referral Date.</description>
+    <errorConditionFormula>Contact_Birthdate__c &gt;  Date_of_Enquiry_or_Referral__c</errorConditionFormula>
+    <errorDisplayField>Date_of_Enquiry_or_Referral__c</errorDisplayField>
+    <errorMessage>Participant Date of Birth cannot be after the Enquiry/Referral Date.</errorMessage>
+</ValidationRule>

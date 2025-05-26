@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Files_Uploaded_to_Referral__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used in online referral flows to mark if any files were uploaded by the external user.</description>
+    <inlineHelpText>Were there any files uploaded to the referral?</inlineHelpText>
+    <label>Files Uploaded to Referral</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

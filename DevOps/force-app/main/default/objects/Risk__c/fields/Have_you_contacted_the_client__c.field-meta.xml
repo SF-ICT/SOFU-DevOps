@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Have_you_contacted_the_client__c</fullName>
+    <description>Complete the Planning a Home Visit Checklist link HERE and document the perceived level of risk. If necessary Re-Assess the Level of Risk after talking to the client and making arrangements.
+
+Wherever possible staff should meet the client in a more controlled setting (i.e. workplace) prior to considering a home visit.</description>
+    <inlineHelpText>Complete the Planning a Home Visit Checklist link HERE and document the perceived level of risk. If necessary Re-Assess the Level of Risk after talking to the client and making arrangements.
+
+Wherever possible staff should meet the client in a more c</inlineHelpText>
+    <label>Have you contacted the client?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

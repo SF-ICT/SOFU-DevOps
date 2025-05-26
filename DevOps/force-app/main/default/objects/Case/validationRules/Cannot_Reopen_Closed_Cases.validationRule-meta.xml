@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Reopen_Closed_Cases</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(Status), &apos;Closed&apos;) &amp;&amp; NOT(ISPICKVAL(Status, &apos;Closed&apos;)) &amp;&amp; $Profile.Name  &lt;&gt; &quot;LAC&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;LAC Admin&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;LAC PETeam&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;System Administrator&quot; &amp;&amp; $Profile.Name &lt;&gt; &quot;Performance Analyst&quot;</errorConditionFormula>
+    <errorMessage>Cases cannot be reopened once they are closed. This is due to impacts to data integrity. If you have closed your case in error, please lodge a ticket via Freshservice and the request will be reviewed.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_PHN_MDS_Data__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  TEXT(Program_Type2__c) = &quot;Medicare Mental Health Centre&quot;,
+  IF(
+    OR(
+      ISBLANK(TEXT(Labour_Force_Status__c)),
+      ISBLANK(TEXT(Marital_Status__c)),
+      ISBLANK(TEXT(NDIS_Participant__c)),
+      ISBLANK(TEXT(Suicide_Referral_Flag__c)),
+      ISBLANK(TEXT(Principal_Diagnosis__c)),
+      ISBLANK(TEXT(iar_dst_practitioner_level_of_care__c)),
+      ISBLANK(TEXT(Referrer_Organisation_Type__c))
+    ),
+    &quot;Yes&quot;,
+    &quot;No&quot;
+  ),
+  IF(
+    TEXT(Program_Type2__c) = &quot;Care Connect - Hunter Manning&quot;,
+    IF(
+      OR(
+        ISBLANK(TEXT(Suicide_Referral_Flag__c)),
+        ISBLANK(TEXT(Principal_Diagnosis__c)),
+        ISBLANK(TEXT(Referrer_Organisation_Type__c))
+      ),
+      &quot;Yes&quot;,
+      &quot;No&quot;
+    ),
+    IF(
+      TEXT(Program_Type2__c) = &quot;Veterans Connect&quot;,
+      IF(
+        OR(
+          ISBLANK(TEXT(NDIS_Participant__c)),
+          ISBLANK(TEXT(Referrer_Organisation_Type__c)),
+          ISBLANK(TEXT(Employment_Participation__c))
+        ),
+        &quot;Yes&quot;,
+        &quot;No&quot;
+      ),
+      &quot;&quot;
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Missing PHN MDS Data?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

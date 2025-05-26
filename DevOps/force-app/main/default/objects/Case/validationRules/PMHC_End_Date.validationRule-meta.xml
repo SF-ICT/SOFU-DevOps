@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMHC_End_Date</fullName>
+    <active>true</active>
+    <description>Case Closed Date must not be before 1 January 2016 or in the Future.</description>
+    <errorConditionFormula>OR(CONTAINS(Program_Name__c, &quot;Care Connect&quot;),
+CONTAINS(Program_Name__c, &quot;Veterans Connect&quot;),
+CONTAINS(Program_Name__c, &quot;Medicare Mental Health Centre&quot;)) &amp;&amp;
+Case_Closed_Date__c &lt;  DATE(2016,1,1) &amp;&amp;
+Case_Closed_Date__c &gt; TODAY()</errorConditionFormula>
+    <errorMessage>Case Closed Date must not be before 1 January 2016 or in the Future.</errorMessage>
+</ValidationRule>

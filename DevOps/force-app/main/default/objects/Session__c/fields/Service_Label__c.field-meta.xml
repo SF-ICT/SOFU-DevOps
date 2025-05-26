@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Label__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    Service__c,
+    &quot;222&quot;, &quot;Active Holding&quot;,
+    &quot;8&quot;, &quot;Advocacy/Support&quot;,
+    &quot;215&quot;, &quot;Brokerage&quot;,
+    &quot;90&quot;, &quot;Business Planning&quot;,
+    &quot;Case Management&quot;, &quot;Case Management&quot;,
+    &quot;223&quot;, &quot;Case Plan Completed&quot;,
+    &quot;Check In&quot;, &quot;Check In&quot;,
+    &quot;4&quot;, &quot;Child/Youth focused groups&quot;,
+    &quot;10&quot;, &quot;Community Capacity Building&quot;,
+    &quot;96&quot;, &quot;Community Engagement&quot;,
+    &quot;5&quot;, &quot;Counselling&quot;,
+    &quot;3&quot;, &quot;Education and Skills Training&quot;,
+    &quot;21&quot;, &quot;Facilitate Employment Pathways&quot;,
+    &quot;13&quot;, &quot;Family Capacity Building&quot;,
+    &quot;225&quot;, &quot;Family Group Conferencing&quot;,
+    &quot;92&quot;, &quot;Family Mediation&quot;,
+    &quot;93&quot;, &quot;Goal Setting&quot;,
+    &quot;Housing Support&quot;, &quot;Housing Support&quot;,
+    &quot;151&quot;, &quot;Indigenous Advocacy / Support&quot;,
+    &quot;152&quot;, &quot;Indigenous Healing Workshops&quot;,
+    &quot;150&quot;, &quot;Indigenous Social Participation&quot;,
+    &quot;153&quot;, &quot;Indigenous supported playgroups&quot;,
+    &quot;2&quot;, &quot;Information/advice/referral&quot;,
+    &quot;In-house Training Program&quot;, &quot;In-house Training Program&quot;,
+    &quot;1&quot;, &quot;Intake/assessment&quot;,
+    &quot;100&quot;, &quot;Intensive Support&quot;,
+    &quot;99&quot;, &quot;Material Aid&quot;,
+    &quot;12&quot;, &quot;Mentoring / Peer Support&quot;,
+    &quot;11&quot;, &quot;Outreach&quot;,
+    &quot;154&quot;, &quot;Parenting Programs&quot;,
+    &quot;Post-Employment&quot;, &quot;Post-Employment&quot;,
+    &quot;Pre-Employment&quot;, &quot;Pre-Employment&quot;,
+    &quot;224&quot;, &quot;Referral Received&quot;,
+    &quot;Reverse Marketing&quot;, &quot;Reverse Marketing&quot;,
+    &quot;143&quot;, &quot;Service Review&quot;,
+    &quot;98&quot;, &quot;Social Participation&quot;,
+    &quot;155&quot;, &quot;Supported playgroups&quot;,
+    &quot;LAC&quot;, &quot;LAC&quot;,
+    &quot;&quot;
+)</formula>
+    <label>Service Label</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

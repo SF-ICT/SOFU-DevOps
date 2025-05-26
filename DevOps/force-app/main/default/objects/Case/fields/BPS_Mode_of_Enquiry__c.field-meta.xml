@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_Mode_of_Enquiry__c</fullName>
+    <label>Mode of Enquiry</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>In Community</fullName>
+                <default>false</default>
+                <label>In Community</label>
+            </value>
+            <value>
+                <fullName>In Office (Face to Face)</fullName>
+                <default>false</default>
+                <label>In Office (Face to Face)</label>
+            </value>
+            <value>
+                <fullName>Phone</fullName>
+                <default>false</default>
+                <label>Phone</label>
+            </value>
+            <value>
+                <fullName>PACE Case Assigned to SF</fullName>
+                <default>false</default>
+                <label>PACE Case Assigned to SF</label>
+            </value>
+            <value>
+                <fullName>Email/Phone</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email/Phone</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

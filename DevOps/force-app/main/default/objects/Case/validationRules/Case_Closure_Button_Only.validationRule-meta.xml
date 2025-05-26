@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Closure_Button_Only</fullName>
+    <active>true</active>
+    <description>Prevents people from closing a case without a case closure date forcing them to use the Case Closure flow via the Case Closure button</description>
+    <errorConditionFormula>AND
+(
+  TEXT(Status) = &quot;Closed&quot;,
+  TEXT(PRIORVALUE(Status)) != &quot;Closed&quot;,
+  ISNULL(Case_Closed_Date__c),
+  NOT(CONTAINS(Program__r.Name, &quot;NDIA&quot;))
+)</errorConditionFormula>
+    <errorMessage>Please use the &quot;Close Case&quot; button at the top-right of the Case screen</errorMessage>
+</ValidationRule>

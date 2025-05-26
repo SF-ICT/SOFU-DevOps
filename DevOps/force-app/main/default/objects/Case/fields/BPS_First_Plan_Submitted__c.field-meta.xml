@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BPS_First_Plan_Submitted__c</fullName>
+    <formula>AND(BPS_Plan_Sequence__c = 1, ISPICKVAL(BPS_Review_Type__c, &quot;&quot;), NOT(ISBLANK(BPS_Plan_Submitted_to_NDIA__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>First Plan Submitted</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

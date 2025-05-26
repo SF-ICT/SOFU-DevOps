@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>The_Bridge_MMHC</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>Case_Owner_Full_Name__c</columns>
+    <columns>Clinician__c</columns>
+    <columns>Date_of_Enquiry_or_Referral__c</columns>
+    <columns>Date_Of_Last_Session__c</columns>
+    <columns>CASES.STATUS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program_Type2__c</field>
+        <operation>equals</operation>
+        <value>Medicare Mental Health Centre,AOD Hub</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>Case_Owner_Full_Name__c</field>
+        <operation>equals</operation>
+        <value>$USER</value>
+    </filters>
+    <filters>
+        <field>Clinician__c</field>
+        <operation>equals</operation>
+        <value>$USER</value>
+    </filters>
+    <label>All Open Cases (The Bridge &amp; MMHC)</label>
+    <sharedTo>
+        <group>Medicare_Mental_Health_Centre</group>
+        <group>The_Bridge</group>
+    </sharedTo>
+</ListView>

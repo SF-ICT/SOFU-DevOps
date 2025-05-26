@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Active_Programs</fullName>
+    <columns>NAME</columns>
+    <columns>Description__c</columns>
+    <columns>Program_Manager__c</columns>
+    <columns>DEX_Reporter__c</columns>
+    <columns>AIHW_Reporter__c</columns>
+    <columns>Program_is_a_Nadabase_Reporter__c</columns>
+    <columns>Program_is_a_PMHC_Reporter__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <label>All Active Programs</label>
+</ListView>
